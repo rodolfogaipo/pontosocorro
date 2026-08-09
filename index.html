@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Ponto Socorro — Estude fácil, do jeito que você entende</title>
+<meta name="description" content="Todo o conteúdo do Ensino Médio de Minas Gerais, explicado de forma fácil, ilustrada e intuitiva.">
+<meta name="theme-color" content="#0a1a3a">
+
+<link rel="manifest" href="manifest.json">
+<link rel="apple-touch-icon" href="icons/icon-180.png">
+<link rel="icon" href="icons/icon-32.png">
+
+<link rel="stylesheet" href="css/style.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js" defer></script>
+</head>
+<body>
+
+<div id="app">
+
+  <!-- HEADER -->
+  <header class="topbar">
+    <button id="btnBack" class="icon-btn" aria-label="Voltar" hidden>←</button>
+    <div class="brand" id="brandHome">
+      <img src="icons/logo-transparent.png" alt="Ponto Socorro" class="brand-logo">
+    </div>
+    <button id="btnMenu" class="icon-btn" aria-label="Progresso">📊</button>
+  </header>
+
+  <main id="view"></main>
+
+  <!-- BOTTOM NAV -->
+  <nav class="bottomnav">
+    <button class="navbtn active" data-nav="home"><span>🏠</span>Início</button>
+    <button class="navbtn" data-nav="progress"><span>✅</span>Progresso</button>
+    <button class="navbtn" data-nav="about"><span>❓</span>Sobre</button>
+  </nav>
+
+</div>
+
+<!-- Toast -->
+<div id="toast" class="toast" hidden></div>
+
+<!-- Glossário: aparece quando toca numa palavra difícil -->
+<div id="glossOverlay" class="gloss-overlay" hidden></div>
+<div id="glossSheet" class="gloss-sheet" hidden>
+  <div class="gloss-sheet-word" id="glossWord"></div>
+  <div class="gloss-sheet-def" id="glossDef"></div>
+  <button class="btn btn-primary btn-full" id="glossClose">Entendi ✅</button>
+</div>
+
+<script src="js/content.js"></script>
+<script src="js/content-extra.js"></script>
+<script src="js/glossary.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
