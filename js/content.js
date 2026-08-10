@@ -47,6 +47,7 @@ const TOPICS = {
     emoji: "🕵️",
     intro: "Interpretar um texto é como ser um detetive: você procura pistas nas palavras para descobrir o que o autor realmente quis dizer.",
     analogy: "Pense num bilhete da sua mãe: \"Não esqueça o guarda-chuva\". Você não lê só as palavras — você entende que ela está te avisando que pode chover!",
+    visual: {"type":"flow","steps":["Ler o texto","Identificar ideia central","Interpretar"]},
     steps: [
       "Leia o texto inteiro uma vez, sem parar, só para entender o assunto.",
       "Leia de novo, agora grifando (ou marcando mentalmente) as palavras-chave.",
@@ -65,6 +66,7 @@ const TOPICS = {
     emoji: "🗂️",
     intro: "Gênero textual é o \"tipo\" de texto: uma receita, uma notícia, uma piada e uma carta são todos diferentes porque cada um tem um objetivo e um jeito próprio de ser escrito.",
     analogy: "É como roupas para ocasiões diferentes: você não vai numa festa de terno igual vai à praia. Cada gênero textual \"se veste\" de um jeito, dependendo de onde vai circular.",
+    visual: {"type":"compare","leftTitle":"Narrativo","leftItems":["Conta uma história"],"rightTitle":"Informativo","rightItems":["Transmite dados"]},
     steps: [
       "Pergunte: qual é o objetivo desse texto (informar, convencer, divertir)?",
       "Observe a estrutura: tem título? Tem passos numerados? Tem diálogo?",
@@ -82,6 +84,7 @@ const TOPICS = {
     emoji: "✏️",
     intro: "Ortografia é escrever as palavras do jeito certo, e acentuação é saber quando (e por que) colocar aqueles sinais em cima das letras, como agudo (´) e til (~).",
     analogy: "É como as regras de trânsito: parecem chatas, mas existem para que todo mundo se entenda sem confusão. Escrever \"está\" sem acento vira \"esta\" — outra palavra, outro sentido.",
+    visual: {"type":"compare","leftTitle":"Com acento","leftItems":["café, você"],"rightTitle":"Sem acento","rightItems":["casa, mesa"]},
     steps: [
       "Palavras oxítonas (força no final) terminadas em A, E, O, EM: acentue (ex: café, também).",
       "Palavras paroxítonas (força no meio): só acentua em casos específicos (ex: fácil, órgão).",
@@ -99,6 +102,7 @@ const TOPICS = {
     emoji: "🧱",
     intro: "Classes gramaticais são os \"tipos\" de palavras que existem: substantivo (nomeia coisas), verbo (indica ação), adjetivo (qualifica), entre outras. Cada uma tem uma função na frase.",
     analogy: "É como as peças de um jogo de montar: cada peça (substantivo, verbo, adjetivo) tem um formato e uma função própria, e juntas formam a frase completa.",
+    visual: {"type":"labeled","center":"Classes\nGramaticais","parts":["Substantivo","Verbo","Adjetivo","Advérbio"]},
     steps: [
       "Substantivo: nomeia pessoas, lugares, coisas ou ideias (casa, amor, Maria).",
       "Verbo: indica ação, estado ou fenômeno (correr, ser, chover).",
@@ -116,6 +120,7 @@ const TOPICS = {
     emoji: "🤝",
     intro: "Concordância é fazer as palavras da frase \"combinarem\" entre si: verbo combinando com o sujeito, e adjetivo combinando com o substantivo, em número (singular/plural) e gênero (masculino/feminino).",
     analogy: "É como formar duplas numa dança: o par tem que estar sincronizado. Se o sujeito é plural, o verbo também precisa \"dançar\" no plural.",
+    visual: {"type":"compare","leftTitle":"Verbal","leftItems":["Verbo + sujeito"],"rightTitle":"Nominal","rightItems":["Adjetivo + substantivo"]},
     steps: [
       "Ache o sujeito da frase (quem faz a ação).",
       "Verifique se ele é singular ou plural.",
@@ -133,6 +138,7 @@ const TOPICS = {
     emoji: "🗣️",
     intro: "Variação linguística é entender que não existe só \"um jeito certo\" de falar português — cada região, grupo social e situação tem seu próprio jeito de se comunicar, e isso é normal.",
     analogy: "É como roupa: você não se veste igual pra uma festa e pra dormir. Do mesmo jeito, você fala diferente com os amigos e numa entrevista de emprego — os dois jeitos são \"certos\", cada um no seu contexto.",
+    visual: {"type":"compare","leftTitle":"Norma culta","leftItems":["Contexto formal"],"rightTitle":"Variação regional","rightItems":["Contexto informal"]},
     steps: [
       "Variação regional: sotaques e palavras diferentes entre estados (ex: \"mexerica\" x \"tangerina\").",
       "Variação social: o jeito de falar pode mudar conforme a idade, profissão ou grupo social.",
@@ -150,6 +156,7 @@ const TOPICS = {
     emoji: "🏰",
     intro: "Trovadorismo e Humanismo foram as primeiras fases da literatura em língua portuguesa, na Idade Média — época de castelos, cantigas cantadas e as primeiras peças de teatro escritas em português.",
     analogy: "Pense nisso como o \"primeiro capítulo\" da história dos livros em português — muito antes da internet, das novelas ou até da imprensa, as histórias eram cantadas ou representadas ao vivo.",
+    visual: {"type":"timeline","events":[{"date":"1189","label":"Cantiga mais antiga"},{"date":"1300s","label":"Trovadorismo"},{"date":"1400s","label":"Humanismo"}]},
     steps: [
       "Trovadorismo (séc. XII-XIV): poemas cantados, as \"cantigas\", em Portugal.",
       "Cantigas de amor: o trovador (poeta) declara amor por uma dama.",
@@ -168,6 +175,7 @@ const TOPICS = {
     emoji: "📜",
     intro: "O Classicismo foi um movimento literário que buscava inspiração nos textos da Grécia e Roma Antigas, valorizando o equilíbrio, a razão e a perfeição das formas — em Portugal, tem Luís de Camões como maior nome.",
     analogy: "É como um artista moderno que decide pintar exatamente no estilo dos grandes mestres renascentistas: o Classicismo \"olhava pra trás\", pros clássicos gregos e romanos, buscando um ideal de perfeição e equilíbrio.",
+    visual: {"type":"timeline","events":[{"date":"1527","label":"Camões nasce"},{"date":"1572","label":"Os Lusíadas"}]},
     steps: [
       "Inspiração nos autores da Antiguidade Clássica (Grécia e Roma).",
       "Valorização da razão, do equilíbrio e das regras fixas de composição.",
@@ -188,6 +196,7 @@ const TOPICS = {
     emoji: "💰",
     intro: "Educação financeira é aprender a cuidar do dinheiro: saber quanto entra, quanto sai, e como sobrar um pouco no final do mês.",
     analogy: "É como encher um balde (o que você ganha) e ao mesmo tempo ter furinhos nele (o que você gasta). Se os furinhos forem maiores que a torneira, o balde nunca enche!",
+    visual: {"type":"bars","data":[{"label":"Ano 1","value":110},{"label":"Ano 2","value":121},{"label":"Ano 3","value":133}],"unit":""},
     steps: [
       "Some tudo o que entra (salário, mesada, etc.) = Receita.",
       "Some tudo o que sai (contas, compras) = Despesa.",
@@ -206,6 +215,7 @@ const TOPICS = {
     emoji: "🔢",
     intro: "Os números são organizados em \"famílias\" (conjuntos): naturais, inteiros, racionais, irracionais e reais. Cada família inclui a anterior e acrescenta números novos.",
     analogy: "É como uma família de bonecas russas: os Naturais (1,2,3...) cabem dentro dos Inteiros, que cabem dentro dos Racionais, que cabem dentro dos Reais — cada conjunto maior \"abraça\" o menor.",
+    visual: {"type":"labeled","center":"Números","parts":["Naturais (N)","Inteiros (Z)","Racionais (Q)","Irracionais (I)"]},
     steps: [
       "Naturais (N): 0, 1, 2, 3... (contagem, sem negativos nem frações).",
       "Inteiros (Z): Naturais + negativos (-3, -2, -1, 0, 1, 2...).",
@@ -224,6 +234,7 @@ const TOPICS = {
     emoji: "📈",
     intro: "Função do 1º grau é uma regra do tipo y = ax + b, que sempre forma uma linha reta quando desenhada no gráfico — ela é usada pra descrever coisas que crescem (ou diminuem) de forma constante.",
     analogy: "Pense numa corrida de táxi: você paga uma bandeirada fixa (b) mais um valor por km rodado (a vezes x). O total sobe sempre na mesma proporção — isso é uma função do 1º grau.",
+    visual: {"type":"line","points":[{"y":-3,"label":"-2"},{"y":-1,"label":"-1"},{"y":1,"label":"0"},{"y":3,"label":"1"},{"y":5,"label":"2"}],"xLabel":"x","yLabel":"y = 2x+1"},
     steps: [
       "A fórmula geral é y = ax + b.",
       "\"a\" é a inclinação da reta (o quanto ela sobe/desce).",
@@ -241,6 +252,7 @@ const TOPICS = {
     emoji: "🎢",
     intro: "Função do 2º grau é uma regra do tipo y = ax² + bx + c, que forma uma curva chamada parábola quando desenhada — parece o formato de um \"U\" ou um \"arco-íris\" invertido.",
     analogy: "Pense numa bola de futebol chutada pro alto: ela sobe, atinge um ponto mais alto, e desce — esse caminho curvo é exatamente o formato de uma parábola.",
+    visual: {"type":"line","points":[{"y":5,"label":"-1"},{"y":0,"label":"0"},{"y":-3,"label":"1"},{"y":-4,"label":"2"},{"y":-3,"label":"3"},{"y":0,"label":"4"},{"y":5,"label":"5"}],"xLabel":"x","yLabel":"y = x²-4x"},
     steps: [
       "A fórmula geral é y = ax² + bx + c.",
       "Se \"a\" é positivo, a parábola tem forma de \"U\" (abre pra cima).",
@@ -259,6 +271,7 @@ const TOPICS = {
     emoji: "🚀",
     intro: "Função exponencial é uma regra do tipo y = a·bˣ, onde o \"x\" fica no expoente — ela representa crescimentos (ou reduções) muito rápidos, como quando algo dobra de tamanho repetidamente.",
     analogy: "Pense numa fofoca se espalhando: 1 pessoa conta pra 2, essas 2 contam pra outras 4, essas 4 contam pra 8... o número de pessoas sabendo cresce cada vez mais rápido — isso é crescimento exponencial.",
+    visual: {"type":"line","points":[{"y":1,"label":"0"},{"y":2,"label":"1"},{"y":4,"label":"2"},{"y":8,"label":"3"},{"y":16,"label":"4"}],"xLabel":"x","yLabel":"y = 2ˣ"},
     steps: [
       "A fórmula geral é y = a·bˣ, onde \"b\" é a base (taxa de crescimento).",
       "Se b > 1, a função cresce (quanto maior x, muito maior y).",
@@ -276,6 +289,7 @@ const TOPICS = {
     emoji: "🔄",
     intro: "Logaritmo responde a uma pergunta específica: \"por qual expoente eu preciso elevar essa base para chegar nesse número?\" — é como \"desfazer\" uma potência.",
     analogy: "Pense numa escada: a exponencial é subir a escada (quantos degraus eu subo?), e o logaritmo é perguntar \"quantos degraus eu subi para chegar aqui?\" — são operações inversas uma da outra.",
+    visual: {"type":"line","points":[{"y":-2,"label":"0.25"},{"y":-1,"label":"0.5"},{"y":0,"label":"1"},{"y":1,"label":"2"},{"y":2,"label":"4"}],"xLabel":"x","yLabel":"y = log₂(x)"},
     steps: [
       "log_b(x) = y significa: \"b elevado a y é igual a x\".",
       "Exemplo: log_2(8) = 3, porque 2³ = 8.",
@@ -293,6 +307,7 @@ const TOPICS = {
     emoji: "🔗",
     intro: "Progressão é uma sequência de números que segue um padrão fixo: na PA (Progressão Aritmética) você sempre SOMA o mesmo valor; na PG (Progressão Geométrica) você sempre MULTIPLICA pelo mesmo valor.",
     analogy: "PA é como subir uma escada com degraus do mesmo tamanho (sempre +2, por exemplo: 2, 4, 6, 8...). PG é como pular de trampolim, onde cada pulo é o dobro do anterior (2, 4, 8, 16...) — cresce muito mais rápido.",
+    visual: {"type":"compare","leftTitle":"PA (soma)","leftItems":["2, 5, 8, 11...","+3 sempre"],"rightTitle":"PG (multiplica)","rightItems":["2, 6, 18, 54...","×3 sempre"]},
     steps: [
       "PA: cada termo = termo anterior + razão fixa (soma constante).",
       "PG: cada termo = termo anterior × razão fixa (multiplicação constante).",
@@ -310,6 +325,7 @@ const TOPICS = {
     emoji: "📐",
     intro: "Trigonometria estuda a relação entre os ângulos e os lados de um triângulo — no triângulo retângulo (que tem um ângulo de 90°), existem fórmulas (seno, cosseno, tangente) que relacionam ângulos e medidas dos lados.",
     analogy: "Pense em medir a altura de um prédio sem subir nele: com o ângulo em que você olha pro topo e a distância até a base, a trigonometria calcula a altura exata — sem precisar de fita métrica gigante.",
+    visual: {"type":"labeled","center":"Triângulo\nRetângulo","parts":["Hipotenusa","Cateto Oposto","Cateto Adjacente","Ângulo θ"]},
     steps: [
       "Cateto oposto: o lado \"de frente\" para o ângulo escolhido.",
       "Cateto adjacente: o lado \"ao lado\" do ângulo escolhido (que não é a hipotenusa).",
@@ -331,6 +347,7 @@ const TOPICS = {
     emoji: "🚗",
     intro: "Física do movimento estuda como as coisas se deslocam: rápido, devagar, em linha reta ou fazendo curva.",
     analogy: "É tipo assistir a corrida de carrinhos de brinquedo: um anda rápido (velocidade alta), outro devagar (velocidade baixa), e você consegue medir isso com um cronômetro e uma trena.",
+    visual: {"type":"line","points":[{"y":0,"label":"0s"},{"y":10,"label":"1s"},{"y":20,"label":"2s"},{"y":30,"label":"3s"}],"xLabel":"tempo","yLabel":"posição (m)"},
     steps: [
       "Velocidade = distância percorrida ÷ tempo gasto.",
       "Se a velocidade não muda, o movimento é uniforme.",
@@ -348,6 +365,7 @@ const TOPICS = {
     emoji: "💪",
     intro: "Em Física, \"trabalho\" é o esforço aplicado para mover algo por uma certa distância. Energia é a capacidade de realizar esse trabalho — e ela nunca desaparece, só se transforma.",
     analogy: "Pense em empurrar uma caixa pesada: quanto mais força você usa e mais longe empurra, mais \"trabalho\" você realiza. A energia que você gastou não sumiu — virou movimento (energia cinética) da caixa.",
+    visual: {"type":"flow","steps":["Energia potencial","Objeto cai","Energia cinética","Trabalho realizado"]},
     steps: [
       "Trabalho (W) = Força × Distância (na direção do movimento).",
       "Energia cinética: energia de um objeto em movimento.",
@@ -365,6 +383,7 @@ const TOPICS = {
     emoji: "🎱",
     intro: "Quantidade de movimento (ou momento linear) mede o quanto um objeto em movimento \"resiste\" a parar — depende da massa e da velocidade. Impulso é a força aplicada durante um tempo, que muda essa quantidade de movimento.",
     analogy: "Pense em bolinhas de bilhar: uma bola pesada em alta velocidade é muito mais difícil de parar do que uma bolinha leve devagar — isso é a quantidade de movimento em ação.",
+    visual: {"type":"compare","leftTitle":"Antes da colisão","leftItems":["Massa × Velocidade","Momento total"],"rightTitle":"Depois da colisão","rightItems":["Se conserva","Momento igual"]},
     steps: [
       "Quantidade de movimento (Q) = massa × velocidade.",
       "Impulso (I) = Força × tempo de aplicação.",
@@ -382,6 +401,7 @@ const TOPICS = {
     emoji: "🌍",
     intro: "Gravitação é a força de atração que existe entre quaisquer dois objetos com massa — é ela que mantém você no chão, a Lua girando ao redor da Terra, e os planetas girando ao redor do Sol.",
     analogy: "Pense em dois ímãs se atraindo, só que muito mais fraco e presente em TUDO que tem massa — quanto mais \"pesado\" (massivo) e mais perto, mais forte a atração gravitacional.",
+    visual: {"type":"labeled","center":"Gravitação","parts":["Massa 1","Massa 2","Distância","Força de atração"]},
     steps: [
       "Toda massa atrai qualquer outra massa (Lei da Gravitação Universal, de Newton).",
       "Quanto maior a massa dos objetos, maior a força de atração.",
@@ -402,6 +422,7 @@ const TOPICS = {
     emoji: "⚫",
     intro: "Tudo que existe — você, a água, o ar — é feito de pedacinhos muito pequenos chamados átomos. Eles são tão pequenos que nem dá para ver a olho nu!",
     analogy: "Pense em LEGO: cada peça pequena é um átomo. Juntando peças diferentes, você monta coisas diferentes — assim como átomos se juntam para formar tudo ao nosso redor.",
+    visual: {"type":"labeled","center":"Átomo","parts":["Próton (+)","Nêutron","Elétron (-)","Núcleo"]},
     steps: [
       "Átomo = a menor parte de um elemento químico.",
       "Átomos se juntam formando moléculas (ex: 2 hidrogênios + 1 oxigênio = água).",
@@ -419,6 +440,7 @@ const TOPICS = {
     emoji: "🔗",
     intro: "Átomos se unem uns aos outros através de ligações químicas, formando moléculas — é como se eles \"compartilhassem\" ou \"trocassem\" elétrons para ficar mais estáveis.",
     analogy: "Pense em duas pessoas dividindo um guarda-chuva na chuva: cada uma \"empresta\" um pouco de proteção pra outra, e as duas ficam mais protegidas juntas — assim como átomos compartilham elétrons pra ficar mais estáveis.",
+    visual: {"type":"compare","leftTitle":"Iônica","leftItems":["Doa/recebe elétron","Metal + não-metal"],"rightTitle":"Covalente","rightItems":["Compartilha elétron","Não-metal + não-metal"]},
     steps: [
       "Ligação iônica: um átomo \"doa\" elétron(s) para outro (forma íons opostos que se atraem).",
       "Ligação covalente: os átomos compartilham elétrons entre si.",
@@ -436,6 +458,7 @@ const TOPICS = {
     emoji: "🧫",
     intro: "As funções inorgânicas são 4 grandes \"famílias\" de substâncias químicas que não têm carbono como base: ácidos, bases, sais e óxidos — cada uma com características próprias.",
     analogy: "É como classificar frutas em \"famílias\" (cítricas, tropicais...): cada função química agrupa substâncias que se comportam de um jeito parecido, mesmo sendo compostos diferentes.",
+    visual: {"type":"labeled","center":"Funções\nInorgânicas","parts":["Ácidos","Bases","Sais","Óxidos"]},
     steps: [
       "Ácidos: liberam H⁺ em água, geralmente têm gosto azedo (ex: vinagre).",
       "Bases: liberam OH⁻ em água, costumam ser \"escorregadias\" (ex: sabão).",
@@ -454,6 +477,7 @@ const TOPICS = {
     emoji: "🔥",
     intro: "Reação química é quando substâncias se transformam em outras substâncias diferentes, quebrando e formando novas ligações entre átomos — como quando você queima papel e ele vira cinzas e fumaça.",
     analogy: "É como misturar ingredientes numa receita: farinha, ovo e leite viram um bolo — algo novo, diferente dos ingredientes originais. Numa reação química, os \"ingredientes\" (reagentes) viram \"produtos\" novos.",
+    visual: {"type":"flow","steps":["Reagentes","Quebra de ligações","Nova ligação","Produtos"]},
     steps: [
       "Reagentes: as substâncias que entram na reação.",
       "Produtos: as substâncias novas que se formam depois.",
@@ -471,6 +495,7 @@ const TOPICS = {
     emoji: "⚖️",
     intro: "Estequiometria é a parte da química que calcula as quantidades exatas de reagentes e produtos numa reação — como uma receita de bolo, mas com fórmulas e proporções em vez de xícaras.",
     analogy: "Pense numa receita: para fazer 2 bolos, você dobra todos os ingredientes. Na química, se você tem o dobro de um reagente, também vai precisar (e produzir) o dobro de tudo mais — a estequiometria calcula essas proporções.",
+    visual: {"type":"bars","data":[{"label":"H₂","value":2},{"label":"O₂","value":1},{"label":"H₂O","value":2}],"unit":" mol"},
     steps: [
       "A equação química balanceada mostra a proporção entre reagentes e produtos.",
       "Use a proporção (em mols) para calcular quantidades desconhecidas.",
@@ -491,6 +516,7 @@ const TOPICS = {
     emoji: "🔬",
     intro: "Todo ser vivo é formado por células — estruturas muito pequenas que funcionam como \"fábricas em miniatura\" mantendo a vida funcionando.",
     analogy: "Pense numa cidade: a célula é como uma casa, cada parte dela (organela) tem uma função, tipo a cozinha (mitocôndria, que produz energia) e o depósito (vacúolo, que guarda coisas).",
+    visual: {"type":"labeled","center":"Célula","parts":["Núcleo","Mitocôndria","Membrana","Citoplasma"]},
     steps: [
       "Célula = unidade básica da vida.",
       "Núcleo guarda o \"manual de instruções\" (DNA).",
@@ -508,6 +534,7 @@ const TOPICS = {
     emoji: "🦁",
     intro: "Ecologia estuda como os seres vivos se relacionam entre si e com o ambiente — e uma das relações mais importantes é \"quem come quem\", organizada em cadeias e teias alimentares.",
     analogy: "Pense numa cadeia alimentar como um jogo de dominó: a planta é comida pelo rato, o rato é comido pela cobra, a cobra é comida pela águia — cada peça depende da anterior para existir.",
+    visual: {"type":"flow","steps":["Sol","Planta (produtor)","Herbívoro","Carnívoro"]},
     steps: [
       "Produtores: plantas, que produzem seu próprio alimento (fotossíntese).",
       "Consumidores: animais que comem outros seres vivos (herbívoros, carnívoros).",
@@ -525,6 +552,7 @@ const TOPICS = {
     emoji: "🌳",
     intro: "Bioma é uma grande região com clima, solo, plantas e animais parecidos entre si. O Brasil tem 6 biomas principais: Amazônia, Cerrado, Mata Atlântica, Caatinga, Pampa e Pantanal.",
     analogy: "Pense em biomas como \"bairros\" de uma cidade gigante: cada um tem seu próprio \"estilo\" — clima, plantas e moradores (animais) diferentes — mesmo fazendo parte do mesmo país.",
+    visual: {"type":"bars","data":[{"label":"Amazônia","value":49},{"label":"Cerrado","value":24},{"label":"Mata Atl.","value":13},{"label":"Caatinga","value":10}],"unit":"%"},
     steps: [
       "Amazônia: a maior floresta tropical do mundo, muito úmida e biodiversa.",
       "Cerrado: vegetação de savana, árvores retorcidas, clima com seca bem marcada.",
@@ -543,6 +571,7 @@ const TOPICS = {
     emoji: "🧫",
     intro: "Como a vida começou na Terra é uma das maiores perguntas da ciência. A teoria mais aceita hoje diz que moléculas simples, há bilhões de anos, foram se combinando até formar as primeiras células vivas.",
     analogy: "Pense em ingredientes soltos (água, gases, minerais) na Terra primitiva se combinando aos poucos, tipo peças de Lego se encaixando ao acaso, até que, depois de muitíssimo tempo, formaram algo capaz de se replicar — a primeira \"vida\".",
+    visual: {"type":"timeline","events":[{"date":"4,5 bi anos","label":"Formação da Terra"},{"date":"3,8 bi anos","label":"Primeiras moléculas"},{"date":"3,5 bi anos","label":"Primeiras células"}]},
     steps: [
       "A Terra tem cerca de 4,5 bilhões de anos.",
       "As primeiras formas de vida (bactérias simples) surgiram há cerca de 3,5 bilhões de anos.",
@@ -560,6 +589,7 @@ const TOPICS = {
     emoji: "🦠",
     intro: "Os seres vivos são organizados em grandes grupos chamados reinos (animais, plantas, fungos, entre outros). Os vírus são um caso à parte — muito simples, ficam \"no limite\" entre o vivo e o não vivo.",
     analogy: "Pense nos reinos como grandes \"times\" da natureza, cada um com regras próprias de como viver. Já o vírus é como um jogador que só entra em campo se \"invadir\" outro time — sozinho, ele nem consegue jogar.",
+    visual: {"type":"labeled","center":"Seres\nVivos","parts":["Monera","Protista","Fungi","Animalia","Plantae"]},
     steps: [
       "Reino Animal, Reino Vegetal (plantas), Reino Fungi (fungos), entre outros.",
       "Vírus não têm célula própria — precisam invadir uma célula viva para se multiplicar.",
@@ -580,6 +610,7 @@ const TOPICS = {
     emoji: "🧭",
     intro: "Assim como uma casa tem endereço (rua, número), qualquer ponto da Terra também tem um \"endereço\": as coordenadas geográficas (latitude e longitude).",
     analogy: "É como um jogo de batalha naval: você usa uma letra e um número para achar um quadradinho exato no tabuleiro. Latitude e longitude fazem a mesma coisa, só que no planeta inteiro!",
+    visual: {"type":"labeled","center":"Coordenadas","parts":["Latitude","Longitude","Equador","Meridiano"]},
     steps: [
       "Latitude mede a distância ao norte ou sul da Linha do Equador.",
       "Longitude mede a distância a leste ou oeste do Meridiano de Greenwich.",
@@ -597,6 +628,7 @@ const TOPICS = {
     emoji: "⛰️",
     intro: "Relevo são as formas da superfície da Terra: montanhas, planícies, planaltos, vales. A geologia estuda como as rochas e o interior da Terra se formam e mudam ao longo de milhões de anos.",
     analogy: "Pense na crosta terrestre como a casca de uma torta que está sempre \"amassando\" bem devagar — colisões entre placas tectônicas formam montanhas, do mesmo jeito que amassar a massa cria dobras.",
+    visual: {"type":"labeled","center":"Relevo","parts":["Planalto","Planície","Montanha","Depressão"]},
     steps: [
       "Planície: área baixa e plana, geralmente perto de rios ou do mar.",
       "Planalto: área elevada e relativamente plana, desgastada pela erosão.",
@@ -614,6 +646,7 @@ const TOPICS = {
     emoji: "🌦️",
     intro: "Clima é o padrão de temperatura, chuva e vento de uma região ao longo de muitos anos — diferente do \"tempo\", que é a condição do momento (hoje está chovendo, por exemplo).",
     analogy: "Pense na diferença entre o \"humor de hoje\" de uma pessoa (tempo) e sua \"personalidade\" (clima): o humor muda todo dia, mas a personalidade é um padrão que se repete ao longo de muito tempo.",
+    visual: {"type":"line","points":[{"y":28,"label":"Jan"},{"y":22,"label":"Mar"},{"y":18,"label":"Jun"},{"y":20,"label":"Set"},{"y":27,"label":"Dez"}],"xLabel":"mês","yLabel":"temperatura °C"},
     steps: [
       "Tempo: condição atmosférica do momento (hoje, agora).",
       "Clima: padrão médio de temperatura e chuva de uma região, ao longo de décadas.",
@@ -631,6 +664,7 @@ const TOPICS = {
     emoji: "🌊",
     intro: "Hidrografia estuda os corpos de água de uma região — rios, lagos, aquíferos — e como eles se organizam em bacias hidrográficas, que são como \"sistemas de drenagem\" naturais do território.",
     analogy: "Pense numa bacia hidrográfica como a rede de encanamento de uma casa: vários \"canos\" pequenos (riachos) vão se juntando em canos maiores (rios), até desaguar num ponto final (o mar ou outro grande rio).",
+    visual: {"type":"flow","steps":["Nascente","Afluentes","Rio principal","Foz"]},
     steps: [
       "Bacia hidrográfica: toda a área de terra que \"drena\" água para um mesmo rio principal.",
       "Rio principal: o maior rio da bacia, que recebe água dos afluentes.",
@@ -648,6 +682,7 @@ const TOPICS = {
     emoji: "🌿",
     intro: "Vegetação é o conjunto de plantas que cobre naturalmente uma região — e ela varia muito dependendo do clima, do solo e da quantidade de chuva de cada lugar.",
     analogy: "Pense na vegetação como a \"roupa\" que a Terra usa em cada lugar: em regiões quentes e úmidas, ela \"veste\" florestas densas; em regiões secas, \"veste\" plantas mais resistentes, como cactos.",
+    visual: {"type":"bars","data":[{"label":"Floresta","value":55},{"label":"Savana","value":23},{"label":"Campos","value":15},{"label":"Deserto","value":7}],"unit":"%"},
     steps: [
       "Floresta: vegetação densa, com árvores altas, comum em climas quentes e úmidos.",
       "Savana: vegetação mais aberta, com árvores espaçadas e muita grama, típica de climas com seca marcada.",
@@ -668,6 +703,7 @@ const TOPICS = {
     emoji: "📜",
     intro: "Fonte histórica é qualquer coisa que nos ajuda a entender o passado: uma carta antiga, uma foto, uma ferramenta, até uma música!",
     analogy: "É como investigar um crime: o historiador é o detetive, e as fontes (documentos, objetos) são as pistas que ajudam a montar a história do que aconteceu.",
+    visual: {"type":"compare","leftTitle":"Fonte primária","leftItems":["Feita na época","Ex: carta, foto"],"rightTitle":"Fonte secundária","rightItems":["Feita depois","Ex: livro didático"]},
     steps: [
       "Identifique o que é a fonte (carta, foto, objeto...).",
       "Pergunte: quem produziu? quando? por quê?",
@@ -685,6 +721,7 @@ const TOPICS = {
     emoji: "🗿",
     intro: "Pré-história é o longo período antes da invenção da escrita, quando os primeiros seres humanos aprenderam a fazer ferramentas, dominar o fogo e viver em grupos.",
     analogy: "Pense na Pré-história como os \"primeiros rascunhos\" da humanidade: sem escrita para registrar nada, tudo que sabemos vem de pistas indiretas — ossos, ferramentas de pedra, pinturas em cavernas.",
+    visual: {"type":"flow","steps":["Paleolítico","Descoberta do fogo","Neolítico","Agricultura"]},
     steps: [
       "Paleolítico: período dos primeiros humanos, caçadores-coletores nômades.",
       "Descoberta do fogo: permitiu cozinhar, se aquecer e se proteger.",
@@ -702,6 +739,7 @@ const TOPICS = {
     emoji: "🏛️",
     intro: "A Antiguidade foi o período das primeiras grandes civilizações organizadas, com cidades, governos e leis escritas — como o Egito e a Mesopotâmia (às margens de grandes rios) e, depois, a Grécia e Roma.",
     analogy: "Pense nessas civilizações antigas como as \"primeiras grandes empresas\" da humanidade: organizaram governo, leis, exércitos e comércio em larga escala — criando modelos que influenciam a sociedade até hoje.",
+    visual: {"type":"timeline","events":[{"date":"3200 a.C.","label":"Egito"},{"date":"3500 a.C.","label":"Mesopotâmia"},{"date":"800 a.C.","label":"Grécia"},{"date":"753 a.C.","label":"Roma"}]},
     steps: [
       "Egito e Mesopotâmia: civilizações que surgiram às margens de rios (Nilo, Tigre e Eufrates).",
       "Grécia Antiga: berço da democracia, filosofia e dos Jogos Olímpicos.",
@@ -719,6 +757,7 @@ const TOPICS = {
     emoji: "🏰",
     intro: "A Idade Média foi o longo período entre a queda do Império Romano (476 d.C.) e o início da Idade Moderna (por volta de 1500) — marcado por castelos, reis, senhores feudais e a forte influência da Igreja Católica.",
     analogy: "Pense na Idade Média como uma \"pirâmide social\" bem rígida: no topo, o rei; depois, os nobres e senhores feudais; embaixo, os camponeses (servos) que trabalhavam a terra em troca de proteção.",
+    visual: {"type":"timeline","events":[{"date":"476","label":"Queda de Roma"},{"date":"800","label":"Império de Carlos Magno"},{"date":"1096","label":"Cruzadas"},{"date":"1453","label":"Fim da Idade Média"}]},
     steps: [
       "Feudalismo: sistema onde nobres davam terra e proteção aos camponeses, em troca de trabalho e lealdade.",
       "A Igreja Católica tinha enorme poder político, econômico e cultural.",
@@ -739,6 +778,7 @@ const TOPICS = {
     emoji: "👥",
     intro: "Sociedade é um grupo de pessoas que vive junto, segue regras parecidas e depende umas das outras para viver bem.",
     analogy: "Pense num time de futebol: cada jogador tem uma função (goleiro, atacante...), mas o time só funciona bem se todos colaborarem entre si — igualzinho à sociedade.",
+    visual: {"type":"labeled","center":"Sociedade","parts":["Normas","Instituições","Cultura","Trabalho"]},
     steps: [
       "Sociedade = pessoas + relações + regras compartilhadas.",
       "Cada pessoa ocupa \"papéis sociais\" diferentes (filho, aluno, trabalhador...).",
@@ -756,6 +796,7 @@ const TOPICS = {
     emoji: "🎭",
     intro: "Cultura é o conjunto de costumes, crenças, comidas, músicas e jeitos de viver de um grupo de pessoas — e o mundo é rico justamente porque existem culturas diferentes, cada uma com seu próprio valor.",
     analogy: "Pense na cultura como o \"tempero\" de cada povo: assim como cada região tem sua comida típica, cada grupo humano tem seu jeito próprio de festejar, se vestir e se relacionar — e nenhum tempero é \"melhor\" que o outro, só diferente.",
+    visual: {"type":"compare","leftTitle":"Etnocentrismo","leftItems":["Julgar pela própria cultura"],"rightTitle":"Relativismo cultural","rightItems":["Entender no contexto"]},
     steps: [
       "Cultura inclui: idioma, religião, culinária, música, costumes e valores.",
       "Etnocentrismo: julgar outras culturas usando a sua própria como \"padrão certo\".",
@@ -773,6 +814,7 @@ const TOPICS = {
     emoji: "👷",
     intro: "O trabalho não é só uma forma de ganhar dinheiro — ele organiza boa parte da vida social: define rotinas, status, identidade e até como as pessoas se relacionam entre si.",
     analogy: "Pense em como, quando alguém pergunta \"o que você faz?\", a resposta geralmente é sobre o trabalho — isso mostra como o trabalho está profundamente ligado à forma como a sociedade nos identifica.",
+    visual: {"type":"compare","leftTitle":"Trabalho formal","leftItems":["Carteira assinada","Direitos garantidos"],"rightTitle":"Trabalho informal","rightItems":["Sem carteira","Menos proteção"]},
     steps: [
       "O trabalho organiza tempo, renda e rotina das pessoas.",
       "Diferentes tipos de trabalho têm diferentes níveis de reconhecimento social.",
@@ -790,6 +832,7 @@ const TOPICS = {
     emoji: "✊",
     intro: "Movimentos sociais são grupos organizados de pessoas que se unem para lutar por uma mudança social — por direitos, por justiça, ou contra alguma injustiça que atinge um grupo.",
     analogy: "Pense num movimento social como um grupo de vizinhos que, sozinhos, não conseguem resolver um problema (tipo falta de segurança na rua), mas juntos e organizados, conseguem pressionar a prefeitura a agir.",
+    visual: {"type":"flow","steps":["Problema social","Organização","Mobilização","Pressão por mudança"]},
     steps: [
       "Movimento social: ação coletiva organizada, buscando uma mudança.",
       "Exemplos históricos: movimento pelos direitos civis, movimento sufragista (voto feminino), movimento ambientalista.",
@@ -807,6 +850,7 @@ const TOPICS = {
     emoji: "⚖️",
     intro: "Desigualdade social é a distribuição desigual de renda, oportunidades e acesso a serviços (como saúde e educação) entre diferentes grupos de uma sociedade.",
     analogy: "Pense numa corrida onde alguns competidores começam bem na frente da linha de largada (por terem nascido em famílias com mais recursos) e outros começam bem atrás — mesmo correndo com o mesmo esforço, o ponto de partida já é desigual.",
+    visual: {"type":"bars","data":[{"label":"10% mais ricos","value":55},{"label":"50% mais pobres","value":12}],"unit":"% da renda"},
     steps: [
       "Desigualdade de renda: diferença na quantidade de dinheiro que as pessoas ganham.",
       "Desigualdade de oportunidades: acesso desigual à educação, saúde e emprego.",
@@ -824,6 +868,7 @@ const TOPICS = {
     emoji: "🏛️",
     intro: "Estado é a organização política que administra um território e sua população, com poder de fazer e aplicar leis. Política é o processo de tomar decisões coletivas sobre como esse poder é usado.",
     analogy: "Pense no Estado como o \"sistema operacional\" de um país: ele organiza as regras básicas (leis) que permitem que tudo funcione — sem ele, seria como um computador sem sistema operacional, incapaz de rodar qualquer programa organizadamente.",
+    visual: {"type":"labeled","center":"Poderes\ndo Estado","parts":["Executivo","Legislativo","Judiciário"]},
     steps: [
       "Estado: estrutura política com território, população e governo definidos.",
       "Poderes do Estado (no Brasil): Executivo, Legislativo e Judiciário.",
@@ -844,6 +889,7 @@ const TOPICS = {
     emoji: "💭",
     intro: "Filosofar é a arte de fazer perguntas profundas sobre coisas que a gente costuma achar óbvias — como \"o que é ser justo?\" ou \"o que é a verdade?\".",
     analogy: "É tipo uma criança de 4 anos perguntando \"por quê?\" sem parar. A filosofia é isso, só que levado a sério: continuar perguntando até entender de verdade.",
+    visual: {"type":"flow","steps":["Pergunta","Reflexão","Argumento","Conclusão provisória"]},
     steps: [
       "Escolha uma ideia que parece \"óbvia\".",
       "Pergunte: por que isso é assim? sempre foi assim? poderia ser diferente?",
@@ -861,6 +907,7 @@ const TOPICS = {
     emoji: "🏺",
     intro: "A Filosofia Antiga grega criou as bases do pensamento ocidental, com três grandes nomes que foram professor, aluno e \"neto acadêmico\" um do outro: Sócrates, Platão e Aristóteles.",
     analogy: "Pense numa corrente de aprendizado: Sócrates ensinou Platão, Platão ensinou Aristóteles — cada um construindo (e às vezes discordando) das ideias do anterior, como uma conversa que atravessou gerações.",
+    visual: {"type":"timeline","events":[{"date":"470 a.C.","label":"Sócrates"},{"date":"428 a.C.","label":"Platão"},{"date":"384 a.C.","label":"Aristóteles"}]},
     steps: [
       "Sócrates: usava perguntas (o \"método socrático\") para levar as pessoas a pensar por si mesmas.",
       "Platão: criou a teoria das \"Formas\" — ideias perfeitas que existiriam além do mundo físico.",
@@ -878,6 +925,7 @@ const TOPICS = {
     emoji: "⛪",
     intro: "A Filosofia Medieval (Idade Média) foi marcada pela tentativa de unir a fé cristã com a razão filosófica — os pensadores dessa época buscavam usar a lógica para entender e defender questões religiosas.",
     analogy: "Pense em alguém tentando construir uma ponte entre duas margens: de um lado, a fé religiosa; do outro, a razão filosófica. Os filósofos medievais passaram séculos tentando construir essa ponte.",
+    visual: {"type":"compare","leftTitle":"Razão","leftItems":["Filosofia grega"],"rightTitle":"Fé","rightItems":["Teologia cristã"]},
     steps: [
       "Patrística: primeira fase, com Santo Agostinho unindo cristianismo e filosofia platônica.",
       "Escolástica: fase posterior, com São Tomás de Aquino unindo cristianismo e filosofia de Aristóteles.",
@@ -895,6 +943,7 @@ const TOPICS = {
     emoji: "🔬",
     intro: "A Filosofia Moderna (a partir do século XVII) trouxe uma virada: os filósofos passaram a colocar a razão humana e a ciência no centro do conhecimento, questionando autoridades tradicionais como a Igreja.",
     analogy: "Pense num momento em que a humanidade \"cresceu\" e passou a confiar mais na própria capacidade de pensar e investigar o mundo, ao invés de aceitar respostas prontas de autoridades — foi mais ou menos isso que a Filosofia Moderna representou.",
+    visual: {"type":"timeline","events":[{"date":"1600s","label":"Descartes"},{"date":"1700s","label":"Iluminismo"},{"date":"1800s","label":"Kant"}]},
     steps: [
       "Racionalismo (Descartes): a razão é a principal fonte segura de conhecimento.",
       "Empirismo (Locke, Hume): o conhecimento vem principalmente da experiência e dos sentidos.",
@@ -912,6 +961,7 @@ const TOPICS = {
     emoji: "⚖️",
     intro: "Ética é a área da filosofia que estuda como devemos agir — o que é considerado certo, errado, justo ou injusto — e por quê.",
     analogy: "Pense na ética como o \"manual de instruções\" que cada pessoa carrega (consciente ou não) para decidir como agir diante de situações difíceis — só que, na filosofia, esse manual é constantemente questionado e discutido.",
+    visual: {"type":"compare","leftTitle":"Utilitarismo","leftItems":["Julga pelo resultado"],"rightTitle":"Ética kantiana","rightItems":["Julga pela intenção"]},
     steps: [
       "Ética das consequências: uma ação é certa se seus resultados são bons (ex: utilitarismo).",
       "Ética dos deveres: uma ação é certa se segue uma regra ou princípio moral, independente do resultado (ex: Kant).",
@@ -929,6 +979,7 @@ const TOPICS = {
     emoji: "🗳️",
     intro: "Filosofia Política estuda questões sobre como a sociedade deveria se organizar politicamente: o que é um governo justo, de onde vem a autoridade do Estado, e quais direitos as pessoas deveriam ter.",
     analogy: "Pense nisso como projetar as \"regras do jogo\" de uma sociedade inteira: quem manda? por quê essa pessoa (ou grupo) tem esse direito? o que acontece se as regras forem injustas? Filósofos políticos discutem exatamente esse tipo de pergunta.",
+    visual: {"type":"compare","leftTitle":"Hobbes","leftItems":["Governo forte","Evita o caos"],"rightTitle":"Locke","rightItems":["Governo limitado","Protege direitos"]},
     steps: [
       "Contrato social: a ideia de que o governo existe por um \"acordo\" entre as pessoas.",
       "Hobbes: defendia um governo forte para evitar o caos (\"o homem é o lobo do homem\").",
@@ -949,6 +1000,7 @@ const TOPICS = {
     emoji: "🎨",
     intro: "Toda imagem, pintura ou desenho é construída com elementos básicos: linha, forma, cor, textura e espaço. Entender esses elementos ajuda a \"ler\" uma obra de arte.",
     analogy: "É como cozinhar: cor, linha e forma são os \"ingredientes\" que o artista mistura para criar um \"prato\" visual diferente a cada obra.",
+    visual: {"type":"labeled","center":"Elementos\nVisuais","parts":["Linha","Forma","Cor","Textura"]},
     steps: [
       "Observe as linhas: são retas, curvas, grossas, finas?",
       "Observe as cores: são quentes (vermelho, laranja) ou frias (azul, verde)?",
@@ -966,6 +1018,7 @@ const TOPICS = {
     emoji: "🖼️",
     intro: "Ao longo da história, a arte passou por diferentes \"fases\" ou movimentos, cada um com um jeito próprio de representar o mundo — do realismo detalhado ao abstrato mais livre.",
     analogy: "Pense nos movimentos artísticos como \"modas\" que duraram décadas ou séculos: assim como a moda de roupas muda com o tempo, o jeito de pintar, esculpir e criar também muda, refletindo as ideias de cada época.",
+    visual: {"type":"timeline","events":[{"date":"1400s","label":"Renascimento"},{"date":"1800s","label":"Impressionismo"},{"date":"1900s","label":"Cubismo"}]},
     steps: [
       "Renascimento: busca pelo realismo e perfeição, inspirado na Antiguidade Clássica.",
       "Impressionismo: pinceladas soltas, captando a luz e o momento (Monet, Renoir).",
@@ -984,6 +1037,7 @@ const TOPICS = {
     emoji: "🇧🇷",
     intro: "A arte brasileira mistura influências indígenas, africanas e europeias, criando um estilo próprio — desde o Barroco mineiro até o Modernismo de artistas como Tarsila do Amaral.",
     analogy: "Pense na arte brasileira como uma feijoada cultural: cada ingrediente (indígena, africano, europeu) contribui com seu próprio \"sabor\", e o resultado é algo único, que só existe porque essas influências se misturaram aqui.",
+    visual: {"type":"timeline","events":[{"date":"1922","label":"Semana de Arte Moderna"},{"date":"1928","label":"Antropofagia"},{"date":"1960s","label":"Tropicália"}]},
     steps: [
       "Barroco mineiro: esculturas religiosas ricas em detalhes, como as obras de Aleijadinho.",
       "Semana de Arte Moderna (1922): marco do Modernismo brasileiro, em São Paulo.",
@@ -1001,6 +1055,7 @@ const TOPICS = {
     emoji: "🎵",
     intro: "Música é organizada a partir de alguns elementos básicos: melodia (a \"linha\" da música que você canta), ritmo (o \"compasso\" que você bate o pé) e harmonia (os acordes que dão suporte).",
     analogy: "Pense numa música como um prédio: o ritmo é a estrutura (as batidas regulares que sustentam tudo), a melodia é a \"fachada\" (o que você mais nota e canta), e a harmonia são as paredes internas que dão sustentação ao conjunto.",
+    visual: {"type":"labeled","center":"Música","parts":["Ritmo","Melodia","Harmonia","Timbre"]},
     steps: [
       "Melodia: a sequência de notas que forma a \"linha\" cantável da música.",
       "Ritmo: o padrão de tempo e batidas que organiza a música.",
@@ -1018,6 +1073,7 @@ const TOPICS = {
     emoji: "🎭",
     intro: "Teatro é a arte de contar histórias através da representação ao vivo — atores interpretando personagens, diante de uma plateia, em tempo real, sem a possibilidade de \"cortar e refazer\" como no cinema.",
     analogy: "Pense no teatro como uma \"conversa ao vivo\" entre atores e plateia: diferente de um filme (gravado e editado), no teatro tudo acontece na hora, e qualquer imprevisto vira parte da experiência.",
+    visual: {"type":"labeled","center":"Teatro","parts":["Ator","Texto","Cenário","Plateia"]},
     steps: [
       "Personagem: o papel interpretado pelo ator.",
       "Cenário: o espaço físico que representa o ambiente da história.",
@@ -1035,6 +1091,7 @@ const TOPICS = {
     emoji: "💃",
     intro: "Dança é a expressão artística através do movimento do corpo, muitas vezes acompanhada de música — pode contar histórias, expressar emoções ou simplesmente celebrar o ritmo.",
     analogy: "Pense na dança como uma \"linguagem sem palavras\": ao invés de falar, o corpo se movimenta para comunicar sentimentos, histórias ou simplesmente a alegria de estar vivo, no ritmo da música.",
+    visual: {"type":"labeled","center":"Dança","parts":["Corpo","Ritmo","Espaço","Expressão"]},
     steps: [
       "Dança pode ser clássica (como o balé, com técnica rígida e codificada).",
       "Ou popular (como o samba, o forró, com raízes culturais e tradição comunitária).",
@@ -1055,6 +1112,7 @@ const TOPICS = {
     emoji: "🕐",
     intro: "O \"Simple Present\" é o tempo verbal usado para falar de rotinas, hábitos e fatos em inglês. É tipo o \"eu como\", \"eu estudo\" do dia a dia.",
     analogy: "Pense no seu horário de futebol toda semana: \"I play football on Sundays\" (eu jogo futebol aos domingos) — é algo que se repete, uma rotina.",
+    visual: {"type":"flow","steps":["I / you / we / they","Verbo (base)","I play, you play..."]},
     steps: [
       "Para \"I / You / We / They\": use o verbo no infinitivo sem \"to\" (I play).",
       "Para \"He / She / It\": acrescente \"s\" ao verbo (He plays).",
@@ -1072,6 +1130,7 @@ const TOPICS = {
     emoji: "⏮️",
     intro: "O \"Simple Past\" é o tempo verbal usado para falar de ações que já aconteceram e terminaram no passado — como \"eu comi\", \"eu estudei\" em português.",
     analogy: "Pense em contar pra alguém o que você fez ontem: \"I watched a movie\" (eu assisti a um filme) — a ação já aconteceu e acabou, é só uma \"foto\" de algo que já passou.",
+    visual: {"type":"compare","leftTitle":"Regular","leftItems":["+ed: played"],"rightTitle":"Irregular","rightItems":["muda: went, ate"]},
     steps: [
       "Verbos regulares: acrescente \"-ed\" ao final (play → played).",
       "Verbos irregulares: mudam de forma própria e precisam ser decorados (go → went).",
@@ -1089,6 +1148,7 @@ const TOPICS = {
     emoji: "📔",
     intro: "Ter um bom vocabulário em inglês significa conhecer palavras suficientes para se comunicar em situações comuns — cumprimentos, números, dias da semana, lugares.",
     analogy: "Pense no vocabulário como os \"tijolos\" para construir frases: quanto mais palavras você conhece, mais \"construções\" (frases) você consegue montar, mesmo sem saber toda a gramática perfeitamente.",
+    visual: {"type":"labeled","center":"Vocabulário","parts":["Cumprimentos","Números","Cores","Família"]},
     steps: [
       "Aprenda por temas: números, cores, família, comida.",
       "Associe a palavra nova a uma imagem ou situação, não só à tradução.",
@@ -1106,6 +1166,7 @@ const TOPICS = {
     emoji: "📰",
     intro: "Reading comprehension é a habilidade de compreender um texto em inglês — não precisa entender palavra por palavra, mas sim captar a ideia geral e os detalhes importantes.",
     analogy: "Pense em ler um texto em inglês como montar um quebra-cabeça: você não precisa reconhecer cada peça (palavra) instantaneamente — dá pra entender a imagem completa (o sentido geral) mesmo com algumas peças (palavras desconhecidas) faltando.",
+    visual: {"type":"flow","steps":["Skim (ideia geral)","Scan (informação específica)","Compreensão"]},
     steps: [
       "Skimming: leia rápido pra entender o tema geral do texto, sem se prender a cada palavra.",
       "Scanning: procure informações específicas (datas, nomes) sem ler tudo detalhadamente.",
@@ -1126,6 +1187,7 @@ const TOPICS = {
     emoji: "❤️",
     intro: "Quando você se exercita, seu coração bate mais rápido e você respira mais fundo — isso é o sistema cardiorrespiratório trabalhando para levar oxigênio aos músculos.",
     analogy: "O coração é como uma bomba d'água: quanto mais você se movimenta, mais \"água\" (sangue com oxigênio) ele precisa bombear para os músculos.",
+    visual: {"type":"flow","steps":["Coração bombeia","Pulmões oxigenam","Músculos recebem O₂"]},
     steps: [
       "O coração bombeia sangue com oxigênio para os músculos.",
       "Os pulmões trocam gás carbônico por oxigênio no ar.",
@@ -1143,6 +1205,7 @@ const TOPICS = {
     emoji: "⚽",
     intro: "Esportes coletivos são jogados em equipe, exigindo cooperação, estratégia e comunicação entre os jogadores — como futebol, vôlei e basquete.",
     analogy: "Pense num time esportivo como uma orquestra: cada jogador tem seu \"instrumento\" (posição/função), e o resultado só é bom quando todos tocam em sintonia, respeitando o papel de cada um.",
+    visual: {"type":"compare","leftTitle":"Esportes coletivos","leftItems":["Trabalho em equipe","Ex: futebol, vôlei"],"rightTitle":"Esportes individuais","rightItems":["Desempenho próprio","Ex: natação"]},
     steps: [
       "Cada esporte coletivo tem regras próprias, mas todos exigem trabalho em equipe.",
       "Posições/funções diferentes dentro do time cumprem papéis específicos (ataque, defesa).",
@@ -1160,6 +1223,7 @@ const TOPICS = {
     emoji: "🤸",
     intro: "Ginástica é uma modalidade que trabalha força, flexibilidade, equilíbrio e coordenação do corpo — pode ser praticada de forma competitiva (como a ginástica artística olímpica) ou como atividade física geral.",
     analogy: "Pense na ginástica como um \"teste completo\" do corpo: ao contrário de esportes focados numa habilidade específica, ela exige força, flexibilidade e equilíbrio trabalhando juntos ao mesmo tempo.",
+    visual: {"type":"labeled","center":"Ginástica","parts":["Flexibilidade","Força","Equilíbrio"]},
     steps: [
       "Flexibilidade: capacidade de mover as articulações em amplitude máxima.",
       "Força: capacidade dos músculos de gerar tensão contra uma resistência.",
@@ -1177,6 +1241,7 @@ const TOPICS = {
     emoji: "🥋",
     intro: "Lutas são modalidades esportivas de combate corpo a corpo, regidas por regras específicas — como judô, karatê e boxe — que trabalham técnica, disciplina e controle emocional, e não apenas força bruta.",
     analogy: "Pense numa luta como um \"jogo de xadrez físico\": vencer não depende só de força, mas de estratégia, timing e antecipar o movimento do adversário — muito parecido com pensar alguns passos à frente num tabuleiro.",
+    visual: {"type":"labeled","center":"Lutas","parts":["Técnica","Disciplina","Respeito","Filosofia"]},
     steps: [
       "Toda luta esportiva segue regras específicas que definem o que é permitido.",
       "Técnica e estratégia costumam ser mais decisivas do que força bruta.",
@@ -1194,6 +1259,7 @@ const TOPICS = {
     emoji: "🏃",
     intro: "Qualidade de vida envolve mais do que não estar doente — inclui alimentação equilibrada, atividade física regular, sono adequado e bem-estar mental, todos trabalhando juntos.",
     analogy: "Pense na saúde como as pernas de uma mesa: se uma perna (sono, alimentação, exercício ou saúde mental) estiver muito mais curta que as outras, a mesa inteira fica instável, mesmo que as outras pernas estejam ótimas.",
+    visual: {"type":"labeled","center":"Qualidade\nde Vida","parts":["Exercício","Alimentação","Sono","Saúde mental"]},
     steps: [
       "Alimentação equilibrada: fornece energia e nutrientes necessários ao corpo.",
       "Atividade física regular: fortalece músculos, coração e melhora o humor.",
@@ -1214,6 +1280,7 @@ const TOPICS = {
     emoji: "💻",
     intro: "Pensamento computacional é a habilidade de quebrar um problema grande em passos pequenos e claros, do jeito que um computador entenderia.",
     analogy: "É como uma receita de bolo: você não fala \"faça um bolo\" para o forno — você dá passo a passo (misture, asse, espere). Programar é dar \"receitas\" para o computador.",
+    visual: {"type":"flow","steps":["Problema","Dividir em partes","Resolver cada parte","Solução completa"]},
     steps: [
       "Decomposição: quebrar o problema em partes menores.",
       "Reconhecimento de padrões: achar semelhanças entre partes do problema.",
@@ -1232,6 +1299,7 @@ const TOPICS = {
     emoji: "🔒",
     intro: "Segurança digital é o conjunto de cuidados para proteger suas informações pessoais, senhas e dispositivos contra golpes, invasões e vazamentos de dados.",
     analogy: "Pense na segurança digital como trancar a porta de casa: você não deixa a chave debaixo do tapete nem entrega ela pra qualquer estranho — as mesmas precauções valem para suas senhas e dados pessoais online.",
+    visual: {"type":"labeled","center":"Senha\nForte","parts":["Letras","Números","Símbolos","Sem dados óbvios"]},
     steps: [
       "Use senhas fortes e diferentes para cada conta importante.",
       "Desconfie de links e mensagens pedindo dados pessoais ou senha (phishing).",
@@ -1249,6 +1317,7 @@ const TOPICS = {
     emoji: "📱",
     intro: "Cultura digital é o jeito como vivemos, nos comunicamos e consumimos informação através da internet e das redes sociais — trazendo tanto oportunidades quanto desafios novos.",
     analogy: "Pense nas redes sociais como uma praça pública gigante, aberta 24 horas: você pode conhecer gente nova e compartilhar ideias, mas também precisa ter cuidado com quem confia e o que compartilha, como faria numa praça de verdade.",
+    visual: {"type":"flow","steps":["Você interage","Algoritmo aprende","Feed personalizado"]},
     steps: [
       "Nem tudo que aparece nas redes sociais é verdade — sempre verifique fontes.",
       "O algoritmo das redes tende a mostrar mais do que você já curte, criando \"bolhas\" de opinião.",
@@ -1266,6 +1335,7 @@ const TOPICS = {
     emoji: "🤖",
     intro: "Inteligência Artificial (IA) são sistemas de computador treinados para reconhecer padrões e tomar decisões, aprendendo a partir de grandes quantidades de dados — como reconhecer rostos em fotos ou recomendar vídeos.",
     analogy: "Pense na IA como uma criança que aprende a reconhecer cachorros vendo milhares de fotos de cachorros: ela não \"sabe\" o que é um cachorro por definição, mas aprende os padrões visuais depois de ver muitos exemplos.",
+    visual: {"type":"flow","steps":["Dados de treino","IA reconhece padrões","Resposta gerada"]},
     steps: [
       "IA aprende reconhecendo padrões em grandes quantidades de dados (Machine Learning).",
       "Quanto mais dados de qualidade, geralmente melhor o desempenho do sistema.",
@@ -1283,6 +1353,7 @@ const TOPICS = {
     emoji: "🤝",
     intro: "Ética digital é pensar sobre como usamos a tecnologia de forma responsável — respeitando a privacidade dos outros, evitando cyberbullying e sendo honesto no ambiente online.",
     analogy: "Pense que as mesmas regras de boa convivência que você usa \"no mundo real\" (respeito, honestidade, empatia) também valem online — só porque uma tela separa você da outra pessoa, isso não muda o impacto real das suas ações.",
+    visual: {"type":"compare","leftTitle":"Uso ético","leftItems":["Respeita privacidade"],"rightTitle":"Uso antiético","rightItems":["Espiona, engana"]},
     steps: [
       "Respeite a privacidade dos outros: não compartilhe fotos ou dados de alguém sem permissão.",
       "Pense antes de comentar: palavras online também machucam de verdade.",
@@ -1303,6 +1374,7 @@ const TOPICS = {
     emoji: "🎭",
     intro: "Figuras de linguagem são \"truques\" que escritores usam para deixar o texto mais bonito, forte ou expressivo do que uma frase comum.",
     analogy: "É como temperar uma comida: a metáfora, a comparação e o exagero são temperos que dão mais sabor ao texto.",
+    visual: {"type":"labeled","center":"Figuras de\nLinguagem","parts":["Metáfora","Comparação","Hipérbole","Ironia"]},
     steps: [
       "Metáfora: compara sem usar \"como\" (Ex: \"Seus olhos são dois faróis\").",
       "Comparação (símile): compara usando \"como\" (Ex: \"Seus olhos são como faróis\").",
@@ -1320,6 +1392,7 @@ const TOPICS = {
     emoji: "🎭",
     intro: "O Barroco é a arte do exagero e do conflito entre o prazer terreno e o medo do pecado. Já o Arcadismo, que veio depois, buscava simplicidade e a vida no campo, longe da cidade.",
     analogy: "Pense no Barroco como uma pessoa dividida entre duas vontades opostas ao mesmo tempo — querer aproveitar a vida e, ao mesmo tempo, temer o castigo por isso. O Arcadismo, por outro lado, é como alguém cansado da cidade sonhando em morar numa fazenda tranquila.",
+    visual: {"type":"compare","leftTitle":"Barroco","leftItems":["Conflito fé x razão"],"rightTitle":"Arcadismo","rightItems":["Vida simples no campo"]},
     steps: [
       "Barroco: conflito entre o espiritual (Deus) e o material (prazer, corpo).",
       "Fusão de estilos: frases longas, contrastes fortes, jogos de palavras.",
@@ -1337,6 +1410,7 @@ const TOPICS = {
     emoji: "💔",
     intro: "O Romantismo trouxe a valorização dos sentimentos, da imaginação e do individualismo — os personagens são movidos por paixões intensas, e a natureza reflete o estado de espírito do autor.",
     analogy: "Pense no Romantismo como o oposto de um relatório frio e racional: é a literatura da emoção em primeiro lugar — o coração fala mais alto que a razão.",
+    visual: {"type":"labeled","center":"Romantismo","parts":["Emoção","Nacionalismo","Idealização","Individualismo"]},
     steps: [
       "Valorização do sentimento e da subjetividade acima da razão.",
       "Idealização do amor, da natureza e, no Brasil, do índio como herói nacional.",
@@ -1354,6 +1428,7 @@ const TOPICS = {
     emoji: "🔗",
     intro: "Período composto é quando uma frase tem mais de um verbo, formando mais de uma oração conectadas entre si — por coordenação (orações \"iguais\") ou subordinação (uma depende da outra).",
     analogy: "Pense em orações coordenadas como dois amigos andando lado a lado, cada um independente. Orações subordinadas são como um cachorro e sua guia: uma depende diretamente da outra para \"fazer sentido\".",
+    visual: {"type":"compare","leftTitle":"Oração principal","leftItems":["Sentido completo"],"rightTitle":"Oração subordinada","rightItems":["Depende da principal"]},
     steps: [
       "Período simples: só uma oração, um verbo (ex: \"Eu estudo\").",
       "Coordenação: orações independentes ligadas (ex: \"Eu estudo e trabalho\").",
@@ -1371,6 +1446,7 @@ const TOPICS = {
     emoji: "🧩",
     intro: "Regência é a relação entre uma palavra (verbo ou nome) e o complemento que ela exige — alguns verbos \"pedem\" preposição, outros não, e usar a errada muda (ou quebra) o sentido da frase.",
     analogy: "Pense na regência como as \"regras de compatibilidade\" entre palavras: assim como um plugue só encaixa numa tomada específica, cada verbo tem seu jeito certo de se conectar ao complemento.",
+    visual: {"type":"compare","leftTitle":"\"Assistir\" (ver)","leftItems":["assistir A o filme"],"rightTitle":"\"Assistir\" (ajudar)","rightItems":["assistir o paciente"]},
     steps: [
       "Regência verbal: relação entre o verbo e seu complemento (ex: \"assistir AO filme\").",
       "Regência nominal: relação entre um substantivo/adjetivo e seu complemento (ex: \"obediente ÀS regras\").",
@@ -1388,6 +1464,7 @@ const TOPICS = {
     emoji: "〰️",
     intro: "Crase é a fusão da preposição \"a\" com o artigo \"a\" (ou \"as\"), representada pelo acento grave (à). Ela só acontece quando as duas coisas se encontram na frase ao mesmo tempo.",
     analogy: "Pense na crase como dois \"a\" se fundindo num só, igual duas gotas de água que se juntam formando uma só gota maior — só existe crase quando os dois \"a\" realmente se encontram.",
+    visual: {"type":"flow","steps":["Preposição \"a\"","+ artigo \"a\"","= crase (à)"]},
     steps: [
       "Crase = preposição \"a\" + artigo \"a\" (ou \"as\").",
       "Truque prático: troque a palavra feminina por uma masculina; se aparecer \"ao\", tem crase.",
@@ -1405,6 +1482,7 @@ const TOPICS = {
     emoji: "🧵",
     intro: "Coesão é a \"costura\" entre as frases de um texto (usando conectivos como \"porém\", \"além disso\"), e coerência é o texto fazer sentido como um todo, sem contradições.",
     analogy: "Pense num texto como um colar de contas: a coesão são os fios que prendem as contas (frases) umas às outras; a coerência é garantir que o colar, no final, faça sentido como peça inteira, sem contas fora do lugar.",
+    visual: {"type":"compare","leftTitle":"Coesão","leftItems":["Conexão gramatical"],"rightTitle":"Coerência","rightItems":["Sentido lógico"]},
     steps: [
       "Coesão: conectivos (mas, porém, além disso, portanto) ligam as ideias entre si.",
       "Coerência: as ideias do texto não se contradizem e fazem sentido lógico juntas.",
@@ -1422,6 +1500,7 @@ const TOPICS = {
     emoji: "📝",
     intro: "Texto narrativo conta uma história (com personagens, tempo, espaço e conflito); texto descritivo \"pinta com palavras\" como algo ou alguém é, sem necessariamente contar uma sequência de fatos.",
     analogy: "Pense na narração como um filme em movimento (as coisas acontecem, uma ação leva à outra) e na descrição como uma foto parada (um retrato detalhado de um momento ou de uma coisa).",
+    visual: {"type":"flow","steps":["Descrição do cenário","Narração da ação","Desfecho"]},
     steps: [
       "Narração: tem enredo, personagens, tempo, espaço e geralmente um conflito.",
       "Descrição: detalha características físicas, sensações e impressões sobre algo.",
@@ -1442,6 +1521,7 @@ const TOPICS = {
     emoji: "⚙️",
     intro: "Uma função é como uma máquina: você coloca um número na entrada (x), ela faz uma operação, e sai outro número (y) na saída.",
     analogy: "Pense numa máquina de suco: você coloca laranjas (entrada) e sai suco (saída). A função matemática funciona igual, só que com números.",
+    visual: {"type":"flow","steps":["Entrada (x)","Função f(x)","Saída (y)"]},
     steps: [
       "Toda função tem uma \"regra\": y = f(x).",
       "Substitua o valor de x na regra para achar y.",
@@ -1459,6 +1539,7 @@ const TOPICS = {
     emoji: "🌊",
     intro: "Funções trigonométricas (seno e cosseno) descrevem movimentos que se repetem em ciclos, como ondas, batimentos cardíacos ou as estações do ano — sempre subindo e descendo de forma regular.",
     analogy: "Pense num balanço de parquinho: ele sobe, desce, sobe de novo, sempre no mesmo ritmo. Esse vaivém repetitivo é exatamente o que uma função seno ou cosseno representa no gráfico.",
+    visual: {"type":"line","points":[{"y":0,"label":"0°"},{"y":0.5,"label":"30°"},{"y":0.87,"label":"60°"},{"y":1,"label":"90°"}],"xLabel":"ângulo","yLabel":"seno"},
     steps: [
       "A função seno (y = sen x) oscila entre -1 e 1, repetindo-se a cada 360°.",
       "A função cosseno (y = cos x) tem o mesmo formato do seno, só que \"adiantada\".",
@@ -1476,6 +1557,7 @@ const TOPICS = {
     emoji: "🔢",
     intro: "Matriz é uma tabela organizada de números, em linhas e colunas — usada para organizar dados de forma compacta, como uma planilha, e resolver vários problemas ao mesmo tempo.",
     analogy: "Pense numa matriz como uma tabela de resultados de um campeonato: cada linha é um time, cada coluna é uma rodada — tudo organizado de forma visual e fácil de consultar.",
+    visual: {"type":"labeled","center":"Matriz\n2x2","parts":["Linha 1","Linha 2","Coluna 1","Coluna 2"]},
     steps: [
       "Uma matriz é identificada pelo número de linhas × colunas (ex: matriz 2×3).",
       "Cada número dentro da matriz é chamado de elemento.",
@@ -1493,6 +1575,7 @@ const TOPICS = {
     emoji: "🎯",
     intro: "Determinante é um número especial calculado a partir de uma matriz quadrada, que revela informações importantes sobre ela — como se um sistema de equações tem solução única ou não.",
     analogy: "Pense no determinante como um \"resumo numérico\" da matriz: um único número que carrega informação importante sobre o comportamento dela, parecido com um exame de sangue que resume a saúde de uma pessoa em poucos números.",
+    visual: {"type":"flow","steps":["Matriz","Calcular det","Resultado (número)"]},
     steps: [
       "Só é possível calcular determinante de matrizes quadradas (mesmo número de linhas e colunas).",
       "Para matriz 2×2 [[a,b],[c,d]]: determinante = a×d − b×c.",
@@ -1510,6 +1593,7 @@ const TOPICS = {
     emoji: "⚖️",
     intro: "Sistema linear é um conjunto de duas ou mais equações que precisam ser resolvidas juntas, ao mesmo tempo — encontrando valores que satisfaçam todas elas simultaneamente.",
     analogy: "Pense em resolver um sistema linear como encontrar o ponto exato de encontro entre duas ruas num mapa: cada equação é uma \"rua\", e a solução é o cruzamento entre elas.",
+    visual: {"type":"compare","leftTitle":"Sistema possível","leftItems":["Tem solução","Retas se cruzam"],"rightTitle":"Sistema impossível","rightItems":["Sem solução","Retas paralelas"]},
     steps: [
       "Um sistema pode ser resolvido por substituição (isolar uma variável e substituir na outra equação).",
       "Ou por eliminação/adição (somar ou subtrair as equações para eliminar uma variável).",
@@ -1527,6 +1611,7 @@ const TOPICS = {
     emoji: "📐",
     intro: "Geometria plana estuda figuras de duas dimensões (largura e altura, sem profundidade) — e uma das aplicações mais úteis é calcular a área que essas figuras ocupam.",
     analogy: "Pense em calcular área como descobrir quantos ladrilhos quadrados de 1 metro cabem no chão de um cômodo — é literalmente \"quanto espaço plano\" uma figura ocupa.",
+    visual: {"type":"bars","data":[{"label":"Quadrado","value":16},{"label":"Triângulo","value":12},{"label":"Círculo","value":19}],"unit":" cm²"},
     steps: [
       "Área do retângulo = base × altura.",
       "Área do triângulo = (base × altura) ÷ 2.",
@@ -1544,6 +1629,7 @@ const TOPICS = {
     emoji: "📦",
     intro: "Geometria espacial estuda figuras tridimensionais (com largura, altura E profundidade) — e volume é a quantidade de espaço que essas figuras ocupam, medida em unidades cúbicas.",
     analogy: "Pense no volume como \"quanta água cabe dentro\" de um objeto oco, ou \"quanto espaço\" um objeto sólido ocupa — é a versão 3D da área, mas em três dimensões ao invés de duas.",
+    visual: {"type":"compare","leftTitle":"Área (2D)","leftItems":["Superfície plana","Unidade: cm²"],"rightTitle":"Volume (3D)","rightItems":["Espaço ocupado","Unidade: cm³"]},
     steps: [
       "Volume do cubo = aresta³ (lado × lado × lado).",
       "Volume do paralelepípedo = comprimento × largura × altura.",
@@ -1561,6 +1647,7 @@ const TOPICS = {
     emoji: "🎲",
     intro: "Análise combinatória é a área da matemática que conta, de forma organizada, quantas maneiras diferentes existem de agrupar, ordenar ou escolher elementos — sem precisar listar tudo manualmente.",
     analogy: "Pense em escolher uma roupa: se você tem 3 camisetas e 2 calças, dá pra descobrir rapidinho quantas combinações existem (3×2=6) sem precisar experimentar cada roupa fisicamente.",
+    visual: {"type":"flow","steps":["Elementos","Permutação/Combinação","Contar possibilidades"]},
     steps: [
       "Princípio multiplicativo: se uma escolha tem \"m\" opções e outra tem \"n\" opções, juntas formam m×n combinações.",
       "Permutação: quantidade de formas de ORDENAR todos os elementos de um grupo.",
@@ -1578,6 +1665,7 @@ const TOPICS = {
     emoji: "🎰",
     intro: "Probabilidade mede a chance de um evento acontecer, numa escala de 0 (impossível) a 1 (certeza) — geralmente expressa em porcentagem, calculada dividindo os casos favoráveis pelos casos possíveis.",
     analogy: "Pense em probabilidade como \"apostar com informação\": ao invés de adivinhar no escuro, você calcula matematicamente quão provável é cada resultado antes de decidir.",
+    visual: {"type":"pie","slices":[{"label":"Cara","value":1},{"label":"Coroa","value":1}]},
     steps: [
       "Probabilidade = casos favoráveis ÷ casos possíveis.",
       "Um evento com probabilidade 0 nunca acontece; com probabilidade 1, sempre acontece.",
@@ -1598,6 +1686,7 @@ const TOPICS = {
     emoji: "🍎",
     intro: "As Leis de Newton explicam por que os objetos se movem ou ficam parados, e o que acontece quando você empurra ou puxa algo.",
     analogy: "Pense em empurrar um carrinho de supermercado: quanto mais pesado ele está, mais força você precisa para movê-lo (2ª Lei de Newton: Força = massa × aceleração).",
+    visual: {"type":"labeled","center":"Leis de\nNewton","parts":["1ª: Inércia","2ª: F=m.a","3ª: Ação-Reação"]},
     steps: [
       "1ª Lei (Inércia): um objeto parado tende a continuar parado; em movimento, tende a continuar em movimento.",
       "2ª Lei: Força = massa × aceleração (F = m.a).",
@@ -1615,6 +1704,7 @@ const TOPICS = {
     emoji: "🌡️",
     intro: "Termologia estuda o calor e seus efeitos. Temperatura mede o quão \"agitadas\" estão as partículas de um corpo; calor é a energia térmica que se transfere de um corpo mais quente para um mais frio.",
     analogy: "Pense em temperatura como o \"quão animada\" está uma festa (partículas se mexendo), e calor como a energia que \"passa\" quando duas festas próximas se misturam, até ficarem no mesmo nível de agitação.",
+    visual: {"type":"line","points":[{"y":0,"label":"0°C"},{"y":50,"label":"50°C"},{"y":100,"label":"100°C"}],"xLabel":"aquecimento","yLabel":"temperatura"},
     steps: [
       "Temperatura mede a agitação das partículas de um corpo.",
       "Calor é a energia térmica em trânsito, sempre do corpo mais quente para o mais frio.",
@@ -1632,6 +1722,7 @@ const TOPICS = {
     emoji: "🔦",
     intro: "Óptica estuda o comportamento da luz — como ela viaja, se reflete em espelhos e se refrata (dobra) ao passar de um meio para outro, como do ar para a água.",
     analogy: "Pense na luz como uma bolinha andando em linha reta: quando bate num espelho, ela \"quica\" de volta (reflexão); quando entra na água, ela muda de direção porque a água \"freia\" ela de um jeito diferente do ar (refração).",
+    visual: {"type":"flow","steps":["Luz incide","Lente refrata","Imagem formada"]},
     steps: [
       "Reflexão: a luz \"quica\" ao bater numa superfície, como um espelho.",
       "Refração: a luz muda de direção ao passar de um meio para outro (ex: ar para água).",
@@ -1649,6 +1740,7 @@ const TOPICS = {
     emoji: "🌀",
     intro: "Ondulatória estuda as ondas — perturbações que se propagam transportando energia, sem necessariamente transportar matéria, como as ondas do mar, o som e a luz.",
     analogy: "Pense numa onda de torcida num estádio de futebol: as pessoas não se movem de lugar (cada uma só levanta e senta), mas o \"movimento\" da onda percorre todo o estádio — a energia se propaga, não as pessoas.",
+    visual: {"type":"compare","leftTitle":"Onda transversal","leftItems":["Vibra perpendicular","Ex: luz"],"rightTitle":"Onda longitudinal","rightItems":["Vibra na direção","Ex: som"]},
     steps: [
       "Amplitude: o quanto a onda \"sobe e desce\" em relação ao ponto de equilíbrio.",
       "Frequência: quantas oscilações completas acontecem por segundo.",
@@ -1666,6 +1758,7 @@ const TOPICS = {
     emoji: "🛁",
     intro: "Hidrostática estuda o comportamento de líquidos em repouso — como a pressão que exercem, e por que alguns objetos flutuam enquanto outros afundam.",
     analogy: "Pense na pressão da água como o \"peso\" de toda a água que está acima de você quando mergulha: quanto mais fundo, mais água \"empilhada\" por cima, mais pressão você sente.",
+    visual: {"type":"labeled","center":"Pressão\nHidrostática","parts":["Profundidade","Densidade","Gravidade"]},
     steps: [
       "Pressão hidrostática aumenta com a profundidade do líquido.",
       "Princípio de Arquimedes: todo corpo submerso recebe um empuxo (força para cima) igual ao peso do líquido deslocado.",
@@ -1686,6 +1779,7 @@ const TOPICS = {
     emoji: "🗂️",
     intro: "A Tabela Periódica organiza todos os elementos químicos conhecidos, agrupando os que têm comportamentos parecidos.",
     analogy: "É como uma estante de biblioteca organizada por assunto: elementos \"parecidos\" ficam na mesma coluna (família), assim como livros do mesmo tema ficam na mesma prateleira.",
+    visual: {"type":"bars","data":[{"label":"H","value":1},{"label":"O","value":8},{"label":"Na","value":11},{"label":"Fe","value":26}],"unit":""},
     steps: [
       "Elementos na mesma coluna (família) têm propriedades químicas parecidas.",
       "O número atômico indica a quantidade de prótons.",
@@ -1703,6 +1797,7 @@ const TOPICS = {
     emoji: "🧃",
     intro: "Solução é uma mistura homogênea (uniforme) de duas ou mais substâncias, onde não dá pra distinguir os componentes a olho nu — como o açúcar dissolvido na água.",
     analogy: "Pense numa solução como um copo de suco em pó bem misturado: depois de dissolvido, você não consegue mais separar visualmente o pó da água — os dois formam uma coisa só, uniforme.",
+    visual: {"type":"compare","leftTitle":"Solvente","leftItems":["Dissolve","Ex: água"],"rightTitle":"Soluto","rightItems":["É dissolvido","Ex: sal"]},
     steps: [
       "Soluto: a substância que é dissolvida (em menor quantidade, geralmente).",
       "Solvente: a substância que dissolve o soluto (em maior quantidade, geralmente).",
@@ -1720,6 +1815,7 @@ const TOPICS = {
     emoji: "🔥",
     intro: "Termoquímica estuda a energia (na forma de calor) envolvida nas reações químicas — algumas liberam calor (exotérmicas), outras absorvem calor do ambiente (endotérmicas).",
     analogy: "Pense numa reação exotérmica como uma fogueira, que libera calor para o ambiente; uma reação endotérmica é como um saco de gelo instantâneo, que absorve calor e esfria ao ser ativado.",
+    visual: {"type":"compare","leftTitle":"Exotérmica","leftItems":["Libera calor","T aumenta"],"rightTitle":"Endotérmica","rightItems":["Absorve calor","T diminui"]},
     steps: [
       "Reação exotérmica: libera calor para o ambiente (o entorno esquenta).",
       "Reação endotérmica: absorve calor do ambiente (o entorno esfria).",
@@ -1737,6 +1833,7 @@ const TOPICS = {
     emoji: "⏱️",
     intro: "Cinética química estuda a VELOCIDADE com que as reações acontecem — por que algumas são instantâneas (uma explosão) e outras extremamente lentas (o enferrujar de um metal).",
     analogy: "Pense na velocidade de uma reação como o trânsito de uma cidade: alguns fatores (mais pistas, menos carros) aceleram o fluxo, assim como temperatura e concentração podem acelerar reações químicas.",
+    visual: {"type":"line","points":[{"y":2,"label":"0min"},{"y":15,"label":"5min"},{"y":35,"label":"10min"},{"y":60,"label":"15min"}],"xLabel":"tempo","yLabel":"produto formado"},
     steps: [
       "Aumentar a temperatura geralmente acelera as reações (mais energia, mais colisões eficazes).",
       "Aumentar a concentração dos reagentes geralmente acelera a reação (mais partículas colidindo).",
@@ -1754,6 +1851,7 @@ const TOPICS = {
     emoji: "⚖️",
     intro: "Equilíbrio químico acontece quando, numa reação reversível, a velocidade da reação direta (reagentes virando produtos) se iguala à velocidade da reação inversa (produtos voltando a reagentes).",
     analogy: "Pense em duas escadas rolantes lado a lado, uma subindo e outra descendo, com pessoas se movendo nas duas ao mesmo tempo na mesma velocidade: mesmo com movimento constante, o número de pessoas em cada andar permanece estável — isso é equilíbrio dinâmico.",
+    visual: {"type":"flow","steps":["Reagentes","Reação direta ⇌ inversa","Equilíbrio"]},
     steps: [
       "Reação reversível: pode acontecer nos dois sentidos (reagentes→produtos e produtos→reagentes).",
       "No equilíbrio, as concentrações de reagentes e produtos permanecem constantes (mas a reação não parou).",
@@ -1771,6 +1869,7 @@ const TOPICS = {
     emoji: "🔋",
     intro: "Eletroquímica estuda a relação entre reações químicas e corrente elétrica — de um lado, reações que geram eletricidade (como em pilhas e baterias); de outro, eletricidade que causa reações (eletrólise).",
     analogy: "Pense numa pilha como uma \"cachoeira de elétrons\": a reação química empurra elétrons de um lado para o outro através de um fio, e esse fluxo de elétrons é exatamente a corrente elétrica que alimenta seu controle remoto.",
+    visual: {"type":"flow","steps":["Reação química","Elétrons se movem","Corrente elétrica"]},
     steps: [
       "Pilha/bateria: reação química espontânea gera corrente elétrica.",
       "Eletrólise: corrente elétrica fornecida de fora provoca uma reação química que não aconteceria sozinha.",
@@ -1791,6 +1890,7 @@ const TOPICS = {
     emoji: "🧬",
     intro: "Genética estuda como características (cor dos olhos, altura...) passam dos pais para os filhos, através de \"instruções\" chamadas genes.",
     analogy: "Pense num baralho: você recebe metade das cartas do seu pai e metade da sua mãe. Essa \"mistura\" de cartas (genes) define suas características.",
+    visual: {"type":"compare","leftTitle":"Alelo dominante","leftItems":["Aparece sempre","Letra maiúscula"],"rightTitle":"Alelo recessivo","rightItems":["Só aparece se par","Letra minúscula"]},
     steps: [
       "Genes são \"instruções\" localizadas no DNA.",
       "Recebemos genes do pai e da mãe (um de cada).",
@@ -1808,6 +1908,7 @@ const TOPICS = {
     emoji: "🧬",
     intro: "Nem toda herança genética segue a regra simples de \"dominante manda\". Alguns genes se misturam (codominância), outros dependem de vários genes juntos, e alguns até dependem do cromossomo sexual.",
     analogy: "Pense na herança simples como uma votação onde só um lado vence (dominante). A codominância é como um empate onde as duas cores aparecem juntas, tipo uma flor malhada de vermelho E branco ao mesmo tempo.",
+    visual: {"type":"pie","slices":[{"label":"AA","value":25},{"label":"Aa","value":50},{"label":"aa","value":25}]},
     steps: [
       "Codominância: os dois alelos se expressam ao mesmo tempo, sem um \"vencer\" o outro.",
       "Herança ligada ao sexo: genes localizados no cromossomo X, afetando mais um sexo que o outro.",
@@ -1825,6 +1926,7 @@ const TOPICS = {
     emoji: "🐒",
     intro: "Evolução é o processo pelo qual as espécies mudam ao longo de gerações, através da seleção natural — características que ajudam a sobreviver e se reproduzir tendem a se tornar mais comuns na população.",
     analogy: "Pense na seleção natural como uma \"peneira\" que a natureza aplica a cada geração: características que ajudam a sobreviver \"passam\" pela peneira mais facilmente, se tornando mais comuns nas gerações seguintes.",
+    visual: {"type":"timeline","events":[{"date":"Geração 1","label":"Variação genética"},{"date":"Seleção","label":"Ambiente seleciona"},{"date":"Geração 2","label":"Mudança na espécie"}]},
     steps: [
       "Variação: indivíduos de uma população têm características levemente diferentes entre si.",
       "Seleção natural: características vantajosas para sobreviver/reproduzir se tornam mais comuns ao longo de gerações.",
@@ -1842,6 +1944,7 @@ const TOPICS = {
     emoji: "❤️",
     intro: "Fisiologia estuda como os órgãos e sistemas do corpo humano funcionam e trabalham juntos — como o sistema circulatório, respiratório e digestório colaboram para manter você vivo.",
     analogy: "Pense no corpo humano como uma cidade bem organizada: o sistema circulatório é a rede de estradas (transportando recursos), o respiratório é a usina de energia (trazendo oxigênio), e o digestório é a fábrica de processamento de matéria-prima (alimento).",
+    visual: {"type":"labeled","center":"Corpo\nHumano","parts":["Sist. Circulatório","Sist. Respiratório","Sist. Digestório","Sist. Nervoso"]},
     steps: [
       "Sistema circulatório: transporta sangue, oxigênio e nutrientes pelo corpo.",
       "Sistema respiratório: realiza as trocas gasosas entre o corpo e o ambiente.",
@@ -1859,6 +1962,7 @@ const TOPICS = {
     emoji: "🥚",
     intro: "Embriologia estuda o desenvolvimento de um ser vivo desde a fecundação (união do óvulo com o espermatozoide) até a formação completa dos órgãos e sistemas do corpo.",
     analogy: "Pense no desenvolvimento embrionário como a construção de uma casa: primeiro vem a fundação (as primeiras divisões celulares), depois a estrutura básica (formação das camadas de tecido) e só depois os \"acabamentos\" (órgãos específicos).",
+    visual: {"type":"flow","steps":["Fecundação","Zigoto","Embrião","Feto"]},
     steps: [
       "Fecundação: união do óvulo com o espermatozoide, formando o zigoto.",
       "Clivagem: divisões celulares rápidas do zigoto, sem aumentar de tamanho no início.",
@@ -1879,6 +1983,7 @@ const TOPICS = {
     emoji: "🏭",
     intro: "A Revolução Industrial (a partir do século 18) foi quando as máquinas começaram a substituir o trabalho manual, mudando completamente a forma de produzir e viver.",
     analogy: "É como sair de fazer tudo à mão (costurar uma calça sozinho) para uma fábrica que produz centenas de calças por hora — mudou tudo, do trabalho às cidades.",
+    visual: {"type":"flow","steps":["Manufatura","Máquina a vapor","Fábricas","Produção em massa"]},
     steps: [
       "Começou na Inglaterra, com a máquina a vapor.",
       "Trabalho passou das oficinas artesanais para as fábricas.",
@@ -1896,6 +2001,7 @@ const TOPICS = {
     emoji: "👑",
     intro: "A Idade Moderna (séc. XV-XVIII) trouxe grandes mudanças: as navegações, o fortalecimento dos Estados nacionais, e o Absolutismo — sistema em que o rei concentrava poder quase ilimitado.",
     analogy: "Pense no Absolutismo como um jogo onde uma única pessoa (o rei) controla todas as peças do tabuleiro ao mesmo tempo — sem outros jogadores para limitar suas decisões.",
+    visual: {"type":"timeline","events":[{"date":"1500s","label":"Absolutismo cresce"},{"date":"1643","label":"Luís XIV"},{"date":"1700s","label":"Auge do poder real"}]},
     steps: [
       "Absolutismo: o rei concentra poder político, sem limitações efetivas de outras instituições.",
       "Teoria do direito divino: a ideia de que o poder do rei vinha diretamente de Deus.",
@@ -1913,6 +2019,7 @@ const TOPICS = {
     emoji: "💡",
     intro: "O Iluminismo foi um movimento intelectual do século XVIII que defendia o uso da razão para questionar tradições, a Igreja e o poder absoluto dos reis — as ideias que embasaram revoluções e as democracias modernas.",
     analogy: "Pense no Iluminismo como um grande \"questionamento coletivo\": ao invés de aceitar \"porque sempre foi assim\", os pensadores da época passaram a perguntar \"por que isso deveria continuar assim?\" sobre praticamente tudo na sociedade.",
+    visual: {"type":"labeled","center":"Iluminismo","parts":["Razão","Liberdade","Igualdade","Ciência"]},
     steps: [
       "Valorização da razão como principal ferramenta para entender e melhorar a sociedade.",
       "Defesa de direitos individuais, liberdade e igualdade perante a lei.",
@@ -1930,6 +2037,7 @@ const TOPICS = {
     emoji: "🇫🇷",
     intro: "A Revolução Francesa (1789) derrubou a monarquia absolutista na França, inspirada em ideais iluministas de liberdade, igualdade e fraternidade — um dos eventos mais importantes da história moderna.",
     analogy: "Pense na Revolução Francesa como uma \"panela de pressão\" que explodiu: décadas de desigualdade social, crise econômica e ideias iluministas circulando, tudo isso acumulado até o povo decidir que não aguentava mais o sistema como estava.",
+    visual: {"type":"timeline","events":[{"date":"1789","label":"Queda da Bastilha"},{"date":"1793","label":"Execução do rei"},{"date":"1799","label":"Napoleão no poder"}]},
     steps: [
       "Contexto: crise financeira do Estado, fome e forte desigualdade entre nobreza/clero e o povo.",
       "Queda da Bastilha (14 de julho de 1789): marco simbólico do início da revolução.",
@@ -1947,6 +2055,7 @@ const TOPICS = {
     emoji: "🌎",
     intro: "A partir do século XVI, países europeus (especialmente Portugal e Espanha) colonizaram o continente americano, explorando recursos naturais e mão de obra — um processo que moldou profundamente a história e a sociedade latino-americana.",
     analogy: "Pense na colonização como uma relação totalmente desigual: a metrópole (país colonizador) definia as regras, extraía riquezas, e a colônia existia principalmente para servir aos interesses econômicos de quem estava do outro lado do oceano.",
+    visual: {"type":"flow","steps":["Chegada europeia","Colonização","Exploração","Independências"]},
     steps: [
       "Colonização de exploração: extração de recursos (ouro, açúcar, prata) para enviar à metrópole.",
       "Trabalho escravo indígena e, principalmente, africano sustentou boa parte da economia colonial.",
@@ -1967,6 +2076,7 @@ const TOPICS = {
     emoji: "🏢",
     intro: "Estratificação social é a forma como uma sociedade se organiza em camadas (estratos), geralmente com base em renda, poder e prestígio — como andares de um prédio, uns mais \"altos\" que outros em recursos e influência.",
     analogy: "Pense num prédio de apartamentos: cada andar tem uma vista e um conforto diferente, mas todos moram no mesmo edifício. A sociedade também é organizada em \"andares\" de acesso a dinheiro, educação e poder.",
+    visual: {"type":"bars","data":[{"label":"Classe alta","value":10},{"label":"Classe média","value":30},{"label":"Classe baixa","value":60}],"unit":"%"},
     steps: [
       "Classe social: grupo definido principalmente por posição econômica.",
       "Mobilidade social: possibilidade de subir ou descer entre estratos.",
@@ -1984,6 +2094,7 @@ const TOPICS = {
     emoji: "🏠",
     intro: "Família e escola são duas das instituições sociais mais importantes, responsáveis por transmitir valores, conhecimento e comportamentos esperados desde a infância — um processo chamado de socialização.",
     analogy: "Pense nessas instituições como os primeiros \"manuais de instrução\" que recebemos na vida: a família ensina os primeiros valores, e a escola amplia esse aprendizado, preparando a pessoa para conviver em sociedade.",
+    visual: {"type":"compare","leftTitle":"Família","leftItems":["Socialização primária"],"rightTitle":"Escola","rightItems":["Socialização secundária"]},
     steps: [
       "Socialização primária: acontece na família, nos primeiros anos de vida.",
       "Socialização secundária: acontece na escola e em outros grupos sociais.",
@@ -2001,6 +2112,7 @@ const TOPICS = {
     emoji: "🏛️",
     intro: "Poder é a capacidade de fazer alguém agir de determinada forma, mesmo contra sua vontade inicial. O Estado organiza e legitima esse poder através de leis, e a cidadania define a relação entre a pessoa e esse poder organizado.",
     analogy: "Pense no poder como a força que faz as coisas acontecerem numa sociedade — e o Estado como o \"sistema de regras\" que organiza essa força para não virar puro caos, dando a cada cidadão um papel dentro desse sistema.",
+    visual: {"type":"labeled","center":"Poder","parts":["Estado","Cidadão","Direitos","Deveres"]},
     steps: [
       "Poder legítimo: quando é aceito como justo pelas pessoas sujeitas a ele.",
       "Estado: organização política com território, população e governo.",
@@ -2018,6 +2130,7 @@ const TOPICS = {
     emoji: "🛍️",
     intro: "Sociologia do consumo estuda como as compras que fazemos não servem só para suprir necessidades básicas — elas também comunicam identidade, status social e pertencimento a um grupo.",
     analogy: "Pense em comprar um tênis de marca: você não está só comprando algo para proteger os pés — está, de certa forma, comunicando um estilo, um grupo social ao qual quer pertencer ou ser associado.",
+    visual: {"type":"flow","steps":["Produto criado","Marketing","Consumo","Descarte"]},
     steps: [
       "Consumo simbólico: comprar algo pelo significado social que carrega, não só pela função.",
       "Sociedade de consumo: sociedade organizada fortemente em torno do consumo de bens.",
@@ -2035,6 +2148,7 @@ const TOPICS = {
     emoji: "🏙️",
     intro: "Sociologia urbana estuda como a vida nas cidades molda as relações sociais — como as pessoas se organizam, se relacionam (ou se isolam) e disputam espaço dentro do ambiente urbano.",
     analogy: "Pense na cidade como um grande \"organismo social\": bairros diferentes têm \"personalidades\" diferentes, e o jeito como as pessoas se movem e se relacionam nesse espaço diz muito sobre a sociedade como um todo.",
+    visual: {"type":"labeled","center":"Cidade","parts":["Moradia","Trabalho","Mobilidade","Lazer"]},
     steps: [
       "Segregação urbana: separação espacial de grupos sociais diferentes na cidade.",
       "Gentrificação: processo em que um bairro popular se torna mais caro, deslocando moradores originais.",
@@ -2055,6 +2169,7 @@ const TOPICS = {
     emoji: "⚖️",
     intro: "Ética aplicada usa os princípios filosóficos para pensar sobre situações concretas e difíceis do cotidiano — como decidir entre duas opções quando as duas parecem certas de algum jeito.",
     analogy: "Pense na ética aplicada como um GPS moral: você não decora o mapa inteiro do mundo, mas usa princípios gerais (não prejudicar os outros, ser justo) para escolher o melhor caminho em cada situação nova.",
+    visual: {"type":"flow","steps":["Situação real","Princípios éticos","Decisão ponderada"]},
     steps: [
       "Identifique quem é afetado pela decisão, e como.",
       "Pense nos princípios envolvidos (justiça, honestidade, cuidado).",
@@ -2072,6 +2187,7 @@ const TOPICS = {
     emoji: "🔬",
     intro: "Filosofia da ciência investiga o que torna o conhecimento científico diferente de outros tipos de conhecimento — como ele é construído, testado e revisado ao longo do tempo.",
     analogy: "Pense na ciência como um prédio em constante reforma: novas descobertas às vezes exigem derrubar paredes antigas (teorias superadas) para construir algo mais sólido, mesmo que o prédio pareça pronto por um tempo.",
+    visual: {"type":"flow","steps":["Observação","Hipótese","Teste","Teoria (revisável)"]},
     steps: [
       "Uma teoria científica precisa ser testável e refutável (poder ser provada errada).",
       "O conhecimento científico avança através de observação, experimentação e revisão.",
@@ -2089,6 +2205,7 @@ const TOPICS = {
     emoji: "💼",
     intro: "Filosofia e trabalho investiga o significado do trabalho na vida humana — por que trabalhamos, o que o trabalho representa para nossa identidade, e como essa relação mudou ao longo da história.",
     analogy: "Pense no trabalho como um espelho: além de gerar renda, ele reflete quem somos socialmente — é por isso que a pergunta \"o que você faz?\" costuma vir logo depois de \"qual é o seu nome?\".",
+    visual: {"type":"timeline","events":[{"date":"Antiga Grécia","label":"Trabalho manual = baixo status"},{"date":"Capitalismo","label":"Trabalho assalariado central"}]},
     steps: [
       "Para os gregos antigos, o trabalho manual era visto com menos prestígio que atividades intelectuais.",
       "Com o capitalismo moderno, o trabalho assalariado se tornou central na organização da sociedade.",
@@ -2106,6 +2223,7 @@ const TOPICS = {
     emoji: "🧩",
     intro: "Lógica formal estuda as regras que tornam um raciocínio válido ou inválido — independente do conteúdo específico das frases, focando na estrutura do argumento.",
     analogy: "Pense na lógica formal como as regras de um jogo de tabuleiro: não importa quais peças você está usando, existem regras fixas sobre quais movimentos são válidos e quais não são.",
+    visual: {"type":"flow","steps":["Premissa 1","Premissa 2","Conclusão"]},
     steps: [
       "Premissa: uma afirmação que serve de base para o raciocínio.",
       "Conclusão: o que se deduz logicamente a partir das premissas.",
@@ -2126,6 +2244,7 @@ const TOPICS = {
     emoji: "🖼️",
     intro: "A Arte Moderna (fim do século XIX até meados do XX) rompeu com as tradições acadêmicas de séculos, explorando novas formas de representar o mundo — da luz e cor do Impressionismo às formas geométricas do Cubismo.",
     analogy: "Pense na Arte Moderna como uma geração de filhos que decide não seguir exatamente as regras dos pais: os artistas modernos queriam experimentar caminhos novos, ao invés de repetir as fórmulas consagradas da arte acadêmica tradicional.",
+    visual: {"type":"compare","leftTitle":"Arte acadêmica","leftItems":["Regras fixas"],"rightTitle":"Arte Moderna","rightItems":["Ruptura, experimentação"]},
     steps: [
       "Impressionismo: capturar impressões de luz e cor num instante específico.",
       "Cubismo: representar objetos a partir de vários ângulos simultaneamente.",
@@ -2143,6 +2262,7 @@ const TOPICS = {
     emoji: "🎬",
     intro: "Cinema é uma linguagem própria, que combina imagem, som, montagem e tempo para contar histórias e provocar emoções de formas que outras artes não conseguem sozinhas.",
     analogy: "Pense no cinema como uma orquestra: imagem, som, atuação, edição e trilha sonora são \"instrumentos\" diferentes que, tocando juntos e bem coordenados, criam um efeito muito mais forte do que qualquer um deles sozinho.",
+    visual: {"type":"labeled","center":"Cinema","parts":["Enquadramento","Montagem","Trilha sonora"]},
     steps: [
       "Enquadramento: como a câmera recorta e organiza o que aparece na tela.",
       "Montagem (edição): a forma como as cenas são cortadas e organizadas na sequência final.",
@@ -2160,6 +2280,7 @@ const TOPICS = {
     emoji: "🎨",
     intro: "Design é a arte de organizar elementos visuais (cor, forma, tipografia, espaço) para comunicar uma mensagem de forma clara e eficaz — presente em logotipos, embalagens, aplicativos e sinalizações do dia a dia.",
     analogy: "Pense no design como um tradutor silencioso: ele pega uma ideia ou informação e a transforma em algo visual que qualquer pessoa consegue entender rapidamente, sem precisar de muitas palavras.",
+    visual: {"type":"labeled","center":"Design","parts":["Hierarquia visual","Tipografia","Contraste"]},
     steps: [
       "Hierarquia visual: organizar elementos para guiar o olhar do observador na ordem certa.",
       "Tipografia: a escolha das fontes de texto também comunica personalidade e tom.",
@@ -2177,6 +2298,7 @@ const TOPICS = {
     emoji: "💻",
     intro: "Arte digital usa tecnologias como computadores, softwares e ferramentas digitais como meio de criação artística — da pintura digital a instalações interativas e arte gerada por algoritmos.",
     analogy: "Pense na arte digital como uma nova caixa de tintas: os pincéis tradicionais viraram ferramentas digitais, mas o impulso criativo por trás continua sendo o mesmo dos artistas de séculos atrás.",
+    visual: {"type":"compare","leftTitle":"Arte tradicional","leftItems":["Tinta, pincel"],"rightTitle":"Arte digital","rightItems":["Software, IA"]},
     steps: [
       "Arte digital pode ser criada inteiramente no computador, ou combinar técnicas tradicionais com edição digital.",
       "Arte generativa usa algoritmos e regras matemáticas para criar padrões e composições visuais.",
@@ -2197,6 +2319,7 @@ const TOPICS = {
     emoji: "🔑",
     intro: "Modal verbs (can, must, should, may...) são verbos auxiliares que expressam ideias como capacidade, obrigação, permissão ou possibilidade — mudando o sentido da frase principal.",
     analogy: "Pense nos modal verbs como \"temperos\" que você adiciona a um verbo: \"eu posso ir\" (capacidade), \"eu devo ir\" (obrigação) e \"eu deveria ir\" (sugestão) usam o mesmo verbo \"ir\", mas o modal muda completamente o sentido da frase.",
+    visual: {"type":"compare","leftTitle":"Must","leftItems":["Obrigação forte"],"rightTitle":"Should","rightItems":["Sugestão"]},
     steps: [
       "Can/Could: capacidade ou possibilidade (\"I can swim\").",
       "Must/Have to: obrigação forte (\"You must study\").",
@@ -2214,6 +2337,7 @@ const TOPICS = {
     emoji: "🔮",
     intro: "Em inglês, existem diferentes formas de falar sobre o futuro — \"will\", \"going to\" e o presente contínuo — cada uma usada em contextos ligeiramente diferentes.",
     analogy: "Pense nas formas de futuro como diferentes graus de certeza: \"will\" é como uma previsão espontânea, \"going to\" é um plano já decidido, e o presente contínuo é um compromisso já marcado na agenda.",
+    visual: {"type":"compare","leftTitle":"Will","leftItems":["Decisão espontânea"],"rightTitle":"Going to","rightItems":["Plano já decidido"]},
     steps: [
       "Will: previsões, decisões espontâneas (\"I think it will rain\").",
       "Going to: planos já decididos com antecedência (\"I'm going to travel next month\").",
@@ -2231,6 +2355,7 @@ const TOPICS = {
     emoji: "📊",
     intro: "Comparativos e superlativos em inglês permitem comparar duas ou mais coisas — \"maior\", \"mais rápido\", \"o melhor\" — seguindo regras específicas dependendo do tamanho da palavra.",
     analogy: "Pense nos comparativos como uma régua: eles medem a diferença entre duas coisas (\"taller than\"), enquanto os superlativos apontam o extremo de um grupo inteiro (\"the tallest\").",
+    visual: {"type":"compare","leftTitle":"Curto: tall","leftItems":["taller, tallest"],"rightTitle":"Longo: beautiful","rightItems":["more/most beautiful"]},
     steps: [
       "Adjetivos curtos: adicione \"-er\" (comparativo) ou \"-est\" (superlativo): tall → taller → tallest.",
       "Adjetivos longos: use \"more\" (comparativo) ou \"most\" (superlativo): beautiful → more beautiful → most beautiful.",
@@ -2248,6 +2373,7 @@ const TOPICS = {
     emoji: "📧",
     intro: "Escrever um e-mail formal em inglês segue uma estrutura própria — saudação, corpo do texto claro e objetivo, e um fechamento educado — diferente da linguagem usada em mensagens informais com amigos.",
     analogy: "Pense num e-mail formal em inglês como uma roupa social: você não usa a mesma linguagem \"de chinelo\" que usaria com amigos — existe um padrão esperado de formalidade para causar boa impressão.",
+    visual: {"type":"flow","steps":["Saudação (Dear...)","Corpo claro","Fechamento (Best regards)"]},
     steps: [
       "Saudação: \"Dear Mr./Ms. [Sobrenome]\" ou \"Dear Sir/Madam\" quando não souber o nome.",
       "Corpo do texto: seja claro e direto sobre o motivo do e-mail logo no início.",
@@ -2268,6 +2394,7 @@ const TOPICS = {
     emoji: "🎾",
     intro: "Esportes de raquete (tênis, badminton, squash) trabalham reflexos, coordenação motora e resistência cardiovascular, além de exigirem estratégia para posicionar a bola ou peteca fora do alcance do adversário.",
     analogy: "Pense num jogo de raquete como um jogo de xadrez em movimento rápido: você precisa antecipar onde o adversário vai jogar e se posicionar antes mesmo da bola chegar, tudo em frações de segundo.",
+    visual: {"type":"flow","steps":["Empunhadura","Posicionamento","Estratégia"]},
     steps: [
       "Empunhadura: o jeito de segurar a raquete influencia diretamente a precisão dos golpes.",
       "Posicionamento: voltar ao centro da quadra após cada golpe facilita cobrir qualquer direção.",
@@ -2285,6 +2412,7 @@ const TOPICS = {
     emoji: "💃",
     intro: "A dança, além de exercício físico, é uma forma de expressão que usa o corpo para comunicar emoções, contar histórias e explorar ritmo e espaço de formas únicas.",
     analogy: "Pense na dança como uma linguagem sem palavras: ao invés de falar um sentimento, o corpo o expressa através de movimento, ritmo e espaço — uma forma de comunicação tão antiga quanto a própria humanidade.",
+    visual: {"type":"labeled","center":"Dança","parts":["Ritmo","Espaço","Qualidade do movimento"]},
     steps: [
       "Ritmo: sincronizar o movimento do corpo com o tempo e a batida da música.",
       "Espaço: usar diferentes níveis (alto, baixo) e direções para compor o movimento.",
@@ -2302,6 +2430,7 @@ const TOPICS = {
     emoji: "🏋️",
     intro: "Treinamento funcional é um tipo de exercício físico que trabalha movimentos usados no dia a dia (agachar, empurrar, puxar, girar), ao invés de isolar músculos específicos como em aparelhos tradicionais de academia.",
     analogy: "Pense no treinamento funcional como treinar para \"a vida real\": ao invés de fortalecer um músculo isolado numa máquina, você treina o corpo inteiro trabalhando junto, do jeito que ele realmente é usado ao carregar sacolas, subir escadas ou levantar algo do chão.",
+    visual: {"type":"compare","leftTitle":"Treino isolado","leftItems":["1 músculo por vez"],"rightTitle":"Treino funcional","rightItems":["Movimento completo"]},
     steps: [
       "Movimentos multiarticulares: exercícios que envolvem várias articulações e músculos ao mesmo tempo.",
       "Estabilidade do core: fortalecer a região central do corpo (abdômen e lombar) melhora o equilíbrio geral.",
@@ -2319,6 +2448,7 @@ const TOPICS = {
     emoji: "🍎",
     intro: "Nutrição esportiva estuda como a alimentação influencia o desempenho físico, a recuperação muscular e a energia disponível para praticar atividades físicas de forma saudável e sustentável.",
     analogy: "Pense na alimentação como o combustível de um carro: um carro de corrida de alta performance não rende bem com combustível de baixa qualidade — do mesmo jeito, o corpo precisa de \"combustível\" adequado para render bem fisicamente.",
+    visual: {"type":"labeled","center":"Nutrição","parts":["Carboidrato","Proteína","Hidratação"]},
     steps: [
       "Carboidratos fornecem a principal fonte de energia rápida para os músculos durante o exercício.",
       "Proteínas ajudam na recuperação e reconstrução do tecido muscular após o esforço físico.",
@@ -2339,6 +2469,7 @@ const TOPICS = {
     emoji: "📱",
     intro: "Algoritmos de recomendação são sistemas que decidem o que aparece no seu feed de redes sociais, baseados no seu comportamento anterior — curtidas, tempo assistindo, compartilhamentos.",
     analogy: "Pense no algoritmo como um garçom que, quanto mais você pede o mesmo prato, mais ele passa a te oferecer só esse prato — mesmo existindo um cardápio inteiro de outras opções que você nunca chega a experimentar.",
+    visual: {"type":"flow","steps":["Comportamento observado","Algoritmo aprende","Feed personalizado"]},
     steps: [
       "O algoritmo analisa seu comportamento (curtidas, tempo de visualização, compartilhamentos).",
       "Com base nesses dados, ele prioriza mostrar conteúdo parecido com o que você já engajou antes.",
@@ -2356,6 +2487,7 @@ const TOPICS = {
     emoji: "📲",
     intro: "Criar um aplicativo envolve organizar telas, definir como o usuário interage com elas, e programar a lógica por trás de cada função — desde um simples botão até processos mais complexos.",
     analogy: "Pense num aplicativo como uma casa: a interface (o que você vê e toca) é como a decoração e os móveis, enquanto o código por trás é como a fiação elétrica e encanamento — invisíveis, mas essenciais para tudo funcionar.",
+    visual: {"type":"compare","leftTitle":"Interface (UI)","leftItems":["O que o usuário vê"],"rightTitle":"Lógica de programação","rightItems":["O que o app faz"]},
     steps: [
       "Interface (UI): as telas e elementos visuais com os quais o usuário interage.",
       "Lógica de programação: o código que define o que acontece quando o usuário toca em cada elemento.",
@@ -2373,6 +2505,7 @@ const TOPICS = {
     emoji: "🔓",
     intro: "O termo \"hacker\", originalmente, se referia a alguém apaixonado por explorar profundamente sistemas de computador — a distinção entre hackers \"éticos\" e criminosos digitais é fundamental para entender esse universo.",
     analogy: "Pense num hacker como um serralheiro: a mesma habilidade de entender fechaduras pode ser usada para ajudar pessoas trancadas fora de casa (uso ético) ou para arrombar propriedades alheias (uso criminoso) — a técnica é a mesma, a intenção é que muda tudo.",
+    visual: {"type":"compare","leftTitle":"Hacker ético","leftItems":["Autorizado, protege"],"rightTitle":"Cracker","rightItems":["Sem autorização, invade"]},
     steps: [
       "Hacker ético (\"white hat\"): usa habilidades técnicas para encontrar e corrigir vulnerabilidades de segurança, com autorização.",
       "Cracker (\"black hat\"): usa as mesmas habilidades técnicas para invadir sistemas sem autorização, com fins maliciosos.",
@@ -2390,6 +2523,7 @@ const TOPICS = {
     emoji: "🌐",
     intro: "Internet das Coisas (IoT) é a conexão de objetos do dia a dia — geladeiras, lâmpadas, relógios, carros — à internet, permitindo que eles coletem dados, se comuniquem entre si e sejam controlados remotamente.",
     analogy: "Pense na IoT como dar \"voz\" a objetos que antes eram mudos: uma geladeira comum não \"conversa\" com ninguém, mas uma geladeira conectada pode avisar seu celular quando o leite está acabando.",
+    visual: {"type":"labeled","center":"IoT","parts":["Sensor","Conectividade","Processamento"]},
     steps: [
       "Sensores: coletam dados do ambiente (temperatura, movimento, luminosidade).",
       "Conectividade: os dispositivos se comunicam via internet, Bluetooth ou outras redes sem fio.",
@@ -2410,6 +2544,7 @@ const TOPICS = {
     emoji: "✍️",
     intro: "A redação dissertativa-argumentativa é aquele texto (como o do ENEM) onde você defende um ponto de vista com argumentos organizados.",
     analogy: "É como montar um caso em um julgamento: você tem uma tese (sua opinião), e precisa de \"provas\" (argumentos) para convencer o \"juiz\" (leitor).",
+    visual: {"type":"flow","steps":["Introdução (tese)","Desenvolvimento (argumentos)","Proposta de intervenção"]},
     steps: [
       "Introdução: apresente o tema e sua tese (opinião central).",
       "Desenvolvimento: 2 parágrafos, cada um com um argumento + exemplo.",
@@ -2427,6 +2562,7 @@ const TOPICS = {
     emoji: "📖",
     intro: "O Realismo retratava a sociedade de forma crítica e objetiva, sem idealizar a realidade como o Romantismo fazia. O Naturalismo foi ainda mais radical, mostrando o ser humano quase como um animal, dominado por instintos e pelo ambiente.",
     analogy: "Se o Romantismo era como uma foto com filtro, deixando tudo mais bonito, o Realismo é uma foto sem filtro nenhum — mostrando defeitos, hipocrisias e problemas sociais como eles realmente são.",
+    visual: {"type":"compare","leftTitle":"Realismo","leftItems":["Crítica social objetiva"],"rightTitle":"Naturalismo","rightItems":["Instintos e hereditariedade"]},
     steps: [
       "Realismo: crítica social, personagens complexos, sem idealização romântica.",
       "Naturalismo: forte influência da ciência, retrata instintos, doenças e miséria.",
@@ -2444,6 +2580,7 @@ const TOPICS = {
     emoji: "🎨",
     intro: "O Parnasianismo valorizava a forma perfeita do poema, como uma obra de arte polida — \"a arte pela arte\". O Simbolismo, ao contrário, buscava sugerir sentimentos e sensações através de sons e símbolos, sem se importar tanto com a lógica.",
     analogy: "O Parnasianismo é como um escultor obcecado em deixar cada detalhe da estátua perfeito. O Simbolismo é como um perfume: você não vê nada, mas sente uma sensação forte e sugestiva, difícil de explicar com lógica.",
+    visual: {"type":"compare","leftTitle":"Parnasianismo","leftItems":["Forma perfeita"],"rightTitle":"Simbolismo","rightItems":["Musicalidade, sugestão"]},
     steps: [
       "Parnasianismo: \"arte pela arte\", forma perfeita, rima e métrica cuidadosas, sem função social.",
       "Simbolismo: valorização da musicalidade das palavras e de sugestões, não de descrições diretas.",
@@ -2461,6 +2598,7 @@ const TOPICS = {
     emoji: "🏙️",
     intro: "O Modernismo brasileiro, iniciado na Semana de Arte Moderna de 1922, rompeu com as regras tradicionais e passou por três fases: a fase de ruptura (1922-1930), a fase de consolidação (1930-1945) e a fase pós-1945 (com a poesia concreta, entre outras experimentações).",
     analogy: "Pense no Modernismo como uma reforma numa casa antiga: primeiro você quebra as paredes velhas (1ª fase, mais rebelde), depois organiza os novos cômodos com mais cuidado (2ª fase, mais madura), e por fim decora com estilos ainda mais experimentais (3ª fase).",
+    visual: {"type":"timeline","events":[{"date":"1922-30","label":"1ª fase: ruptura"},{"date":"1930-45","label":"2ª fase: romance social"},{"date":"pós-45","label":"3ª fase: poesia concreta"}]},
     steps: [
       "1ª fase (1922-1930): ruptura, linguagem coloquial, valorização do Brasil (Oswald e Mário de Andrade).",
       "2ª fase (1930-1945): romance regionalista e social, mais maduro (Graciliano Ramos, Jorge Amado).",
@@ -2478,6 +2616,7 @@ const TOPICS = {
     emoji: "📚",
     intro: "A literatura contemporânea brasileira (das últimas décadas até hoje) é marcada pela diversidade de vozes, temas urbanos, questões de identidade e uma pluralidade de estilos, sem um movimento único e dominante como nas fases anteriores.",
     analogy: "Se cada movimento literário anterior era como um time de futebol com uma tática única, a literatura contemporânea é mais como um campeonato com vários times jogando estilos completamente diferentes ao mesmo tempo, sem uma \"escola\" dominante.",
+    visual: {"type":"labeled","center":"Literatura\nContemporânea","parts":["Diversidade","Temas urbanos","Autoras/autores diversos"]},
     steps: [
       "Diversidade de vozes: mais espaço para autoras mulheres, autores negros, indígenas e LGBTQIA+.",
       "Temas urbanos: violência, desigualdade social e vida nas grandes cidades ganham destaque.",
@@ -2495,6 +2634,7 @@ const TOPICS = {
     emoji: "💬",
     intro: "Toda vez que nos comunicamos, um dos seis elementos da comunicação (emissor, receptor, mensagem, código, canal, contexto) costuma se destacar mais — e isso define a \"função da linguagem\" predominante naquele texto.",
     analogy: "Pense numa festa: às vezes você fala sobre você mesmo (função emotiva), às vezes convence alguém a fazer algo (função apelativa), às vezes só verifica se a ligação está funcionando (\"alô, está me ouvindo?\" — função fática). Cada situação de fala tem um foco diferente.",
+    visual: {"type":"labeled","center":"Funções da\nLinguagem","parts":["Referencial","Emotiva","Apelativa","Poética"]},
     steps: [
       "Função referencial: foco no assunto/contexto (notícias, informações objetivas).",
       "Função emotiva: foco no emissor, expressando sentimentos (\"eu\" em destaque).",
@@ -2513,6 +2653,7 @@ const TOPICS = {
     emoji: "🔗",
     intro: "Intertextualidade é quando um texto \"conversa\" com outro texto já existente — seja citando, parodiando, homenageando ou até criticando a obra original.",
     analogy: "Pense numa música que faz um \"sample\" (trecho reaproveitado) de outra música famosa: quem conhece a música original percebe a referência e entende a nova canção de um jeito mais rico — isso é intertextualidade.",
+    visual: {"type":"flow","steps":["Texto original","Referência a outro texto","Novo sentido"]},
     steps: [
       "Citação: menciona diretamente outro texto, com ou sem aspas.",
       "Paródia: retoma um texto para criticar ou satirizar, geralmente de forma bem-humorada.",
@@ -2533,6 +2674,7 @@ const TOPICS = {
     emoji: "📊",
     intro: "Estatística ajuda a resumir um monte de dados em números que fazem sentido, como a média, para entender melhor uma situação.",
     analogy: "É como resumir o desempenho do seu time inteiro na temporada em um único número — a média de gols por jogo, por exemplo.",
+    visual: {"type":"bars","data":[{"label":"Média","value":7},{"label":"Mediana","value":6.5},{"label":"Moda","value":8}],"unit":""},
     steps: [
       "Média = soma de todos os valores ÷ quantidade de valores.",
       "Moda = o valor que mais se repete.",
@@ -2550,6 +2692,7 @@ const TOPICS = {
     emoji: "📍",
     intro: "Geometria analítica usa números e equações para descrever figuras geométricas — cada ponto do plano vira um par de coordenadas (x, y), e cada reta vira uma equação.",
     analogy: "É como dar um \"endereço\" matemático para cada ponto: em vez de \"rua tal, número tal\", você usa coordenadas (x, y) para localizar qualquer ponto num mapa quadriculado.",
+    visual: {"type":"labeled","center":"Ponto\n(x,y)","parts":["Eixo X","Eixo Y","Origem","Reta"]},
     steps: [
       "Cada ponto no plano é representado por um par (x, y).",
       "A distância entre dois pontos pode ser calculada com uma fórmula baseada no Teorema de Pitágoras.",
@@ -2567,6 +2710,7 @@ const TOPICS = {
     emoji: "⭕",
     intro: "Circunferência é o conjunto de todos os pontos que estão à mesma distância (o raio) de um ponto central. Na geometria analítica, ela também pode ser descrita por uma equação.",
     analogy: "Pense num cachorro preso numa coleira presa a uma estaca no chão: por onde ele andar, mantendo a coleira esticada, ele desenha uma circunferência perfeita ao redor da estaca (o centro).",
+    visual: {"type":"labeled","center":"Circunferência","parts":["Centro","Raio","Diâmetro"]},
     steps: [
       "Raio: a distância constante entre o centro e qualquer ponto da circunferência.",
       "Diâmetro: o dobro do raio, atravessando a circunferência de um lado a outro passando pelo centro.",
@@ -2584,6 +2728,7 @@ const TOPICS = {
     emoji: "🔮",
     intro: "Números complexos foram criados para resolver um problema que os números \"normais\" (reais) não conseguem: encontrar a raiz quadrada de um número negativo. Eles usam a unidade imaginária \"i\", onde i² = -1.",
     analogy: "Pense nos números complexos como uma \"segunda dimensão\" dos números: se os números reais são uma linha reta, os números complexos formam um plano inteiro, com uma direção \"real\" e outra \"imaginária\".",
+    visual: {"type":"labeled","center":"a + bi","parts":["Parte Real","Parte Imaginária","i² = -1"]},
     steps: [
       "A unidade imaginária i é definida como i² = -1 (ou seja, i = √-1).",
       "Um número complexo tem a forma a + bi, onde \"a\" é a parte real e \"b\" é a parte imaginária.",
@@ -2601,6 +2746,7 @@ const TOPICS = {
     emoji: "➗",
     intro: "Polinômio é uma expressão matemática formada pela soma de termos com variáveis elevadas a expoentes inteiros não negativos, como 3x² + 2x - 5.",
     analogy: "Pense num polinômio como uma receita com vários ingredientes (termos), cada um com sua própria \"quantidade\" (coeficiente) e \"tipo\" (grau da variável) — juntos formam uma expressão só.",
+    visual: {"type":"flow","steps":["Termos","Grau do polinômio","Coeficientes"]},
     steps: [
       "Grau do polinômio: o maior expoente da variável presente na expressão.",
       "Coeficiente: o número que multiplica cada termo do polinômio.",
@@ -2618,6 +2764,7 @@ const TOPICS = {
     emoji: "🧮",
     intro: "Equação polinomial é uma igualdade que envolve um polinômio igualado a zero, como x² - 5x + 6 = 0. Resolver essa equação significa encontrar os valores de x (as raízes) que tornam a igualdade verdadeira.",
     analogy: "Pense em encontrar as raízes de uma equação como procurar em quais pontos exatos uma montanha-russa (o gráfico do polinômio) toca o chão (o eixo x) — esses pontos de contato são as raízes.",
+    visual: {"type":"flow","steps":["Equação","Isolar x","Raízes encontradas"]},
     steps: [
       "Uma raiz de uma equação polinomial é um valor de x que torna a expressão igual a zero.",
       "Uma equação do 2º grau tem, no máximo, 2 raízes reais.",
@@ -2635,6 +2782,7 @@ const TOPICS = {
     emoji: "💹",
     intro: "Matemática financeira avançada aprofunda conceitos como juros compostos aplicados a financiamentos, investimentos de longo prazo e análise de qual opção financeira é realmente mais vantajosa.",
     analogy: "Pense em comparar duas propostas de financiamento de carro: só olhando a parcela mensal você pode se enganar — é preciso calcular o valor total pago em cada opção para saber qual realmente compensa mais.",
+    visual: {"type":"line","points":[{"y":100,"label":"0"},{"y":110,"label":"1"},{"y":121,"label":"2"},{"y":133,"label":"3"}],"xLabel":"anos","yLabel":"montante (R$)"},
     steps: [
       "Valor presente: quanto um valor futuro \"vale hoje\", descontando os juros.",
       "Valor futuro: quanto um valor de hoje vai \"valer\" no futuro, somando os juros.",
@@ -2655,6 +2803,7 @@ const TOPICS = {
     emoji: "⚡",
     intro: "Eletrostática estuda as cargas elétricas paradas (sem corrente elétrica fluindo) e as forças de atração e repulsão entre elas — é o que faz um balão grudar na parede depois de esfregado no cabelo.",
     analogy: "Pense em cargas elétricas como ímãs invisíveis: cargas iguais (positivo com positivo, ou negativo com negativo) se repelem, e cargas diferentes se atraem — exatamente como os polos de um ímã.",
+    visual: {"type":"compare","leftTitle":"Carga +","leftItems":["Menos elétrons","Repele +"],"rightTitle":"Carga -","rightItems":["Mais elétrons","Repele -"]},
     steps: [
       "Cargas iguais se repelem; cargas diferentes se atraem.",
       "A Lei de Coulomb calcula a força entre duas cargas elétricas.",
@@ -2672,6 +2821,7 @@ const TOPICS = {
     emoji: "🔌",
     intro: "Eletrodinâmica estuda as cargas elétricas em movimento — a corrente elétrica que faz seus aparelhos funcionarem, circulando por fios e circuitos.",
     analogy: "Pense na corrente elétrica como água correndo por um cano: a voltagem é a \"pressão\" que empurra a água, a corrente é o \"quanto\" de água passa, e a resistência é um estreitamento do cano que dificulta a passagem.",
+    visual: {"type":"flow","steps":["Gerador","Corrente elétrica","Circuito","Consumo"]},
     steps: [
       "Corrente elétrica: fluxo de cargas elétricas através de um condutor.",
       "Lei de Ohm: Voltagem = Corrente × Resistência (V = R.I).",
@@ -2689,6 +2839,7 @@ const TOPICS = {
     emoji: "🧲",
     intro: "Eletromagnetismo estuda a relação entre eletricidade e magnetismo — como uma corrente elétrica pode criar um campo magnético, e como um campo magnético em movimento pode gerar eletricidade.",
     analogy: "Pense em eletricidade e magnetismo como dois lados da mesma moeda: eles estão tão conectados que um sempre pode gerar o outro — é esse princípio que faz motores elétricos e geradores de energia funcionarem.",
+    visual: {"type":"compare","leftTitle":"Eletricidade","leftItems":["Cargas em movimento"],"rightTitle":"Magnetismo","rightItems":["Campo magnético"]},
     steps: [
       "Corrente elétrica passando por um fio cria um campo magnético ao redor dele.",
       "Um ímã em movimento perto de um fio pode gerar corrente elétrica (indução eletromagnética).",
@@ -2706,6 +2857,7 @@ const TOPICS = {
     emoji: "🌌",
     intro: "Física moderna começou no início do século XX, com a Teoria da Relatividade de Einstein e a Física Quântica — teorias que revolucionaram a forma como entendemos o espaço, o tempo e as partículas mais fundamentais da matéria.",
     analogy: "Se a física clássica é como as regras de um jogo de tabuleiro conhecido, a física moderna é como descobrir que, em certas condições extremas (muito rápido ou muito pequeno), o jogo segue regras completamente diferentes e contraintuitivas.",
+    visual: {"type":"timeline","events":[{"date":"1900","label":"Teoria quântica"},{"date":"1905","label":"Relatividade especial"},{"date":"1915","label":"Relatividade geral"}]},
     steps: [
       "Teoria da Relatividade (Einstein): tempo e espaço não são absolutos, dependem da velocidade do observador.",
       "Física Quântica: estuda o comportamento de partículas subatômicas, que seguem regras probabilísticas.",
@@ -2726,6 +2878,7 @@ const TOPICS = {
     emoji: "⛓️",
     intro: "Química orgânica estuda os compostos formados principalmente por carbono — presentes nos combustíveis, plásticos, remédios e até no seu próprio corpo.",
     analogy: "O carbono é como o \"LEGO universal\" da natureza: ele consegue se conectar de várias formas diferentes, formando cadeias curtas, longas, ramificadas ou em anel.",
+    visual: {"type":"labeled","center":"Carbono","parts":["4 ligações","Cadeias longas","Base da vida"]},
     steps: [
       "O átomo de carbono tem 4 \"mãos\" (ligações) para se conectar.",
       "Cadeias podem ser abertas (lineares/ramificadas) ou fechadas (em anel).",
@@ -2743,6 +2896,7 @@ const TOPICS = {
     emoji: "🧬",
     intro: "Assim como na química inorgânica, os compostos orgânicos também são organizados em \"famílias\" (funções) que compartilham características e comportamentos parecidos — como álcoois, ácidos e aldeídos.",
     analogy: "Pense nas funções orgânicas como sobrenomes de família: cada composto tem sua estrutura própria, mas o \"grupo funcional\" (parte específica da molécula) indica a qual família ele pertence e como ele costuma se comportar.",
+    visual: {"type":"compare","leftTitle":"Álcool","leftItems":["Grupo -OH","Ex: etanol"],"rightTitle":"Ácido carboxílico","rightItems":["Grupo -COOH","Ex: vinagre"]},
     steps: [
       "Álcool: possui o grupo -OH ligado a um carbono saturado (ex: etanol).",
       "Ácido carboxílico: possui o grupo -COOH (ex: ácido acético, do vinagre).",
@@ -2760,6 +2914,7 @@ const TOPICS = {
     emoji: "🔀",
     intro: "Isomeria é quando duas ou mais moléculas têm exatamente a mesma fórmula molecular, mas estruturas diferentes — como duas casas construídas com o mesmo número de tijolos, mas em formatos diferentes.",
     analogy: "Pense em isômeros como dois quebra-cabeças montados com exatamente as mesmas peças, mas formando imagens finais diferentes — mesma \"matéria-prima\", resultado final diferente.",
+    visual: {"type":"compare","leftTitle":"Isômero A","leftItems":["Mesma fórmula"],"rightTitle":"Isômero B","rightItems":["Estrutura diferente"]},
     steps: [
       "Isomeria plana: moléculas com estruturas visivelmente diferentes (cadeia, posição, função).",
       "Isomeria espacial: moléculas com a mesma estrutura plana, mas orientação espacial diferente.",
@@ -2777,6 +2932,7 @@ const TOPICS = {
     emoji: "⚗️",
     intro: "Reações orgânicas são transformações químicas envolvendo compostos de carbono — como a combustão de combustíveis, a fermentação do açúcar em álcool, ou a síntese de plásticos e remédios.",
     analogy: "Pense nas reações orgânicas como receitas de cozinha complexas: você combina \"ingredientes\" moleculares específicos, segue um \"processo\" (reação), e obtém um produto final diferente dos ingredientes originais.",
+    visual: {"type":"flow","steps":["Combustível","Combustão","CO₂ + H₂O + energia"]},
     steps: [
       "Combustão: reação com oxigênio que libera energia (queima de combustíveis).",
       "Fermentação: processo biológico que transforma açúcares em álcool e gás carbônico.",
@@ -2794,6 +2950,7 @@ const TOPICS = {
     emoji: "🔗",
     intro: "Polímeros são moléculas gigantes formadas pela repetição de unidades menores (monômeros) ligadas em cadeia — como o plástico, a borracha e até o DNA e as proteínas do seu corpo.",
     analogy: "Pense num polímero como um colar de contas: cada \"conta\" (monômero) se repete e se conecta às outras, formando uma cadeia longa — quanto mais contas, mais longo o colar (e mais resistente o material).",
+    visual: {"type":"flow","steps":["Monômero","Repetição","Cadeia longa (polímero)"]},
     steps: [
       "Monômero: a unidade menor que se repete, formando o polímero.",
       "Polímeros naturais: como celulose, borracha natural, proteínas e DNA.",
@@ -2811,6 +2968,7 @@ const TOPICS = {
     emoji: "☢️",
     intro: "Radioatividade é a emissão espontânea de energia e partículas por núcleos atômicos instáveis, que se transformam (decaem) em busca de uma configuração mais estável.",
     analogy: "Pense num núcleo radioativo como uma pessoa carregando peso demais, tentando se equilibrar: para ficar mais estável, ela vai soltando pedaços do peso (partículas e energia) aos poucos, até atingir um equilíbrio.",
+    visual: {"type":"line","points":[{"y":100,"label":"0 meia-vida"},{"y":50,"label":"1"},{"y":25,"label":"2"},{"y":12.5,"label":"3"}],"xLabel":"meias-vidas","yLabel":"% restante"},
     steps: [
       "Núcleos instáveis emitem radiação (partículas ou energia) para se tornarem mais estáveis.",
       "Meia-vida: tempo necessário para metade dos átomos de uma amostra radioativa decair.",
@@ -2831,6 +2989,7 @@ const TOPICS = {
     emoji: "🌱",
     intro: "Botânica é o ramo da biologia que estuda as plantas — desde sua estrutura (raiz, caule, folha) até processos como a fotossíntese e a reprodução.",
     analogy: "Pense numa planta como uma fábrica bem organizada: a raiz é o setor de captação de matéria-prima (água e nutrientes), o caule é o transporte, e a folha é a fábrica principal, onde a fotossíntese \"produz\" o alimento da planta.",
+    visual: {"type":"labeled","center":"Planta","parts":["Raiz","Caule","Folha","Flor"]},
     steps: [
       "Raiz: absorve água e nutrientes do solo e fixa a planta.",
       "Caule: sustenta a planta e transporta água/nutrientes entre raiz e folhas.",
@@ -2848,6 +3007,7 @@ const TOPICS = {
     emoji: "🦓",
     intro: "Zoologia é o ramo da biologia dedicado ao estudo dos animais — sua classificação, anatomia, comportamento e a incrível diversidade de formas de vida animal no planeta.",
     analogy: "Pense na classificação dos animais como organizar uma biblioteca gigante: cada \"prateleira\" (grupo) reúne animais que compartilham características parecidas, facilitando entender as semelhanças e diferenças entre eles.",
+    visual: {"type":"compare","leftTitle":"Vertebrados","leftItems":["Coluna vertebral","Ex: peixes, aves"],"rightTitle":"Invertebrados","rightItems":["Sem coluna","Ex: insetos"]},
     steps: [
       "Vertebrados: animais com coluna vertebral (peixes, anfíbios, répteis, aves, mamíferos).",
       "Invertebrados: animais sem coluna vertebral (insetos, moluscos, vermes, entre outros).",
@@ -2865,6 +3025,7 @@ const TOPICS = {
     emoji: "🌍",
     intro: "Ecologia aplicada usa o conhecimento sobre ecossistemas para entender e minimizar os impactos que as atividades humanas causam no ambiente — como poluição, desmatamento e mudanças climáticas.",
     analogy: "Pense num ecossistema como uma teia de aranha: mexer em um único fio (uma espécie, um rio, uma floresta) pode fazer a teia inteira vibrar e se desequilibrar, mesmo que a mudança pareça pequena no começo.",
+    visual: {"type":"flow","steps":["Espécie-chave removida","Desequilíbrio","Efeito cascata"]},
     steps: [
       "Pegada ecológica: mede o impacto do consumo humano sobre os recursos naturais.",
       "Espécies-chave: algumas espécies têm impacto desproporcional na estabilidade de um ecossistema.",
@@ -2882,6 +3043,7 @@ const TOPICS = {
     emoji: "🧫",
     intro: "Biotecnologia é o uso de organismos vivos (ou partes deles, como enzimas e genes) para desenvolver produtos e tecnologias úteis, da produção de remédios à modificação genética de plantas.",
     analogy: "Pense na biotecnologia como \"contratar\" seres vivos (bactérias, fungos, células) para trabalhar para você, produzindo algo útil — como usar leveduras para fermentar pão, só que em versões muito mais avançadas e precisas.",
+    visual: {"type":"flow","steps":["Gene isolado","Inserção em bactéria","Produção em escala"]},
     steps: [
       "Engenharia genética: modificação direta do DNA de um organismo para obter uma característica desejada.",
       "Transgênicos: organismos que receberam genes de outra espécie através de engenharia genética.",
@@ -2899,6 +3061,7 @@ const TOPICS = {
     emoji: "🛡️",
     intro: "Imunologia estuda o sistema imunológico — a \"defesa\" do corpo contra vírus, bactérias e outras ameaças, incluindo como vacinas treinam esse sistema para reconhecer invasores antes mesmo de uma infecção real.",
     analogy: "Pense no sistema imunológico como um exército de segurança do corpo: alguns \"soldados\" (células de defesa) patrulham constantemente, e outros \"aprendem\" a reconhecer inimigos específicos depois de um primeiro contato — exatamente o que uma vacina simula.",
+    visual: {"type":"flow","steps":["Vacina aplicada","Corpo reconhece","Células de memória"]},
     steps: [
       "Imunidade inata: defesa geral e imediata do corpo, presente desde o nascimento.",
       "Imunidade adaptativa: defesa específica, que \"aprende\" a reconhecer um invasor específico.",
@@ -2919,6 +3082,7 @@ const TOPICS = {
     emoji: "🌐",
     intro: "Globalização é o processo de aproximação entre países através da economia, tecnologia e cultura, fazendo o mundo parecer \"menor\" e mais conectado.",
     analogy: "É como um grupo de WhatsApp gigante: uma notícia ou produto criado num país pode chegar ao mundo inteiro quase instantaneamente.",
+    visual: {"type":"labeled","center":"Globalização","parts":["Comércio","Tecnologia","Cultura","Finanças"]},
     steps: [
       "Avanços em transporte e internet aproximaram países.",
       "Empresas multinacionais produzem e vendem em vários países ao mesmo tempo.",
@@ -2936,6 +3100,7 @@ const TOPICS = {
     emoji: "🗺️",
     intro: "O Brasil é dividido oficialmente em 5 regiões (Norte, Nordeste, Centro-Oeste, Sudeste e Sul), cada uma com características próprias de relevo, clima, economia e cultura.",
     analogy: "Pense nas regiões do Brasil como bairros de uma cidade gigante: cada uma tem sua própria \"personalidade\" e função — algumas concentram indústrias, outras concentram agricultura, outras têm florestas preservadas.",
+    visual: {"type":"bars","data":[{"label":"Norte","value":8},{"label":"Nordeste","value":15},{"label":"Sudeste","value":42},{"label":"Sul","value":27},{"label":"C-Oeste","value":8}],"unit":"%"},
     steps: [
       "Norte: maior em território, concentra a Floresta Amazônica.",
       "Nordeste: clima semiárido no interior, forte turismo no litoral.",
@@ -2953,6 +3118,7 @@ const TOPICS = {
     emoji: "🌾",
     intro: "O agronegócio é um dos setores mais importantes da economia brasileira, envolvendo desde a produção agrícola e pecuária até a indústria, o transporte e a exportação desses produtos.",
     analogy: "Pense no agronegócio como uma grande cadeia de produção, do campo até a mesa (ou até o navio de exportação): envolve quem planta, quem processa, quem transporta e quem vende — um sistema muito maior do que apenas \"plantar e colher\".",
+    visual: {"type":"flow","steps":["Produção rural","Processamento","Exportação"]},
     steps: [
       "Commodities agrícolas: produtos primários vendidos em grande escala, como soja, milho e café.",
       "O Brasil é um dos maiores exportadores mundiais de diversos produtos agropecuários.",
@@ -2970,6 +3136,7 @@ const TOPICS = {
     emoji: "♻️",
     intro: "Sustentabilidade ambiental é buscar um desenvolvimento econômico e social que atenda às necessidades atuais sem comprometer a capacidade das futuras gerações de atender às suas próprias necessidades.",
     analogy: "Pense num poço de água: se você retira mais água do que a chuva consegue repor, o poço seca com o tempo. Sustentabilidade é usar os recursos no ritmo que a natureza consegue repor, sem esgotá-los.",
+    visual: {"type":"labeled","center":"Sustenta-\nbilidade","parts":["Econômico","Social","Ambiental"]},
     steps: [
       "Desenvolvimento sustentável: equilíbrio entre crescimento econômico, justiça social e preservação ambiental.",
       "Energias renováveis: fontes que se regeneram naturalmente (solar, eólica, hídrica).",
@@ -2990,6 +3157,7 @@ const TOPICS = {
     emoji: "👑",
     intro: "O Brasil Império (1822-1889) foi o período entre a Independência e a Proclamação da República, marcado por dois imperadores (D. Pedro I e D. Pedro II) e pela manutenção da escravidão por décadas após outros países já a terem abolido.",
     analogy: "Pense no Brasil Império como um país tentando andar com uma perna no futuro (progresso, modernização) e outra presa no passado (escravidão, estrutura colonial) — uma contradição que marcou todo o período.",
+    visual: {"type":"timeline","events":[{"date":"1822","label":"Independência"},{"date":"1840","label":"D. Pedro II"},{"date":"1888","label":"Abolição"},{"date":"1889","label":"Fim do Império"}]},
     steps: [
       "D. Pedro I: primeiro imperador, governou de 1822 a 1831, quando abdicou.",
       "D. Pedro II: segundo imperador, reinou por quase 50 anos (1840-1889).",
@@ -3007,6 +3175,7 @@ const TOPICS = {
     emoji: "🏛️",
     intro: "A Proclamação da República, em 1889, encerrou o período imperial e iniciou uma nova fase política no Brasil — passando por diferentes momentos, como a República Velha, dominada pelas oligarquias agrárias.",
     analogy: "Pense na transição do Império para a República como uma troca de \"donos\" do poder político: ao invés de um imperador hereditário, o poder passou a ser (pelo menos formalmente) disputado através de eleições, embora, na prática, ainda controlado por poucas famílias poderosas.",
+    visual: {"type":"timeline","events":[{"date":"1889","label":"Proclamação"},{"date":"1894","label":"República Velha"},{"date":"1930","label":"Fim da República Velha"}]},
     steps: [
       "1889: Proclamação da República, encerrando o período imperial.",
       "República Velha (1889-1930): domínio político das oligarquias agrárias, especialmente cafeicultoras.",
@@ -3024,6 +3193,7 @@ const TOPICS = {
     emoji: "🎙️",
     intro: "Getúlio Vargas governou o Brasil por quase 20 anos (com uma interrupção), num período que incluiu tanto avanços trabalhistas importantes quanto uma ditadura autoritária, o Estado Novo (1937-1945).",
     analogy: "Pense em Vargas como um político de contrastes: ao mesmo tempo que criou leis trabalhistas que ainda protegem trabalhadores hoje, também governou de forma autoritária, censurando a imprensa e perseguindo opositores — dois lados de uma mesma trajetória política.",
+    visual: {"type":"timeline","events":[{"date":"1930","label":"Revolução de 30"},{"date":"1937","label":"Estado Novo"},{"date":"1945","label":"Fim do 1º governo"},{"date":"1954","label":"Suicídio de Vargas"}]},
     steps: [
       "1930-1945: primeiro governo Vargas, incluindo o Estado Novo (ditadura, 1937-1945).",
       "Criação da CLT (Consolidação das Leis do Trabalho) em 1943, com direitos trabalhistas importantes.",
@@ -3041,6 +3211,7 @@ const TOPICS = {
     emoji: "🌐",
     intro: "A Guerra Fria (1947-1991) foi um período de tensão entre duas superpotências — Estados Unidos (capitalismo) e União Soviética (socialismo) — que disputaram influência mundial sem entrar em confronto militar direto uma com a outra.",
     analogy: "Pense na Guerra Fria como um jogo de xadrez gigante e tenso entre dois jogadores que nunca se enfrentam diretamente no tabuleiro principal, mas competem através de \"peões\" — outros países, conflitos regionais e a corrida espacial.",
+    visual: {"type":"compare","leftTitle":"EUA","leftItems":["Capitalismo","Bloco ocidental"],"rightTitle":"URSS","rightItems":["Socialismo","Bloco oriental"]},
     steps: [
       "Bipolarização: o mundo dividido entre a influência dos EUA (capitalismo) e da URSS (socialismo).",
       "Guerra \"fria\" porque não houve confronto militar direto entre as duas superpotências.",
@@ -3058,6 +3229,7 @@ const TOPICS = {
     emoji: "✊",
     intro: "A Ditadura Militar (1964-1985) foi um período de governo autoritário no Brasil, marcado pela perseguição política, censura à imprensa e supressão de direitos civis, além de um forte crescimento econômico em alguns anos (o \"milagre econômico\").",
     analogy: "Pense na Ditadura Militar como um período em que o país foi \"trancado\" politicamente: eleições diretas foram suspensas, a imprensa foi censurada e a liberdade de expressão foi restringida — mesmo enquanto a economia crescia em alguns momentos.",
+    visual: {"type":"timeline","events":[{"date":"1964","label":"Golpe militar"},{"date":"1968","label":"AI-5"},{"date":"1979","label":"Lei da Anistia"},{"date":"1985","label":"Fim da ditadura"}]},
     steps: [
       "1964: golpe militar derruba o presidente João Goulart, iniciando a ditadura.",
       "AI-5 (1968): Ato Institucional que suspendeu direitos civis e ampliou a repressão política.",
@@ -3075,6 +3247,7 @@ const TOPICS = {
     emoji: "🌏",
     intro: "O mundo contemporâneo (desde o fim da Guerra Fria, em 1991, até hoje) é marcado pela globalização acelerada, novos conflitos regionais, avanços tecnológicos rápidos e desafios globais como as mudanças climáticas.",
     analogy: "Pense no mundo contemporâneo como uma rede gigante e interconectada: um evento econômico, político ou tecnológico num país pode afetar rapidamente o resto do mundo, diferente de épocas em que os países eram mais isolados uns dos outros.",
+    visual: {"type":"timeline","events":[{"date":"1991","label":"Fim da URSS"},{"date":"2001","label":"11 de Setembro"},{"date":"2020","label":"Pandemia"}]},
     steps: [
       "Fim da Guerra Fria (1991): o mundo deixou de ser dividido em apenas dois blocos de poder.",
       "Globalização acelerada: maior integração econômica, tecnológica e cultural entre países.",
@@ -3095,6 +3268,7 @@ const TOPICS = {
     emoji: "📢",
     intro: "Movimentos sociais contemporâneos, como os voltados para o clima, gênero e diversidade racial, usam cada vez mais as redes digitais para se organizar, mobilizar apoio e pressionar por mudanças.",
     analogy: "Pense num movimento social contemporâneo como um rio que ganhou novos afluentes: além das formas tradicionais de organização (sindicatos, associações), as redes sociais viraram um canal poderoso e rápido de mobilização.",
+    visual: {"type":"flow","steps":["Rede social","Hashtag viral","Mobilização em massa"]},
     steps: [
       "Movimentos digitais podem mobilizar milhares de pessoas rapidamente através de hashtags e compartilhamentos.",
       "A pauta de um movimento pode se espalhar globalmente, cruzando fronteiras nacionais com facilidade.",
@@ -3112,6 +3286,7 @@ const TOPICS = {
     emoji: "🌐",
     intro: "Cidadania digital é o exercício de direitos e deveres num mundo cada vez mais conectado — envolve desde participação política online até o uso responsável e crítico das tecnologias.",
     analogy: "Pense na cidadania digital como uma extensão da cidadania tradicional: assim como você tem direitos e deveres na vida física (votar, respeitar leis), você também tem no ambiente online (privacidade, respeito, participação).",
+    visual: {"type":"labeled","center":"Cidadania\nDigital","parts":["Participação","Responsabilidade","Direitos digitais"]},
     steps: [
       "Participação: usar ferramentas digitais para se informar e participar de debates públicos.",
       "Responsabilidade: entender o impacto real das próprias ações online sobre outras pessoas.",
@@ -3129,6 +3304,7 @@ const TOPICS = {
     emoji: "🌈",
     intro: "Identidade é a forma como uma pessoa se reconhece e é reconhecida socialmente — envolvendo aspectos como gênero, raça, orientação sexual, cultura — e a diversidade é o reconhecimento de que essas identidades são plurais numa sociedade.",
     analogy: "Pense na identidade como as várias camadas de roupa que uma pessoa usa ao mesmo tempo: cada camada (gênero, raça, religião, profissão) faz parte de quem ela é, e juntas formam uma identidade única e complexa.",
+    visual: {"type":"labeled","center":"Identidade","parts":["Gênero","Raça","Cultura","Orientação sexual"]},
     steps: [
       "Identidade não é fixa: ela pode ser construída e reconstruída ao longo da vida e das experiências.",
       "Reconhecer a diversidade significa entender que não existe um único jeito \"certo\" de ser.",
@@ -3146,6 +3322,7 @@ const TOPICS = {
     emoji: "🛒",
     intro: "Sociologia do consumo digital estuda como compramos, usamos e nos relacionamos com produtos e serviços num mundo cada vez mais mediado por plataformas digitais, aplicativos e influenciadores online.",
     analogy: "Pense no consumo digital como uma vitrine que nunca fecha e que conhece seus gostos pessoais: diferente de uma loja física, o ambiente digital observa constantemente seu comportamento para personalizar o que te oferece.",
+    visual: {"type":"flow","steps":["Anúncio personalizado","Dado do usuário","Compra por impulso"]},
     steps: [
       "Marketing de influenciadores: pessoas com grande audiência online promovem produtos de forma mais pessoal e confiável.",
       "Compras por impulso são facilitadas pela praticidade dos aplicativos e pela exposição constante a anúncios.",
@@ -3166,6 +3343,7 @@ const TOPICS = {
     emoji: "🌍",
     intro: "Filosofia contemporânea (do século XX até hoje) lida com questões como a linguagem, o poder, a tecnologia e a condição humana num mundo cada vez mais globalizado e complexo.",
     analogy: "Pense na filosofia contemporânea como um mapa sendo redesenhado constantemente: novas descobertas científicas, tecnológicas e sociais obrigam os filósofos a repensar perguntas antigas com ferramentas e contextos completamente novos.",
+    visual: {"type":"labeled","center":"Filosofia\nContemporânea","parts":["Linguagem","Poder","Tecnologia"]},
     steps: [
       "A filosofia contemporânea questiona estruturas de poder presentes na linguagem e nas instituições sociais.",
       "Temas como tecnologia, meio ambiente e globalização ganharam espaço central na reflexão filosófica recente.",
@@ -3183,6 +3361,7 @@ const TOPICS = {
     emoji: "🚪",
     intro: "Existencialismo é uma corrente filosófica que coloca a existência individual, a liberdade e a responsabilidade de cada pessoa no centro da reflexão — a ideia central é que \"a existência precede a essência\": primeiro existimos, depois nos definimos através de nossas escolhas.",
     analogy: "Pense no existencialismo como nascer sem um manual de instruções: diferente de um objeto fabricado com uma função pré-definida, o ser humano nasce livre e precisa criar seu próprio significado através das escolhas que faz ao longo da vida.",
+    visual: {"type":"flow","steps":["Existência (nasce livre)","Escolhas","Essência (quem se torna)"]},
     steps: [
       "\"A existência precede a essência\": nascemos sem uma natureza fixa e nos definimos pelas escolhas.",
       "Liberdade radical: somos responsáveis por nossas escolhas, mesmo diante de circunstâncias difíceis.",
@@ -3200,6 +3379,7 @@ const TOPICS = {
     emoji: "🤖",
     intro: "Filosofia da tecnologia investiga como as ferramentas e sistemas tecnológicos moldam (e são moldados por) a experiência humana, a ética e a própria forma como entendemos o mundo.",
     analogy: "Pense na tecnologia como uma extensão do corpo e da mente humana: assim como óculos estendem a visão, ferramentas digitais estendem nossa memória, comunicação e capacidade de agir sobre o mundo — mudando, no processo, quem somos.",
+    visual: {"type":"compare","leftTitle":"Tecnologia neutra","leftItems":["Só depende do uso"],"rightTitle":"Tecnologia com valores","rightItems":["Design já influencia"]},
     steps: [
       "Tecnologia não é neutra: ela carrega valores e escolhas de quem a projeta, influenciando como vivemos.",
       "Ferramentas tecnológicas podem tanto ampliar quanto limitar a autonomia e as capacidades humanas.",
@@ -3217,6 +3397,7 @@ const TOPICS = {
     emoji: "🧬",
     intro: "Bioética é o ramo da filosofia que investiga dilemas morais relacionados à vida, saúde e avanços biotecnológicos — como edição genética, eutanásia, testes em animais e alocação de recursos médicos escassos.",
     analogy: "Pense na bioética como um freio de mão para a ciência: à medida que a tecnologia médica avança rapidamente e permite fazer coisas cada vez mais poderosas, a bioética pergunta \"mas devemos fazer isso?\", além de apenas \"conseguimos fazer isso?\".",
+    visual: {"type":"labeled","center":"Bioética","parts":["Autonomia","Beneficência","Justiça"]},
     steps: [
       "Autonomia: o direito do paciente de tomar decisões informadas sobre seu próprio corpo e tratamento.",
       "Beneficência e não maleficência: buscar o bem do paciente, evitando causar dano.",
@@ -3237,6 +3418,7 @@ const TOPICS = {
     emoji: "🖌️",
     intro: "Arte contemporânea (das últimas décadas até hoje) rompe ainda mais com as fronteiras tradicionais entre disciplinas artísticas, misturando pintura, tecnologia, performance e crítica social numa mesma obra.",
     analogy: "Pense na arte contemporânea como uma cozinha fusion: ela mistura ingredientes (técnicas, mídias, referências) de tradições muito diferentes, criando pratos (obras) que não se encaixam mais em categorias simples como \"pintura\" ou \"escultura\".",
+    visual: {"type":"labeled","center":"Arte\nContemporânea","parts":["Mistura de mídias","Crítica social","Materiais não convencionais"]},
     steps: [
       "Arte contemporânea frequentemente usa materiais não convencionais (objetos do cotidiano, lixo, tecnologia).",
       "Muitas obras contemporâneas buscam provocar reflexão crítica sobre temas sociais e políticos.",
@@ -3254,6 +3436,7 @@ const TOPICS = {
     emoji: "🎭",
     intro: "Performance é uma forma de arte que usa o corpo do artista, em tempo real, como principal meio de expressão, enquanto a arte urbana (como o grafite) transforma espaços públicos em suportes artísticos, muitas vezes sem autorização formal.",
     analogy: "Pense na performance como uma escultura viva: ao invés de um objeto fixo, o próprio corpo e a ação do artista, acontecendo naquele momento único, são a obra — impossível de repetir exatamente da mesma forma duas vezes.",
+    visual: {"type":"compare","leftTitle":"Performance","leftItems":["Corpo, tempo real"],"rightTitle":"Arte urbana","rightItems":["Espaço público"]},
     steps: [
       "Performance acontece ao vivo, num tempo e espaço específicos, geralmente sem possibilidade de repetição idêntica.",
       "Arte urbana ocupa espaços públicos (muros, ruas), tornando a arte acessível a quem normalmente não frequentaria museus.",
@@ -3271,6 +3454,7 @@ const TOPICS = {
     emoji: "🎬",
     intro: "Indústria cultural é o conceito que descreve como produtos culturais (música, filmes, séries) são produzidos em massa, seguindo lógicas de mercado, muitas vezes padronizando gostos e experiências culturais em larga escala.",
     analogy: "Pense na indústria cultural como uma linha de produção de fábrica, só que produzindo entretenimento: assim como carros idênticos saem de uma linha de montagem, muitos produtos culturais seguem fórmulas repetidas para maximizar vendas e audiência.",
+    visual: {"type":"flow","steps":["Produção em massa","Fórmula testada","Maior audiência"]},
     steps: [
       "Padronização: produtos culturais frequentemente seguem fórmulas testadas para garantir sucesso comercial.",
       "Produção em massa: filmes, músicas e séries são criados visando alcançar o maior público possível.",
@@ -3288,6 +3472,7 @@ const TOPICS = {
     emoji: "✊",
     intro: "Arte engajada é aquela criada com a intenção explícita de denunciar injustiças, mobilizar pessoas ou provocar mudança social — usando a linguagem artística como ferramenta de ativismo político e social.",
     analogy: "Pense na arte engajada como um megafone visual: ao invés de apenas expressar sentimentos pessoais, o artista usa sua obra deliberadamente para amplificar uma causa e chamar atenção para um problema social específico.",
+    visual: {"type":"flow","steps":["Causa social","Obra de arte","Mobilização do público"]},
     steps: [
       "Arte engajada frequentemente aborda temas como desigualdade, racismo, direitos humanos e meio ambiente.",
       "Pode usar diferentes formatos: música de protesto, murais, performances, fotografia documental.",
@@ -3308,6 +3493,7 @@ const TOPICS = {
     emoji: "🔄",
     intro: "A voz passiva em inglês (\"The book was written by her\") inverte o foco da frase: ao invés de destacar quem faz a ação, destaca o que sofreu a ação — útil quando o \"fazedor\" da ação é desconhecido ou menos importante.",
     analogy: "Pense na voz passiva como trocar o foco de uma câmera: ao invés de filmar o motorista dirigindo (voz ativa), você filma o carro sendo dirigido (voz passiva) — a cena é parecida, mas o centro das atenções muda completamente.",
+    visual: {"type":"compare","leftTitle":"Ativa","leftItems":["She wrote the book"],"rightTitle":"Passiva","rightItems":["The book was written"]},
     steps: [
       "Estrutura: sujeito + verbo \"to be\" + particípio passado (+ \"by\" + agente, se necessário).",
       "Voz ativa: \"She wrote the book\" (ela escreveu o livro).",
@@ -3325,6 +3511,7 @@ const TOPICS = {
     emoji: "🔀",
     intro: "Frases condicionais (\"if\") em inglês expressam situações hipotéticas e suas consequências — desde condições reais e prováveis até situações completamente imaginárias ou impossíveis.",
     analogy: "Pense nas condicionais como diferentes graus de \"e se\": algumas são bem prováveis (\"se chover, eu levo guarda-chuva\"), e outras são puramente hipotéticas (\"se eu fosse rico, viajaria o mundo todo\") — o inglês tem estruturas gramaticais específicas para marcar cada grau de possibilidade.",
+    visual: {"type":"compare","leftTitle":"1st: real","leftItems":["If it rains, I will..."],"rightTitle":"2nd: hipotético","rightItems":["If I were rich..."]},
     steps: [
       "First Conditional (situação real/provável): If + presente simples, will + infinitivo. (\"If it rains, I will stay home\")",
       "Second Conditional (situação hipotética/improvável): If + passado simples, would + infinitivo. (\"If I were rich, I would travel\")",
@@ -3342,6 +3529,7 @@ const TOPICS = {
     emoji: "🎓",
     intro: "Escrita acadêmica em inglês segue convenções específicas de estrutura, tom formal e citação de fontes — habilidades importantes para quem pretende estudar ou trabalhar em contextos internacionais.",
     analogy: "Pense na escrita acadêmica como seguir a receita exata de um prato tradicional: existem convenções bem estabelecidas (introdução, desenvolvimento com evidências, conclusão) que, seguidas corretamente, tornam seu texto reconhecível e confiável dentro daquele contexto.",
+    visual: {"type":"flow","steps":["Thesis statement","Evidências","Conclusão"]},
     steps: [
       "Introdução clara: apresente o tema e o argumento principal (thesis statement) logo no início.",
       "Desenvolvimento com evidências: sustente cada argumento com dados, exemplos ou citações de fontes confiáveis.",
@@ -3359,6 +3547,7 @@ const TOPICS = {
     emoji: "💼",
     intro: "Participar de uma entrevista de emprego em inglês exige vocabulário específico e frases apropriadas para se apresentar, falar sobre experiências profissionais e responder perguntas comuns com confiança.",
     analogy: "Pense numa entrevista de emprego em inglês como um roteiro de teatro que você pratica bastante antes da apresentação: quanto mais familiarizado você estiver com as \"falas\" comuns desse contexto, mais natural e confiante você soa na hora real.",
+    visual: {"type":"labeled","center":"STAR\nMethod","parts":["Situation","Task","Action","Result"]},
     steps: [
       "Prepare uma apresentação pessoal curta e clara (\"Tell me about yourself\").",
       "Pratique descrever experiências profissionais usando verbos de ação no passado (\"I managed\", \"I developed\").",
@@ -3379,6 +3568,7 @@ const TOPICS = {
     emoji: "🧠",
     intro: "A relação entre atividade física e saúde mental vai muito além do corpo — exercícios regulares influenciam diretamente o humor, os níveis de estresse e até a qualidade do sono.",
     analogy: "Pense no exercício físico como uma \"vacina\" natural contra parte do estresse do dia a dia: o simples ato de movimentar o corpo libera substâncias químicas que ajudam a regular o humor, funcionando quase como uma pausa reparadora para a mente.",
+    visual: {"type":"flow","steps":["Exercício regular","Endorfina liberada","Menos estresse"]},
     steps: [
       "Exercício físico regular está associado à redução de sintomas de ansiedade e estresse.",
       "A prática de atividades físicas libera substâncias como endorfina, associadas à sensação de bem-estar.",
@@ -3396,6 +3586,7 @@ const TOPICS = {
     emoji: "♿",
     intro: "Esportes adaptados são modalidades esportivas ajustadas para permitir a prática por pessoas com deficiência física, sensorial ou intelectual — como o basquete em cadeira de rodas, o goalball e o atletismo paralímpico.",
     analogy: "Pense nos esportes adaptados como uma tradução: as regras e equipamentos de um esporte são \"traduzidos\" para permitir que pessoas com diferentes capacidades físicas ou sensoriais participem plenamente, mantendo a essência competitiva e o desafio do esporte original.",
+    visual: {"type":"labeled","center":"Esportes\nAdaptados","parts":["Equipamento","Regras ajustadas","Classificação"]},
     steps: [
       "Adaptações podem envolver equipamentos específicos (cadeiras de rodas esportivas, próteses), regras modificadas ou classificação por níveis de deficiência.",
       "Esportes paralímpicos seguem regulamentações internacionais próprias, com categorias de classificação funcional.",
@@ -3413,6 +3604,7 @@ const TOPICS = {
     emoji: "📏",
     intro: "Avaliação física é o processo de medir e acompanhar indicadores do corpo — como frequência cardíaca, flexibilidade e composição corporal — para entender melhor a condição física de uma pessoa e planejar treinos adequados.",
     analogy: "Pense na avaliação física como um checkup do carro antes de uma viagem longa: verificar o \"estado atual\" antes de planejar o percurso ajuda a evitar problemas e traçar um plano de treino mais seguro e eficaz.",
+    visual: {"type":"labeled","center":"Avaliação\nFísica","parts":["Freq. cardíaca","Flexibilidade","Composição corporal"]},
     steps: [
       "Frequência cardíaca de repouso: um indicador básico da condição cardiovascular geral.",
       "Testes de flexibilidade: avaliam a amplitude de movimento das articulações.",
@@ -3430,6 +3622,7 @@ const TOPICS = {
     emoji: "🩹",
     intro: "Primeiros socorros são os cuidados iniciais dados a alguém em situação de emergência ou acidente, antes da chegada de atendimento médico especializado — conhecimentos básicos que podem literalmente salvar vidas.",
     analogy: "Pense nos primeiros socorros como uma \"ponte\" entre o momento do acidente e a chegada da ajuda profissional: agir corretamente nesse intervalo pode fazer toda a diferença no resultado final para a vítima.",
+    visual: {"type":"flow","steps":["Avaliar segurança","Checar consciência","Acionar 192"]},
     steps: [
       "Avalie a segurança do local antes de se aproximar da vítima.",
       "Verifique se a pessoa está consciente e respirando normalmente.",
@@ -3450,6 +3643,7 @@ const TOPICS = {
     emoji: "🤖",
     intro: "Inteligência Artificial (IA) já está presente em recomendações de streaming, assistentes de voz, tradutores automáticos e muito mais — entender seus usos e limitações é essencial para usá-la de forma crítica.",
     analogy: "Pense na IA como um aprendiz muito rápido, mas sem bom senso próprio: ela consegue reconhecer padrões em quantidades gigantescas de dados incrivelmente rápido, mas não tem verdadeira compreensão do significado do que está processando, podendo cometer erros que um humano jamais cometeria.",
+    visual: {"type":"compare","leftTitle":"IA reconhece padrão","leftItems":["Estatística"],"rightTitle":"IA não compreende","rightItems":["Sem consciência"]},
     steps: [
       "IA aprende reconhecendo padrões em grandes quantidades de dados de treinamento.",
       "Sistemas de IA podem ter desempenho excelente em tarefas específicas, mas falham em situações fora do padrão aprendido.",
@@ -3467,6 +3661,7 @@ const TOPICS = {
     emoji: "🚀",
     intro: "Empreendedorismo digital é criar e desenvolver negócios que usam a internet e tecnologias digitais como base — de lojas virtuais a aplicativos e serviços online, com modelos de negócio muitas vezes diferentes dos negócios tradicionais.",
     analogy: "Pense no empreendedorismo digital como abrir uma loja sem paredes físicas: ao invés de depender de um ponto comercial caro numa rua movimentada, um negócio digital pode alcançar clientes em qualquer lugar, com custos iniciais geralmente menores.",
+    visual: {"type":"flow","steps":["Problema real","Validar com público","Escalar negócio"]},
     steps: [
       "Identifique um problema real que seu produto ou serviço digital pode resolver para um público específico.",
       "Valide a ideia com um público pequeno antes de investir pesado em desenvolvimento completo.",
@@ -3484,6 +3679,7 @@ const TOPICS = {
     emoji: "💻",
     intro: "Currículo e portfólio digital são formas modernas de apresentar suas experiências, habilidades e trabalhos para potenciais empregadores — indo além do currículo tradicional em papel, com links, projetos e presença profissional online.",
     analogy: "Pense num portfólio digital como uma vitrine aberta 24 horas: diferente de um currículo em papel entregue pessoalmente, ele fica disponível para qualquer recrutador acessar a qualquer momento, mostrando não só o que você diz saber fazer, mas exemplos reais do seu trabalho.",
+    visual: {"type":"flow","steps":["Experiência","Projetos concretos","Presença online"]},
     steps: [
       "Perfis profissionais em plataformas como LinkedIn ampliam a visibilidade e o networking profissional.",
       "Um portfólio digital pode incluir projetos, certificados e exemplos concretos do seu trabalho.",
@@ -3501,6 +3697,7 @@ const TOPICS = {
     emoji: "🔐",
     intro: "Ética e privacidade avançada aprofunda questões sobre como dados pessoais são coletados, usados e protegidos por empresas e governos — incluindo leis específicas, como a LGPD no Brasil, criadas para regular esse uso.",
     analogy: "Pense na privacidade digital como as paredes da sua casa: assim como você decide quem pode entrar e ver o que há dentro dela, você deveria ter controle similar sobre quem acessa e usa suas informações pessoais no ambiente digital.",
+    visual: {"type":"labeled","center":"LGPD","parts":["Consentimento","Transparência","Direito ao esquecimento"]},
     steps: [
       "LGPD (Lei Geral de Proteção de Dados): legislação brasileira que regula como empresas podem coletar e usar dados pessoais.",
       "Consentimento informado: usuários devem saber e concordar com como seus dados serão usados.",
@@ -3521,6 +3718,7 @@ const TOPICS = {
     emoji: "💬",
     intro: "Saber interpretar textos ajuda em tudo: ler um contrato de trabalho, entender uma bula de remédio ou uma notícia no jornal.",
     analogy: "É como usar um GPS: o texto te dá informações, e interpretar bem é \"seguir a rota certa\" sem se perder no caminho.",
+    visual: {"type":"flow","steps":["Ler com atenção","Identificar o essencial","Compreender"]},
     steps: [
       "Leia com calma, sem pressa.",
       "Identifique a ideia principal do texto.",
@@ -3538,6 +3736,7 @@ const TOPICS = {
     emoji: "📄",
     intro: "No dia a dia, você lida com documentos importantes — contrato de aluguel, carteira de trabalho, termos de um empréstimo — e entender bem o que está escrito evita prejuízos e mal-entendidos.",
     analogy: "Pense num documento como um mapa de um caminho que você vai percorrer: se você não lê direito antes de começar, pode acabar tomando uma direção que não queria — e às vezes é difícil voltar atrás.",
+    visual: {"type":"flow","steps":["Ler o documento inteiro","Checar números e prazos","Perguntar antes de assinar"]},
     steps: [
       "Leia o documento inteiro antes de assinar, mesmo que pareça longo.",
       "Preste atenção especial em números (valores, prazos, datas).",
@@ -3555,6 +3754,7 @@ const TOPICS = {
     emoji: "📋",
     intro: "No dia a dia, você lida com vários tipos de texto — WhatsApp, e-mail formal, aviso no mural do trabalho, receita médica — e cada um segue um jeito próprio de ser escrito e lido.",
     analogy: "Pense nos gêneros textuais como roupas para ocasiões diferentes: você não manda uma mensagem para o chefe do mesmo jeito que manda para um amigo próximo — cada situação pede um \"traje\" (estilo de escrita) apropriado.",
+    visual: {"type":"compare","leftTitle":"Formal (e-mail trabalho)","leftItems":["Linguagem cuidadosa"],"rightTitle":"Informal (WhatsApp amigo)","rightItems":["Linguagem solta"]},
     steps: [
       "E-mail formal (para trabalho, banco): linguagem mais cuidadosa, sem gírias.",
       "Mensagem informal (WhatsApp com amigos): linguagem mais solta, abreviações.",
@@ -3572,6 +3772,7 @@ const TOPICS = {
     emoji: "📝",
     intro: "Saber escrever um bom currículo e cartas formais (como uma carta de apresentação ou de reclamação) é uma habilidade prática essencial para conseguir emprego e resolver questões do dia a dia.",
     analogy: "Pense no currículo como uma \"vitrine\" da sua trajetória profissional: você tem só alguns segundos para chamar a atenção de quem está \"passando na rua\" (o recrutador), então cada informação precisa estar bem organizada e visível.",
+    visual: {"type":"labeled","center":"Currículo","parts":["Dados pessoais","Experiência","Formação"]},
     steps: [
       "Currículo: organize por seções claras (dados pessoais, experiência, formação).",
       "Seja objetivo: destaque o que é mais relevante para a vaga desejada.",
@@ -3592,6 +3793,7 @@ const TOPICS = {
     emoji: "🧮",
     intro: "A regra de três é uma ferramenta para resolver problemas de proporção: se eu sei quanto \"3\" vale, quanto vale \"5\"?",
     analogy: "É como fazer uma receita para mais pessoas: se a receita de bolo para 4 pessoas usa 2 ovos, quantos ovos você usa para 8 pessoas? A regra de três responde isso.",
+    visual: {"type":"flow","steps":["Duas grandezas","Regra de três","Valor desconhecido"]},
     steps: [
       "Organize os dados em duas colunas relacionadas.",
       "Multiplique em cruz.",
@@ -3609,6 +3811,7 @@ const TOPICS = {
     emoji: "💯",
     intro: "Porcentagem é uma forma de expressar uma parte de algo em relação a um total de 100 — usada o tempo todo em descontos, juros, notícias e aumentos de preço.",
     analogy: "Pense em porcentagem como fatiar uma pizza sempre em 100 pedaços imaginários: se algo é \"20%\", significa 20 desses 100 pedaços — não importa se a pizza (o total) é grande ou pequena.",
+    visual: {"type":"bars","data":[{"label":"Preço cheio","value":100},{"label":"Com desconto","value":80}],"unit":""},
     steps: [
       "Porcentagem = valor ÷ total × 100.",
       "Para calcular X% de um valor, multiplique o valor por X e divida por 100.",
@@ -3626,6 +3829,7 @@ const TOPICS = {
     emoji: "💰",
     intro: "Juros simples são calculados sempre sobre o valor original (o \"principal\"), sem incidir sobre os juros já acumulados — diferente dos juros compostos, que \"rendem juros sobre juros\".",
     analogy: "Pense em juros simples como um aluguel fixo: todo mês você paga o mesmo valor de \"aluguel\" sobre a mesma quantia original, sem esse aluguel aumentar por causa do que já foi pago antes.",
+    visual: {"type":"line","points":[{"y":100,"label":"Mês 0"},{"y":105,"label":"Mês 1"},{"y":110,"label":"Mês 2"},{"y":115,"label":"Mês 3"}],"xLabel":"tempo","yLabel":"valor (R$)"},
     steps: [
       "Fórmula: Juros = Capital × Taxa × Tempo.",
       "Valor final = Capital inicial + Juros calculados.",
@@ -3643,6 +3847,7 @@ const TOPICS = {
     emoji: "📐",
     intro: "Geometria básica aplicada usa conceitos como área e perímetro para resolver problemas do dia a dia — calcular quanto material comprar para uma reforma, ou quanto espaço um móvel vai ocupar.",
     analogy: "Pense na área como a quantidade de piso necessária para cobrir totalmente um cômodo, e o perímetro como a quantidade de rodapé necessária para contornar as paredes desse mesmo cômodo.",
+    visual: {"type":"labeled","center":"Retângulo","parts":["Base","Altura","Área = b×h"]},
     steps: [
       "Área do retângulo: base × altura.",
       "Perímetro do retângulo: soma de todos os lados (2 × base + 2 × altura).",
@@ -3663,6 +3868,7 @@ const TOPICS = {
     emoji: "💡",
     intro: "Entender o básico de eletricidade ajuda a usar aparelhos com segurança em casa — desde saber por que um chuveiro elétrico consome tanta energia até entender o que significa a voltagem de um aparelho.",
     analogy: "Pense na eletricidade em casa como água correndo por canos: a voltagem é a pressão da água, a corrente é o quanto de água passa, e ligar aparelhos demais na mesma tomada é como forçar água demais por um cano estreito.",
+    visual: {"type":"labeled","center":"Circuito","parts":["Voltagem","Corrente","Resistência"]},
     steps: [
       "Voltagem (110V ou 220V): a \"força\" com que a eletricidade é entregue pela rede elétrica.",
       "Aparelhos que geram calor (chuveiro, ferro de passar) geralmente consomem muito mais energia.",
@@ -3680,6 +3886,7 @@ const TOPICS = {
     emoji: "🔋",
     intro: "Entender como diferentes fontes de energia funcionam e como usar energia de forma mais consciente ajuda a economizar na conta de luz e reduzir impactos ambientais.",
     analogy: "Pense na energia elétrica como água numa caixa d'água: assim como você fecha a torneira quando não está usando, pequenos hábitos de desligar aparelhos não utilizados evitam desperdício de energia (e dinheiro) ao longo do mês.",
+    visual: {"type":"bars","data":[{"label":"Chuveiro","value":5500},{"label":"Geladeira","value":150},{"label":"TV","value":100}],"unit":"W"},
     steps: [
       "Aparelhos em modo \"stand-by\" (luzinha acesa) continuam consumindo uma pequena quantidade de energia.",
       "Energia solar é uma fonte renovável que pode reduzir a dependência da rede elétrica tradicional.",
@@ -3697,6 +3904,7 @@ const TOPICS = {
     emoji: "⚠️",
     intro: "Conceitos básicos de física, como força, equilíbrio e alavancas, estão diretamente ligados a práticas de segurança no trabalho — como a forma correta de levantar peso ou o funcionamento de equipamentos de proteção.",
     analogy: "Pense no seu corpo como uma máquina que segue leis físicas reais: levantar um peso da forma errada é como sobrecarregar uma peça de máquina fora do seu ponto de apoio ideal, aumentando o risco de \"quebrar\" (se machucar).",
+    visual: {"type":"flow","steps":["Peso próximo ao corpo","Menos esforço","Menos risco de lesão"]},
     steps: [
       "Ao levantar peso do chão, dobre os joelhos e mantenha as costas retas, usando as pernas (mais fortes) para o esforço.",
       "Distribuir o peso de uma carga próxima ao corpo reduz o esforço necessário para sustentá-la.",
@@ -3717,6 +3925,7 @@ const TOPICS = {
     emoji: "🧴",
     intro: "Entender um pouco de química ajuda a usar produtos de limpeza com segurança — como saber por que nunca se deve misturar água sanitária com produtos à base de amônia, uma combinação perigosa e comum em casas.",
     analogy: "Pense nos produtos de limpeza como ingredientes de uma receita perigosa: assim como alguns alimentos não combinam bem juntos, certos produtos químicos de limpeza, quando misturados, podem criar reações perigosas, mesmo cada um sendo seguro sozinho.",
+    visual: {"type":"compare","leftTitle":"Água sanitária","leftItems":["NUNCA misturar"],"rightTitle":"Amônia","rightItems":["Gera gás tóxico"]},
     steps: [
       "Água sanitária (hipoclorito de sódio) nunca deve ser misturada com produtos à base de amônia.",
       "Essa mistura libera gases tóxicos que podem causar sérios danos respiratórios.",
@@ -3734,6 +3943,7 @@ const TOPICS = {
     emoji: "🍳",
     intro: "Química dos alimentos explica processos do dia a dia na cozinha — por que uma fruta escurece depois de cortada, por que o fermento faz o pão crescer, e como o cozimento transforma os alimentos.",
     analogy: "Pense na cozinha como um laboratório de química acessível: cada receita é, na prática, uma sequência de reações químicas controladas, mesmo que a maioria das pessoas nunca pense nisso dessa forma ao cozinhar.",
+    visual: {"type":"flow","steps":["Maçã cortada","Oxigênio do ar","Oxidação (escurece)"]},
     steps: [
       "Oxidação: reação entre o alimento cortado e o oxigênio do ar, causando escurecimento (como numa maçã cortada).",
       "Fermentação: microrganismos (como leveduras) produzem gases que fazem massas de pão crescerem.",
@@ -3751,6 +3961,7 @@ const TOPICS = {
     emoji: "🌍",
     intro: "Química ambiental estuda como substâncias químicas interagem com o meio ambiente — desde a poluição do ar e da água até processos naturais de decomposição e reciclagem de materiais.",
     analogy: "Pense na química ambiental como o estudo de como diferentes \"ingredientes\" (poluentes, materiais recicláveis, gases) se misturam ao grande \"prato\" que é o planeta, e como essas misturas afetam o equilíbrio natural do ambiente.",
+    visual: {"type":"flow","steps":["Poluente no ar","Vento transporta","Chuva ácida cai longe"]},
     steps: [
       "Poluentes químicos podem contaminar o ar, a água e o solo, afetando a saúde humana e de ecossistemas.",
       "Materiais como plástico levam centenas de anos para se decompor naturalmente no ambiente.",
@@ -3771,6 +3982,7 @@ const TOPICS = {
     emoji: "🫀",
     intro: "Entender o funcionamento básico do corpo humano — como o coração, os pulmões e o sistema digestivo trabalham — ajuda a cuidar melhor da própria saúde e a entender orientações médicas do dia a dia.",
     analogy: "Pense no corpo humano como uma cidade bem organizada: cada \"órgão\" é como um departamento com uma função específica (o coração é a estação de bombeamento de água, os pulmões são a estação de tratamento de ar), todos trabalhando juntos para manter tudo funcionando.",
+    visual: {"type":"labeled","center":"Coração","parts":["Bombeia sangue","Oxigênio","Nutrientes"]},
     steps: [
       "O coração bombeia sangue, levando oxigênio e nutrientes para todo o corpo.",
       "Os pulmões realizam a troca de gases: absorvem oxigênio do ar e eliminam gás carbônico.",
@@ -3788,6 +4000,7 @@ const TOPICS = {
     emoji: "💉",
     intro: "Entender como doenças se transmitem e como se prevenir — através de vacinação, higiene e hábitos saudáveis — é fundamental para proteger a própria saúde e a de quem está ao redor.",
     analogy: "Pense na prevenção de doenças como trancar as portas de casa: você não espera um assalto acontecer para instalar uma fechadura — da mesma forma, medidas preventivas de saúde (vacinas, higiene) protegem antes mesmo de qualquer problema aparecer.",
+    visual: {"type":"flow","steps":["Mosquito pica infectado","Vírus no mosquito","Pica outra pessoa"]},
     steps: [
       "Doenças infecciosas podem se transmitir por contato direto, ar, água contaminada ou vetores como mosquitos.",
       "Vacinas treinam o sistema imunológico a reconhecer um agente causador de doença, sem causar a doença real.",
@@ -3805,6 +4018,7 @@ const TOPICS = {
     emoji: "♻️",
     intro: "Entender conceitos básicos de sustentabilidade e cuidado ambiental ajuda a tomar decisões conscientes no dia a dia, desde a separação de lixo reciclável até a economia de água em casa.",
     analogy: "Pense no meio ambiente como uma conta bancária compartilhada por toda a humanidade: se retiramos recursos mais rápido do que a natureza consegue repor, o \"saldo\" vai diminuindo — sustentabilidade é usar de um jeito que a conta continue sempre positiva.",
+    visual: {"type":"pie","slices":[{"label":"Reciclável","value":40},{"label":"Orgânico","value":45},{"label":"Rejeito","value":15}]},
     steps: [
       "Separar corretamente o lixo reciclável facilita seu reaproveitamento, reduzindo a extração de novos recursos naturais.",
       "Pequenos hábitos de economia de água (como fechar a torneira ao escovar os dentes) fazem diferença acumulada ao longo do tempo.",
@@ -3825,6 +4039,7 @@ const TOPICS = {
     emoji: "🏙️",
     intro: "Geografia urbana estuda como as cidades se organizam — bairros, transporte, moradia — e os desafios que o crescimento urbano acelerado traz para quem vive nas grandes cidades brasileiras.",
     analogy: "Pense numa cidade como um organismo vivo: bairros são como órgãos com funções diferentes (residencial, comercial, industrial), e ruas e transporte são como veias que precisam funcionar bem para tudo circular sem travar.",
+    visual: {"type":"labeled","center":"Cidade","parts":["Moradia","Trabalho","Transporte","Lazer"]},
     steps: [
       "Cidades crescem através de bairros que se conectam por ruas, avenidas e sistemas de transporte.",
       "A distância entre moradia e trabalho influencia diretamente a qualidade de vida de quem mora numa cidade.",
@@ -3842,6 +4057,7 @@ const TOPICS = {
     emoji: "🚶",
     intro: "Migração é o deslocamento de pessoas de um lugar para outro, muitas vezes em busca de melhores oportunidades de trabalho e vida — um fenômeno histórico e atual que molda cidades e regiões inteiras.",
     analogy: "Pense na migração como o movimento de água buscando o caminho de menor resistência: assim como a água flui em direção a áreas mais baixas, pessoas frequentemente se deslocam em direção a lugares com mais oportunidades de trabalho e melhores condições de vida.",
+    visual: {"type":"flow","steps":["Falta de oportunidade","Decisão de migrar","Nova cidade/região"]},
     steps: [
       "Migração interna: deslocamento de pessoas dentro do próprio país, geralmente do campo para a cidade ou entre regiões.",
       "Migração internacional: deslocamento entre diferentes países, muitas vezes em busca de trabalho ou refúgio.",
@@ -3859,6 +4075,7 @@ const TOPICS = {
     emoji: "🗺️",
     intro: "O Brasil possui uma grande diversidade de recursos naturais e regiões com diferentes níveis de desenvolvimento econômico — entender essa geografia ajuda a compreender melhor desigualdades e oportunidades do país.",
     analogy: "Pense no Brasil como uma casa grande com cômodos muito diferentes entre si: cada região tem seus próprios recursos, desafios e potenciais, exigindo políticas e investimentos específicos para cada realidade local.",
+    visual: {"type":"bars","data":[{"label":"Norte","value":8},{"label":"Nordeste","value":15},{"label":"Sudeste","value":42},{"label":"Sul","value":27}],"unit":"%"},
     steps: [
       "O Brasil possui grande diversidade de biomas e recursos naturais distribuídos por seu vasto território.",
       "As regiões brasileiras apresentam diferentes níveis de industrialização, urbanização e desenvolvimento econômico.",
@@ -3879,6 +4096,7 @@ const TOPICS = {
     emoji: "⚖️",
     intro: "Cidadania é o exercício pleno de direitos e deveres numa sociedade — conhecer seus direitos básicos (trabalhistas, de consumidor, sociais) é fundamental para se proteger e exigir tratamento justo no dia a dia.",
     analogy: "Pense na cidadania como conhecer as regras de um jogo antes de jogá-lo: sem saber quais são seus direitos, fica mais difícil perceber quando algo está errado e mais difícil ainda reivindicar o que é justo.",
+    visual: {"type":"labeled","center":"Direitos","parts":["Trabalhistas","Consumidor","Sociais"]},
     steps: [
       "Direitos trabalhistas garantem condições mínimas de trabalho, como férias remuneradas e jornada regulamentada.",
       "Direitos do consumidor protegem quem compra produtos ou contrata serviços contra práticas abusivas.",
@@ -3896,6 +4114,7 @@ const TOPICS = {
     emoji: "👷",
     intro: "O trabalho ocupa um lugar central na organização da sociedade — além de garantir sustento, ele influencia identidade, relações sociais e até a forma como o tempo é organizado na vida das pessoas.",
     analogy: "Pense no trabalho como o eixo de uma roda: praticamente tudo o mais (moradia, alimentação, tempo livre, relações sociais) gira em torno dele, moldando a rotina e as possibilidades de vida de cada pessoa.",
+    visual: {"type":"compare","leftTitle":"Trabalho formal","leftItems":["Direitos garantidos"],"rightTitle":"Trabalho informal","rightItems":["Menos proteção"]},
     steps: [
       "O trabalho formal (com carteira assinada) garante acesso a direitos trabalhistas e proteção previdenciária.",
       "O trabalho informal, sem esses vínculos formais, oferece menos proteções, mas às vezes maior flexibilidade.",
@@ -3913,6 +4132,7 @@ const TOPICS = {
     emoji: "🎭",
     intro: "O Brasil é formado pela mistura de diferentes povos e culturas — indígenas, africanos, europeus e outras influências — que juntas moldaram a diversidade cultural, culinária, religiosa e artística do país.",
     analogy: "Pense na cultura brasileira como um grande mosaico: cada peça (indígena, africana, europeia, e outras influências mais recentes) mantém características próprias, mas juntas formam uma imagem rica e única, impossível de reduzir a uma única origem.",
+    visual: {"type":"labeled","center":"Cultura\nBrasileira","parts":["Indígena","Africana","Europeia"]},
     steps: [
       "A cultura brasileira resulta do encontro (muitas vezes forçado e desigual) entre povos indígenas, africanos e europeus.",
       "Essa diversidade se expressa em música, culinária, religião, dança e expressões artísticas por todo o país.",
@@ -3933,6 +4153,7 @@ const TOPICS = {
     emoji: "🤝",
     intro: "Ética no cotidiano envolve refletir sobre como agir bem nas pequenas e grandes decisões do dia a dia — do respeito no trato com outras pessoas até dilemas mais complexos sobre honestidade e responsabilidade.",
     analogy: "Pense na ética cotidiana como uma bússola interna: ela não te dá um mapa completo com todas as respostas prontas, mas te ajuda a se orientar na direção de decisões mais justas e respeitosas nas situações do dia a dia.",
+    visual: {"type":"flow","steps":["Situação","Quem é afetado","Decisão responsável"]},
     steps: [
       "Respeito: tratar outras pessoas com consideração, reconhecendo sua dignidade, mesmo em desacordos.",
       "Responsabilidade: assumir as consequências das próprias ações e decisões.",
@@ -3950,6 +4171,7 @@ const TOPICS = {
     emoji: "🔍",
     intro: "Pensamento crítico é a capacidade de analisar informações e argumentos de forma cuidadosa, questionando fontes e evidências antes de aceitar uma afirmação como verdadeira — uma habilidade essencial numa época com tanta informação circulando.",
     analogy: "Pense no pensamento crítico como um filtro de água: assim como um bom filtro remove impurezas antes que a água chegue até você, o pensamento crítico ajuda a separar informações confiáveis de boatos, exageros ou manipulações antes de aceitá-las como verdade.",
+    visual: {"type":"flow","steps":["Informação recebida","Checar a fonte","Buscar evidências"]},
     steps: [
       "Questione a fonte: de onde vem essa informação, e ela tem histórico de confiabilidade?",
       "Busque evidências: a afirmação é sustentada por dados, fatos verificáveis ou apenas por opinião?",
@@ -3967,6 +4189,7 @@ const TOPICS = {
     emoji: "🏛️",
     intro: "Filosofia e cidadania investiga como a reflexão filosófica pode contribuir para uma participação mais consciente e ativa na vida em sociedade — desde entender diferentes formas de governo até refletir sobre justiça social.",
     analogy: "Pense na filosofia aplicada à cidadania como um exercício de \"zoom out\": ao invés de reagir apenas ao que acontece no dia a dia, ela convida a pensar sobre questões mais amplas — que tipo de sociedade queremos construir, e por quê.",
+    visual: {"type":"flow","steps":["Informar-se","Participar","Contribuir com o bem comum"]},
     steps: [
       "Participação política vai além de votar: inclui se informar, debater e se engajar em questões coletivas.",
       "Justiça social envolve refletir sobre distribuição equitativa de oportunidades e recursos numa sociedade.",
@@ -3987,6 +4210,7 @@ const TOPICS = {
     emoji: "🎨",
     intro: "Arte popular são as expressões artísticas criadas por comunidades, muitas vezes transmitidas de geração em geração — como o artesanato regional, as festas populares e a literatura de cordel — refletindo a cultura e a identidade de diferentes regiões do Brasil.",
     analogy: "Pense na arte popular como receitas de família passadas de avó para neta: ela não vem de escolas formais de arte, mas carrega décadas (às vezes séculos) de tradição, identidade e conhecimento coletivo de uma comunidade.",
+    visual: {"type":"labeled","center":"Arte\nPopular","parts":["Artesanato","Festas","Cordel"]},
     steps: [
       "Arte popular geralmente é transmitida de geração em geração, através da observação e prática.",
       "Reflete a identidade cultural, os valores e a história de comunidades e regiões específicas.",
@@ -4004,6 +4228,7 @@ const TOPICS = {
     emoji: "🌟",
     intro: "A relação entre arte, cultura e identidade pessoal é profunda — as expressões artísticas que consumimos e produzimos frequentemente refletem e reforçam quem somos e de onde viemos.",
     analogy: "Pense na cultura como o solo onde a identidade de uma pessoa cresce: assim como uma planta se desenvolve de forma diferente dependendo do solo em que está plantada, nossa identidade é moldada pelas tradições culturais, artísticas e sociais que nos cercam desde a infância.",
+    visual: {"type":"labeled","center":"Identidade","parts":["Família","Cultura local","Influências globais"]},
     steps: [
       "A arte que consumimos (música, filmes, literatura) frequentemente reflete e reforça aspectos da nossa identidade cultural.",
       "Diferentes gerações de uma mesma família podem se relacionar de formas distintas com tradições culturais herdadas.",
@@ -4021,6 +4246,7 @@ const TOPICS = {
     emoji: "🖋️",
     intro: "Além de apreciar arte, criar suas próprias expressões artísticas — mesmo sem formação técnica formal — pode ser uma ferramenta poderosa de autoconhecimento, processamento emocional e comunicação pessoal.",
     analogy: "Pense na arte como uma forma de conversa consigo mesmo: às vezes é mais fácil expressar um sentimento complexo através de um desenho, uma música ou um texto do que tentar explicá-lo diretamente em palavras cotidianas.",
+    visual: {"type":"flow","steps":["Sentimento","Expressão criativa","Autoconhecimento"]},
     steps: [
       "Criar arte não exige formação técnica formal — qualquer pessoa pode se expressar através de diferentes linguagens artísticas.",
       "O processo criativo pode ajudar a processar emoções difíceis, funcionando como uma ferramenta de autoconhecimento.",
@@ -4041,6 +4267,7 @@ const TOPICS = {
     emoji: "💼",
     intro: "Saber vocabulário e expressões básicas de inglês relacionadas ao trabalho pode abrir portas em diversas áreas — desde atender um cliente estrangeiro até entender instruções simples em manuais e treinamentos.",
     analogy: "Pense no inglês para o trabalho como uma caixa de ferramentas básica: você não precisa dominar tudo de uma vez, mas ter algumas ferramentas essenciais já disponíveis facilita muito quando a situação exige.",
+    visual: {"type":"labeled","center":"No trabalho","parts":["Thank you","Excuse me","Can you help me?"]},
     steps: [
       "Vocabulário essencial: cumprimentos, agradecimentos e frases básicas de atendimento em inglês.",
       "Números e horários em inglês são úteis para situações práticas, como agendar compromissos.",
@@ -4058,6 +4285,7 @@ const TOPICS = {
     emoji: "📖",
     intro: "Conhecer palavras e expressões básicas de inglês usadas no cotidiano — números, dias da semana, cores, alimentos — forma uma base sólida para situações simples de comunicação em inglês.",
     analogy: "Pense no vocabulário básico como os tijolos de uma construção: sozinhos, eles parecem simples, mas são a base necessária sobre a qual frases e conversas mais complexas serão construídas depois.",
+    visual: {"type":"labeled","center":"Dia a dia","parts":["Números","Dias da semana","Alimentos"]},
     steps: [
       "Números em inglês são úteis para preços, horários e quantidades no dia a dia.",
       "Dias da semana e meses ajudam a marcar compromissos e datas em contextos de trabalho ou viagem.",
@@ -4075,6 +4303,7 @@ const TOPICS = {
     emoji: "✈️",
     intro: "Saber frases básicas de inglês para situações de viagem — como pedir informações, fazer check-in num hotel ou pedir ajuda — torna experiências fora do país (ou com turistas estrangeiros) muito mais tranquilas.",
     analogy: "Pense nessas frases de viagem como um kit de sobrevivência linguística: você não precisa de fluência completa, apenas de algumas expressões-chave bem escolhidas que resolvem as situações mais comuns e importantes.",
+    visual: {"type":"labeled","center":"Viagem","parts":["Where is...?","How much is this?","Can you help me?"]},
     steps: [
       "\"Where is...?\" (Onde fica...?) é útil para pedir direções em qualquer situação de viagem.",
       "\"How much is this?\" (Quanto custa isso?) é essencial para situações de compra.",
@@ -4095,6 +4324,7 @@ const TOPICS = {
     emoji: "❤️",
     intro: "Cuidar da saúde envolve mais do que apenas evitar doenças — inclui hábitos regulares de atividade física, alimentação equilibrada e descanso adequado, que juntos contribuem para uma melhor qualidade de vida no dia a dia.",
     analogy: "Pense na saúde como um banco de três pilares: atividade física, alimentação e sono. Se um desses pilares está fraco, mesmo os outros dois sendo fortes, o equilíbrio geral da saúde fica comprometido.",
+    visual: {"type":"labeled","center":"Qualidade\nde Vida","parts":["Atividade física","Alimentação","Sono"]},
     steps: [
       "Atividade física regular contribui para a saúde cardiovascular, força muscular e bem-estar geral.",
       "Uma alimentação equilibrada fornece a energia e os nutrientes necessários para o corpo funcionar bem.",
@@ -4112,6 +4342,7 @@ const TOPICS = {
     emoji: "🚶",
     intro: "Manter-se ativo na vida adulta, adaptando o tipo e a intensidade do exercício às condições individuais, traz benefícios significativos de saúde física e mental, mesmo para quem está começando a se exercitar mais tarde na vida.",
     analogy: "Pense na atividade física na vida adulta como manter uma máquina em uso regular: assim como uma máquina parada por muito tempo enferruja mais facilmente, o corpo humano também se beneficia de movimento regular para manter sua funcionalidade ao longo do tempo.",
+    visual: {"type":"flow","steps":["Começar devagar","Aumentar aos poucos","Manter regularidade"]},
     steps: [
       "Nunca é tarde para começar a se exercitar — os benefícios aparecem em qualquer idade adulta.",
       "É importante adaptar o tipo e a intensidade do exercício às condições e limitações individuais de cada pessoa.",
@@ -4129,6 +4360,7 @@ const TOPICS = {
     emoji: "🥗",
     intro: "Uma alimentação equilibrada, com variedade de nutrientes, contribui diretamente para energia, disposição e bem-estar geral no dia a dia — sem precisar de dietas extremas ou restrições complicadas.",
     analogy: "Pense na alimentação equilibrada como abastecer um carro com o combustível certo: assim como um carro funciona melhor com o combustível adequado, o corpo funciona melhor quando recebe uma variedade equilibrada de nutrientes ao longo do dia.",
+    visual: {"type":"labeled","center":"Alimentação","parts":["Variedade","Horários regulares","Água"]},
     steps: [
       "Variedade alimentar (frutas, verduras, proteínas, grãos) ajuda a garantir o fornecimento de diferentes nutrientes necessários.",
       "Manter horários regulares de alimentação contribui para níveis mais estáveis de energia ao longo do dia.",
@@ -4149,6 +4381,7 @@ const TOPICS = {
     emoji: "📱",
     intro: "Conhecer bem as funções básicas do celular e aplicativos essenciais (mensagens, banco digital, mapas) torna o dia a dia mais prático e ajuda a resolver tarefas cotidianas com mais autonomia.",
     analogy: "Pense no celular como uma caixa de ferramentas multifuncional: dentro dele existem \"ferramentas\" para quase tudo — se comunicar, pagar contas, se localizar — e conhecer bem cada uma facilita muito a vida prática.",
+    visual: {"type":"labeled","center":"Celular","parts":["Mensagens","Banco digital","Mapas"]},
     steps: [
       "Aplicativos de mensagens permitem comunicação rápida por texto, voz e vídeo com outras pessoas.",
       "Aplicativos bancários (bancos digitais) permitem realizar transações financeiras diretamente pelo celular.",
@@ -4166,6 +4399,7 @@ const TOPICS = {
     emoji: "🔒",
     intro: "Conhecer práticas básicas de segurança digital — como criar senhas fortes e identificar tentativas de golpe — ajuda a proteger informações pessoais e dinheiro de golpistas cada vez mais comuns no ambiente digital.",
     analogy: "Pense na segurança digital como trancar as portas de casa: pequenas medidas de proteção (senha forte, desconfiar de mensagens estranhas) funcionam como fechaduras que dificultam bastante a ação de quem quer se aproveitar de você.",
+    visual: {"type":"compare","leftTitle":"Senha fraca","leftItems":["Data de nascimento"],"rightTitle":"Senha forte","rightItems":["Letras+números+símbolos"]},
     steps: [
       "Senhas fortes combinam letras, números e símbolos, evitando informações óbvias como data de nascimento.",
       "Golpistas frequentemente se passam por bancos, empresas ou familiares para tentar roubar dinheiro ou dados.",
@@ -4183,6 +4417,7 @@ const TOPICS = {
     emoji: "💬",
     intro: "Conhecer bem as funções e cuidados necessários no uso do WhatsApp e outros aplicativos de mensagem ajuda a se comunicar de forma mais eficaz e segura no dia a dia, evitando golpes comuns nessas plataformas.",
     analogy: "Pense no WhatsApp como uma porta de entrada muito usada da sua casa digital: por ser tão utilizada no dia a dia, também é um dos caminhos preferidos de golpistas tentando entrar — por isso vale a pena conhecer bem como usá-la com segurança.",
+    visual: {"type":"flow","steps":["Mensagem suspeita","Não clicar no link","Confirmar por outro meio"]},
     steps: [
       "Mensagens de voz e vídeo chamadas permitem comunicação mais pessoal do que apenas texto escrito.",
       "Golpes comuns no WhatsApp incluem clonagem de conta e mensagens fingindo ser de familiares pedindo dinheiro urgente.",
@@ -4203,6 +4438,7 @@ const TOPICS = {
     emoji: "🇧🇷",
     intro: "Cidadania é o conjunto de direitos e deveres que uma pessoa tem por fazer parte de um país — votar, ter acesso à saúde, educação, e também respeitar as leis.",
     analogy: "É como ser sócio de um clube: você tem direitos (usar a piscina, o salão) e deveres (pagar a mensalidade, seguir as regras) — cidadania funciona parecido, mas em relação ao seu país.",
+    visual: {"type":"compare","leftTitle":"Direito no papel","leftItems":["Previsto em lei"],"rightTitle":"Direito na prática","rightItems":["Depende de acesso"]},
     steps: [
       "Direitos civis: liberdade, ir e vir, propriedade.",
       "Direitos políticos: votar e ser votado.",
@@ -4220,6 +4456,7 @@ const TOPICS = {
     emoji: "👷",
     intro: "A história do trabalho no Brasil passa pela escravidão, depois pelo trabalho assalariado ainda sem muitos direitos, até chegar às leis trabalhistas modernas (CLT) que protegem trabalhadores hoje.",
     analogy: "Pense na história do trabalho como uma longa escada sendo construída aos poucos: cada direito trabalhista conquistado (férias, décimo terceiro, jornada de 8 horas) é um degrau que não existia antes e precisou ser lutado por trabalhadores organizados.",
+    visual: {"type":"timeline","events":[{"date":"até 1888","label":"Trabalho escravo"},{"date":"1900s","label":"Trabalho assalariado"},{"date":"1943","label":"CLT"}]},
     steps: [
       "Até 1888: trabalho escravo era a base da economia brasileira.",
       "Início do século XX: trabalho assalariado nas fábricas, mas com poucos direitos e jornadas exaustivas.",
@@ -4237,6 +4474,7 @@ const TOPICS = {
     emoji: "✊",
     intro: "Ao longo da história, diversos movimentos sociais organizados lutaram por direitos no Brasil — dos movimentos abolicionistas no século XIX aos movimentos sindicais, feministas e por moradia dos últimos séculos.",
     analogy: "Pense nos movimentos sociais brasileiros como diferentes grupos empurrando, cada um à sua maneira e em sua época, para abrir portas que antes estavam fechadas — cada conquista social geralmente veio depois de muita organização e pressão popular.",
+    visual: {"type":"flow","steps":["Pessoa sozinha reclama","Grupo se organiza","Pressão e resultado"]},
     steps: [
       "Movimento abolicionista: lutou pelo fim da escravidão, culminando na Lei Áurea de 1888.",
       "Movimento sindical: trabalhadores organizados lutando por direitos trabalhistas e melhores salários.",
@@ -4257,6 +4495,7 @@ const TOPICS = {
     emoji: "👨‍👩‍👧‍👦",
     intro: "Geografia da população estuda como as pessoas estão distribuídas pelo território, como crescem (ou diminuem) e como se movem — dados essenciais para planejar cidades, saúde e educação.",
     analogy: "Pense num mapa de densidade populacional como um mapa de calor: áreas \"quentes\" (vermelhas) têm muita gente concentrada, e áreas \"frias\" (azuis) têm poucos habitantes por km².",
+    visual: {"type":"bars","data":[{"label":"0-14","value":22},{"label":"15-64","value":68},{"label":"65+","value":10}],"unit":"%"},
     steps: [
       "Densidade demográfica: número de habitantes dividido pela área do território (hab/km²).",
       "Taxa de natalidade e mortalidade determinam o crescimento natural da população.",
@@ -4274,6 +4513,7 @@ const TOPICS = {
     emoji: "🏙️",
     intro: "Urbanização é o processo de crescimento das cidades em relação ao campo — cada vez mais pessoas passam a viver em áreas urbanas, trazendo desafios como moradia, transporte e infraestrutura.",
     analogy: "Pense na urbanização como um \"ímã\": as cidades atraem pessoas em busca de emprego, educação e serviços — mas, se crescerem rápido demais sem planejamento, esse ímã também atrai problemas como falta de moradia digna e trânsito caótico.",
+    visual: {"type":"line","points":[{"y":36,"label":"1970"},{"y":56,"label":"1991"},{"y":81,"label":"2010"},{"y":87,"label":"2022"}],"xLabel":"ano","yLabel":"% urbano"},
     steps: [
       "Êxodo rural: migração de pessoas do campo para as cidades.",
       "Taxa de urbanização: percentual da população que vive em áreas urbanas.",
@@ -4291,6 +4531,7 @@ const TOPICS = {
     emoji: "🏭",
     intro: "Geografia econômica estuda como as atividades econômicas (agricultura, indústria, serviços) se distribuem pelo espaço, e por que certas regiões se especializam em determinadas produções.",
     analogy: "Pense na geografia econômica como entender \"por que cada região tem sua especialidade\" — assim como um restaurante especializado em um tipo de comida, regiões se especializam em produzir o que seu ambiente, mão de obra e infraestrutura favorecem.",
+    visual: {"type":"labeled","center":"Economia","parts":["Primário","Secundário","Terciário"]},
     steps: [
       "Setor primário: extração de recursos naturais (agricultura, mineração, pesca).",
       "Setor secundário: transformação de matérias-primas em produtos (indústria).",
@@ -4308,6 +4549,7 @@ const TOPICS = {
     emoji: "🌐",
     intro: "Geopolítica estuda como fatores geográficos, econômicos e de poder influenciam as relações entre países — conflitos por território, recursos estratégicos e influência internacional.",
     analogy: "Pense na geopolítica mundial como um grande jogo de xadrez entre países: cada movimento (uma aliança, um conflito, um acordo comercial) é feito pensando em ganhar vantagem estratégica de longo prazo, não só no momento presente.",
+    visual: {"type":"compare","leftTitle":"Norte Global","leftItems":["Mais industrializado","Maior renda média"],"rightTitle":"Sul Global","rightItems":["Em desenvolvimento","Menor renda média"]},
     steps: [
       "Geopolítica: estudo de como geografia, recursos e poder influenciam relações internacionais.",
       "Recursos estratégicos (petróleo, água, minerais raros) frequentemente motivam disputas geopolíticas.",
@@ -4321,5 +4563,5 @@ const TOPICS = {
     ]
   }
   ]
-};;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+};;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 

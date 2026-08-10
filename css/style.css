@@ -140,6 +140,9 @@ main#view{ flex:1; padding: 18px 16px 96px; }
 .analogy-card{ border-left:4px solid var(--gold); }
 .analogy-card h3{ color:var(--gold); }
 
+.topic-visual{ background:#fff; border-radius:14px; padding:8px; margin:14px 0; box-shadow:0 2px 10px rgba(0,0,0,0.15); }
+.topic-visual svg{ width:100%; height:auto; display:block; }
+
 /* Card de revisão antes dos exercícios (details/summary nativo) */
 .summary-card{ border-left:4px solid var(--orange); padding:0; overflow:hidden; }
 .summary-card summary{

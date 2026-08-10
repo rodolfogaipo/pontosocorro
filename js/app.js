@@ -461,6 +461,8 @@ function renderTopic(key){
       <p>${glossify(topic.intro)}</p>
     </div>
 
+    ${topic.visual ? renderVisual(topic.visual) : ''}
+
     <div class="card analogy-card">
       <h3>🌟 Pensa assim...</h3>
       <p>${glossify(topic.analogy)}</p>
