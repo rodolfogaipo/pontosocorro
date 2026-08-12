@@ -2598,6 +2598,402 @@ const TECH_TOPICS = {
       "Porque o superaquecimento gradual de conexões ou fios subdimensionados pode ser um processo lento e cumulativo, sem sintomas visíveis imediatos, até que uma condição específica de uso — como ligar vários equipamentos simultaneamente — eleve a demanda a um ponto crítico"
     ], correct:3, resolution:"Um erro de dimensionamento, como um fio ligeiramente subdimensionado para a carga que costuma ser conectada a ele, pode não gerar problemas perceptíveis em condições normais de uso ao longo de anos; mas o superaquecimento das conexões e do próprio fio, mesmo que gradual e cumulativo, degrada a isolação elétrica ao longo do tempo, e uma condição específica — como conectar vários equipamentos de alta potência simultaneamente em um único circuito — pode elevar subitamente a demanda a um ponto crítico, revelando um risco que estava latente desde a instalação original." }
     ]
+  },
+  "eletronica__eletricidade-basica-e-circuitos-eletricos": {
+    title: "Eletricidade Básica e Circuitos Elétricos",
+    emoji: "🔋",
+    intro: "Eletricidade básica e circuitos elétricos estudam os conceitos fundamentais de tensão, corrente e resistência, além de como esses elementos se combinam em circuitos série, paralelo e mistos.",
+    analogy: "Pense num circuito elétrico como uma pista de corrida com pistas paralelas ou uma única pista sequencial: em um circuito série, os carros (elétrons) passam um atrás do outro pelo mesmo caminho único; em um circuito paralelo, existem várias pistas independentes que os carros podem escolher para chegar ao destino.",
+    visual: {"type": "compare", "leftTitle": "Circuito Série", "leftItems": ["Um único caminho", "Mesma corrente em todos os pontos", "Se um componente falha, o circuito todo para"], "rightTitle": "Circuito Paralelo", "rightItems": ["Vários caminhos independentes", "Mesma tensão em cada ramo", "Se um componente falha, os demais continuam"]},
+    exercises: [
+      { level:"facil", question:"O que caracteriza um circuito elétrico em série?", options:[
+      "A corrente elétrica se divide automaticamente entre vários caminhos diferentes possíveis",
+      "Os componentes estão conectados em um único caminho, e a mesma corrente passa por todos eles",
+      "Os componentes estão conectados em caminhos totalmente independentes uns dos outros",
+      "A tensão aplicada é sempre igual em cada componente do circuito, independentemente da posição"
+    ], correct:1, resolution:"Em um circuito série, os componentes estão conectados em um único caminho sequencial, e a mesma corrente elétrica passa por todos eles; se um componente falhar ou o caminho for interrompido em qualquer ponto, todo o circuito deixa de funcionar." },
+      { level:"medio", question:"Por que, em um circuito paralelo, cada ramo pode continuar funcionando mesmo que outro ramo seja interrompido?", options:[
+      "Porque, nessa interpretação incorreta, a corrente elétrica em um circuito paralelo nunca pode ser interrompida por nenhum motivo",
+      "Porque, segundo essa hipótese equivocada, todos os ramos de um circuito paralelo compartilham obrigatoriamente o mesmo caminho físico",
+      "Porque, segundo essa ideia equivocada, circuitos paralelos nunca utilizam nenhum tipo de fonte de tensão compartilhada entre os ramos",
+      "Porque cada ramo tem seu próprio caminho independente conectado à mesma fonte de tensão, sem depender da continuidade dos demais ramos"
+    ], correct:3, resolution:"Em um circuito paralelo, cada ramo é conectado independentemente à mesma fonte de tensão, formando caminhos distintos para a corrente elétrica; se um ramo for interrompido, os demais continuam recebendo tensão e funcionando normalmente, pois não dependem da continuidade física daquele ramo específico." },
+      { level:"dificil", question:"Como a Lei de Ohm (V = R × I) se aplica para calcular a resistência equivalente de resistores associados em série?", options:[
+      "A resistência equivalente em série é a soma simples das resistências individuais, já que a mesma corrente atravessa todos os resistores, e as quedas de tensão se somam",
+      "A resistência equivalente em série é calculada dividindo a soma das resistências pelo número total de resistores presentes",
+      "A resistência equivalente em série é sempre menor do que qualquer uma das resistências individuais presentes no circuito independentemente do tipo de alimento ou processo envolvido",
+      "A resistência equivalente em série é sempre igual à menor resistência entre todos os resistores conectados no circuito em qualquer contexto da produção industrial de alimentos"
+    ], correct:0, resolution:"Como a mesma corrente passa por todos os resistores em série, e cada um gera uma queda de tensão proporcional à sua resistência (pela Lei de Ohm), a resistência total equivalente do circuito é simplesmente a soma aritmética de todas as resistências individuais associadas em série." },
+      { level:"dificilimo", question:"Por que a resistência equivalente de resistores associados em paralelo é sempre menor do que a menor resistência individual presente no circuito?", options:[
+      "Porque cada resistor adicional em paralelo oferece um caminho extra para a corrente fluir, aumentando a condutância total do circuito, o que equivale a reduzir a resistência total abaixo de qualquer resistência isolada",
+      "Porque, segundo essa hipótese equivocada, apenas o resistor de maior valor determina totalmente a resistência equivalente do circuito paralelo ao longo de qualquer etapa do processo produtivo considerado",
+      "Porque, nessa interpretação incorreta, a resistência equivalente em paralelo é sempre igual à soma simples das resistências individuais independentemente do tipo de alimento ou processo envolvido",
+      "Porque, segundo essa ideia equivocada, resistores em paralelo sempre cancelam completamente a resistência uns dos outros no circuito em qualquer contexto da produção industrial de alimentos"
+    ], correct:0, resolution:"Cada resistor adicionado em paralelo cria um novo caminho alternativo para a corrente elétrica fluir, o que aumenta a condutância total do circuito (o inverso da resistência); matematicamente, isso significa que o inverso da resistência equivalente é a soma dos inversos de cada resistência individual, resultando sempre em uma resistência equivalente menor do que a menor resistência isolada presente no circuito." }
+    ]
+  },
+  "eletronica__desenho-tecnico-aplicado-cad-eda": {
+    title: "Desenho Técnico Aplicado (CAD/EDA)",
+    emoji: "🖊️",
+    intro: "Desenho técnico aplicado à eletrônica combina ferramentas CAD (desenho assistido por computador) com EDA (automação de projeto eletrônico), usadas especificamente para desenhar esquemas de circuitos e layouts de placas de circuito impresso.",
+    analogy: "Pense no EDA como um CAD especializado para o mundo invisível da eletrônica: enquanto um CAD comum desenha objetos físicos visíveis, como uma peça mecânica, o software EDA desenha trilhas de cobre e componentes eletrônicos que, montados juntos, formam um circuito funcional dentro de uma placa.",
+    visual: {"type": "labeled", "center": "Ferramentas EDA", "parts": ["Esquemático elétrico", "Layout de PCB", "Lista de componentes (BOM)", "Simulação de circuito"]},
+    exercises: [
+      { level:"facil", question:"O que é um esquemático elétrico, criado com ferramentas de desenho técnico eletrônico?", options:[
+      "Uma representação gráfica que mostra como os componentes de um circuito estão conectados eletricamente entre si",
+      "Um relatório financeiro que detalha o custo total de fabricação de uma placa eletrônica",
+      "Um documento legal exigido para o registro de patente de um novo produto eletrônico",
+      "Um manual de instruções voltado exclusivamente para o usuário final do produto eletrônico"
+    ], correct:0, resolution:"Um esquemático elétrico é uma representação gráfica padronizada que mostra como os componentes de um circuito — resistores, capacitores, circuitos integrados — estão conectados eletricamente entre si, usando símbolos específicos para cada tipo de componente." },
+      { level:"medio", question:"Qual é a diferença entre o esquemático de um circuito e o layout da placa de circuito impresso (PCB)?", options:[
+      "O esquemático, segundo essa ideia equivocada, é usado apenas para fins decorativos, sem nenhuma função técnica real em qualquer contexto da produção industrial de alimentos",
+      "O layout, nessa interpretação incorreta, é criado antes do esquemático em qualquer projeto de placa eletrônica independentemente do tipo de alimento ou processo envolvido",
+      "O esquemático e o layout são, segundo essa hipótese equivocada, sempre exatamente o mesmo tipo de documento técnico ao longo de qualquer etapa do processo produtivo considerado",
+      "O esquemático mostra as conexões elétricas lógicas entre os componentes, enquanto o layout define a posição física real desses componentes e das trilhas de cobre na placa"
+    ], correct:3, resolution:"O esquemático representa as conexões elétricas lógicas entre os componentes de forma abstrata, sem se preocupar com posição física; já o layout de PCB traduz essas conexões lógicas em um desenho físico real, definindo onde cada componente será posicionado na placa e como as trilhas de cobre serão traçadas fisicamente para conectá-los." },
+      { level:"dificil", question:"Por que o roteamento de trilhas em uma placa de circuito impresso precisa considerar não apenas a conectividade elétrica, mas também fatores como interferência eletromagnética entre trilhas próximas?", options:[
+      "Porque, segundo essa hipótese equivocada, qualquer disposição física das trilhas produz exatamente o mesmo resultado elétrico final ao longo de qualquer etapa do processo produtivo considerado",
+      "Porque trilhas muito próximas, especialmente em sinais de alta frequência, podem induzir interferência umas nas outras, comprometendo o funcionamento correto do circuito mesmo com todas as conexões eletricamente corretas",
+      "Porque o roteamento de trilhas, segundo essa ideia equivocada, nunca tem nenhuma relação real com o desempenho elétrico do circuito em qualquer contexto da produção industrial de alimentos",
+      "Porque a interferência eletromagnética, nessa interpretação incorreta, só ocorre em circuitos que não possuem nenhum tipo de trilha de cobre independentemente do tipo de alimento ou processo envolvido"
+    ], correct:1, resolution:"Trilhas de cobre muito próximas, especialmente quando conduzem sinais de alta frequência, podem gerar interferência eletromagnética entre si (efeito conhecido como crosstalk), afetando a integridade dos sinais mesmo que todas as conexões estejam eletricamente corretas do ponto de vista lógico; por isso o roteamento físico precisa considerar espaçamento, comprimento e disposição das trilhas, não apenas garantir a conectividade correta entre os pontos." },
+      { level:"dificilimo", question:"Por que um projeto de PCB aprovado em simulação de esquemático ainda pode apresentar mau funcionamento após a fabricação física da placa?", options:[
+      "Porque a simulação de esquemático avalia principalmente a lógica das conexões elétricas, mas efeitos físicos reais — como resistência das trilhas, capacitância parasita e interferência entre componentes próximos — só se manifestam completamente na placa fabricada",
+      "Porque, nessa interpretação incorreta, placas fabricadas nunca podem, sob nenhuma circunstância, funcionar de forma diferente do que foi simulado independentemente do tipo de alimento ou processo envolvido",
+      "Porque, segundo essa ideia equivocada, simulações de esquemático são sempre uma garantia absoluta e infalível do funcionamento físico da placa em qualquer contexto da produção industrial de alimentos",
+      "Porque, segundo essa hipótese equivocada, a fabricação física de uma PCB nunca introduz nenhum tipo de efeito elétrico não previsto ao longo de qualquer etapa do processo produtivo considerado"
+    ], correct:0, resolution:"A simulação de esquemático avalia principalmente o comportamento lógico e teórico das conexões elétricas planejadas, mas não captura completamente todos os efeitos físicos reais que surgem apenas na placa fabricada — como a resistência real das trilhas de cobre, capacitâncias parasitas entre trilhas próximas e interferências eletromagnéticas específicas do layout físico — fatores que podem causar comportamento diferente do previsto na simulação puramente lógica." }
+    ]
+  },
+  "eletronica__eletronica": {
+    title: "Fundamentos de Eletrônica Analógica",
+    emoji: "🔧",
+    intro: "Eletrônica analógica estuda componentes que trabalham com sinais contínuos e variáveis — como diodos, transistores e amplificadores operacionais — formando a base para circuitos que processam sinais do mundo real, como som e temperatura.",
+    analogy: "Pense em um sinal analógico como o volume de uma torneira que pode ser ajustado gradualmente, do fio d'água ao jato máximo, ao contrário de um interruptor de luz simples, que só tem ligado ou desligado — componentes analógicos como transistores permitem esse controle gradual e contínuo de corrente elétrica.",
+    visual: {"type": "labeled", "center": "Eletrônica Analógica", "parts": ["Diodo", "Transistor", "Amplificador operacional", "Capacitor"]},
+    exercises: [
+      { level:"facil", question:"Qual é a função básica de um diodo em um circuito eletrônico?", options:[
+      "Armazenar energia elétrica temporariamente para liberação em um momento posterior",
+      "Amplificar o sinal elétrico que passa através dele, aumentando sua intensidade original",
+      "Permitir a passagem de corrente elétrica em apenas uma direção, bloqueando o fluxo na direção contrária",
+      "Converter diretamente energia elétrica em energia luminosa visível ao olho humano"
+    ], correct:2, resolution:"Um diodo é um componente semicondutor que permite a passagem de corrente elétrica em apenas uma direção (sentido direto), bloqueando o fluxo na direção oposta (sentido reverso) — uma função fundamental para retificação de sinais e proteção de circuitos." },
+      { level:"medio", question:"Por que um transistor pode funcionar tanto como amplificador quanto como chave eletrônica?", options:[
+      "Porque o transistor, nessa interpretação incorreta, armazena energia elétrica internamente como se fosse uma pequena bateria independentemente do tipo de alimento ou processo envolvido",
+      "Porque o transistor, segundo essa hipótese equivocada, converte diretamente corrente contínua em corrente alternada em qualquer aplicação ao longo de qualquer etapa do processo produtivo considerado",
+      "Porque uma pequena variação na corrente ou tensão aplicada em um terminal do transistor pode controlar de forma proporcional ou total uma corrente muito maior circulando entre os outros dois terminais",
+      "Porque o transistor, segundo essa ideia equivocada, só consegue funcionar como amplificador, nunca como chave eletrônica em qualquer contexto da produção industrial de alimentos"
+    ], correct:2, resolution:"O transistor controla uma corrente maior entre dois de seus terminais a partir de uma corrente ou tensão menor aplicada em um terceiro terminal; quando essa relação é usada de forma proporcional, o transistor amplifica sinais, e quando é usada em seus extremos (totalmente ligado ou desligado), ele funciona como uma chave eletrônica controlada eletricamente." },
+      { level:"dificil", question:"Qual é a diferença fundamental entre um circuito retificador de meia onda e um retificador de onda completa?", options:[
+      "O retificador de meia onda aproveita apenas metade do ciclo da corrente alternada, enquanto o de onda completa aproveita ambos os semiciclos, resultando em uma saída mais estável e eficiente",
+      "O retificador de meia onda nunca utiliza nenhum tipo de diodo, e o de onda completa depende inteiramente de diodos para funcionar independentemente do tipo de alimento ou processo envolvido",
+      "O retificador de meia onda converte corrente contínua em alternada, e o de onda completa faz exatamente o processo inverso ao longo de qualquer etapa do processo produtivo considerado",
+      "O retificador de meia onda é usado apenas em circuitos de baixa tensão, e o de onda completa é usado exclusivamente em alta tensão em qualquer contexto da produção industrial de alimentos"
+    ], correct:0, resolution:"O retificador de meia onda utiliza apenas um diodo e aproveita somente metade do ciclo da corrente alternada (o semiciclo positivo, por exemplo), descartando a outra metade; o retificador de onda completa utiliza uma configuração com mais diodos que aproveita ambos os semiciclos da corrente alternada, resultando em uma saída de corrente contínua mais estável, com menos ondulação (ripple) e maior eficiência de conversão." },
+      { level:"dificilimo", question:"Por que um amplificador operacional (Op-Amp) idealizado como tendo ganho infinito ainda funciona de forma estável e previsível em circuitos práticos com realimentação negativa?", options:[
+      "Porque, nessa interpretação incorreta, a realimentação negativa elimina completamente qualquer ganho do circuito, resultando em saída sempre nula independentemente do tipo de alimento ou processo envolvido",
+      "Porque, segundo essa hipótese equivocada, o ganho infinito teórico de um amplificador operacional se traduz diretamente em instabilidade absoluta na prática ao longo de qualquer etapa do processo produtivo considerado",
+      "Porque, segundo essa ideia equivocada, amplificadores operacionais reais nunca de fato possuem nenhum tipo de ganho interno elevado em qualquer contexto da produção industrial de alimentos",
+      "Porque a realimentação negativa cria um mecanismo de autocorreção que limita o ganho efetivo do circuito a um valor determinado pelos componentes externos, tornando o comportamento previsível independentemente do altíssimo ganho interno do amplificador"
+    ], correct:3, resolution:"Embora um Op-Amp idealizado tenha ganho interno extremamente alto (teoricamente infinito), a realimentação negativa — parte do sinal de saída sendo redirecionada de volta à entrada — cria um mecanismo de autocorreção que limita o ganho efetivo do circuito ao valor determinado pelos resistores e outros componentes externos escolhidos pelo projetista, tornando o comportamento do circuito previsível e estável, independentemente do ganho interno bruto do amplificador." }
+    ]
+  },
+  "eletronica__instalacao-eletrica-de-baixa-tensao": {
+    title: "Instalação Elétrica de Baixa Tensão",
+    emoji: "🔌",
+    intro: "Instalação elétrica de baixa tensão trata do planejamento e execução de sistemas elétricos residenciais e comerciais que operam nas tensões padronizadas de uso cotidiano, seguindo normas técnicas de segurança.",
+    analogy: "Pense na instalação de baixa tensão como o encanamento interno de uma casa, ajustado para a pressão de água segura para uso doméstico: assim como não se conecta diretamente um cano de alta pressão industrial a uma torneira de banheiro, instalações elétricas de baixa tensão são especificamente projetadas para lidar com as tensões seguras usadas em residências e pequenos comércios.",
+    visual: {"type": "labeled", "center": "Instalação de Baixa Tensão", "parts": ["Quadro de distribuição", "Disjuntores individuais", "Tomadas e interruptores", "Fiação dimensionada"]},
+    exercises: [
+      { level:"facil", question:"O que caracteriza uma instalação elétrica de baixa tensão?", options:[
+      "Um sistema elétrico usado exclusivamente em grandes usinas de geração de energia em qualquer contexto da produção industrial de alimentos",
+      "Um sistema elétrico que opera nas tensões padronizadas de uso residencial e comercial comum, geralmente até 1000 volts",
+      "Um sistema elétrico reservado exclusivamente para equipamentos médicos de uso hospitalar",
+      "Um sistema elétrico que funciona apenas com corrente elétrica contínua, nunca alternada"
+    ], correct:1, resolution:"A instalação elétrica de baixa tensão opera dentro das faixas padronizadas para uso residencial, comercial e de pequenas indústrias, geralmente até 1000 volts em corrente alternada, sendo o tipo de instalação mais comum encontrado em edificações do dia a dia." },
+      { level:"medio", question:"Por que cada circuito de uma instalação residencial (como iluminação e tomadas) costuma ter seu próprio disjuntor separado?", options:[
+      "Porque isso permite que uma falha em um circuito específico seja isolada, sem interromper o funcionamento de toda a instalação elétrica da residência",
+      "Porque disjuntores separados, segundo essa ideia equivocada, servem apenas para reduzir o valor total da conta de energia",
+      "Porque disjuntores separados, nessa interpretação incorreta, são exigidos exclusivamente para instalações elétricas comerciais",
+      "Porque disjuntores separados, segundo essa hipótese equivocada, aumentam artificialmente a tensão disponível em cada circuito"
+    ], correct:0, resolution:"Separar circuitos em disjuntores individuais permite que uma falha ou sobrecarga em um circuito específico — como o de tomadas de uma cozinha — seja isolada e desligada sem afetar o funcionamento dos demais circuitos da residência, como a iluminação de outros cômodos, facilitando também a manutenção." },
+      { level:"dificil", question:"Por que o dimensionamento de uma instalação elétrica residencial precisa considerar a demanda simultânea de equipamentos, e não apenas a soma da potência de todos os aparelhos instalados?", options:[
+      "Porque raramente todos os equipamentos de uma residência são usados ao mesmo tempo, então dimensionar pela soma total geralmente resultaria em um sistema superdimensionado e mais caro do que o necessário na prática",
+      "Porque a demanda simultânea, segundo essa ideia equivocada, é sempre exatamente igual à soma total de potência de todos os equipamentos em qualquer contexto da produção industrial de alimentos",
+      "Porque o dimensionamento por demanda simultânea, nessa interpretação incorreta, é proibido pela legislação técnica brasileira em qualquer instalação independentemente do tipo de alimento ou processo envolvido",
+      "Porque considerar a demanda simultânea, segundo essa hipótese equivocada, elimina totalmente a necessidade de qualquer disjuntor na instalação ao longo de qualquer etapa do processo produtivo considerado"
+    ], correct:0, resolution:"Na prática, é incomum que todos os equipamentos elétricos de uma residência estejam ligados ao mesmo tempo com potência máxima simultaneamente; por isso normas técnicas de dimensionamento consideram um fator de demanda, que estima o uso real esperado, evitando superdimensionar o sistema (e encarecê-lo desnecessariamente) sem comprometer a segurança do uso cotidiano." },
+      { level:"dificilimo", question:"Por que uma instalação elétrica pode atender rigorosamente a todas as normas técnicas no momento da instalação e, anos depois, se tornar inadequada sem que nenhuma modificação tenha sido feita nela?", options:[
+      "Porque o perfil de consumo elétrico de uma residência tende a mudar ao longo dos anos com a aquisição de novos equipamentos, e uma instalação dimensionada para o consumo original pode se tornar insuficiente para a demanda real posterior, mesmo sem alteração física na fiação",
+      "Porque, nessa interpretação incorreta, uma instalação elétrica aprovada uma vez permanece tecnicamente adequada para sempre, independentemente do uso ao longo de qualquer etapa do processo produtivo considerado",
+      "Porque, segundo essa hipótese equivocada, o consumo elétrico de uma residência é sempre exatamente constante ao longo de décadas de uso mesmo em situações consideradas tecnicamente controladas segundo essa mesma linha de raciocínio equivocada apresentada",
+      "Porque, segundo essa ideia equivocada, normas técnicas de instalação elétrica nunca mudam ao longo do tempo em nenhuma circunstância em qualquer contexto da produção industrial de alimentos independentemente do tipo de alimento ou processo envolvido"
+    ], correct:0, resolution:"O perfil de consumo elétrico de uma residência costuma aumentar ao longo dos anos com a aquisição de novos equipamentos — ar-condicionado, carregadores, eletrodomésticos adicionais — e uma instalação originalmente bem dimensionada para o consumo da época pode se tornar insuficiente para a demanda real anos depois, mesmo que nenhuma modificação física tenha sido feita na fiação original, exigindo reavaliação periódica da capacidade da instalação." }
+    ]
+  },
+  "eletronica__manutencao-eletroeletronica-basica": {
+    title: "Manutenção Eletroeletrônica Básica",
+    emoji: "🛠️",
+    intro: "Manutenção eletroeletrônica básica envolve o diagnóstico e reparo de defeitos comuns em equipamentos elétricos e eletrônicos, utilizando ferramentas de medição e um processo estruturado de identificação de falhas.",
+    analogy: "Pense na manutenção de um equipamento eletrônico como o trabalho de um médico diagnosticando um paciente: em vez de tratar aleatoriamente sintomas isolados, um bom diagnóstico segue um processo lógico — observar sintomas, medir sinais vitais, formular hipóteses e testá-las — até encontrar a causa raiz real do problema.",
+    visual: {"type": "flow", "steps": ["Observação do defeito", "Medição com instrumentos", "Formulação de hipótese", "Teste e confirmação"]},
+    exercises: [
+      { level:"facil", question:"Qual é a primeira etapa recomendada ao diagnosticar um defeito em um equipamento eletrônico?", options:[
+      "Desmontar completamente o equipamento antes de verificar qualquer sintoma apresentado",
+      "Comprar peças de reposição para todos os componentes possivelmente relacionados ao defeito",
+      "Substituir imediatamente todos os componentes do equipamento sem nenhuma investigação prévia",
+      "Observar cuidadosamente os sintomas apresentados pelo equipamento antes de qualquer intervenção física"
+    ], correct:3, resolution:"Antes de qualquer intervenção física ou substituição de componentes, é fundamental observar cuidadosamente os sintomas apresentados pelo equipamento — como ele se comporta, quando o problema ocorre, que sons ou cheiros são percebidos — pois essa observação orienta as etapas seguintes do diagnóstico." },
+      { level:"medio", question:"Por que o uso de um multímetro é uma ferramenta essencial na manutenção eletroeletrônica básica?", options:[
+      "Porque o multímetro, segundo essa ideia equivocada, serve apenas para limpar componentes eletrônicos sujos ou enferrujados",
+      "Porque o multímetro, nessa interpretação incorreta, é usado exclusivamente para soldar componentes em uma placa de circuito",
+      "Porque o multímetro, segundo essa hipótese equivocada, substitui totalmente a necessidade de qualquer observação visual do equipamento",
+      "Porque permite medir grandezas elétricas como tensão, corrente e resistência, fornecendo dados objetivos para confirmar ou descartar hipóteses sobre o defeito"
+    ], correct:3, resolution:"O multímetro permite medir grandezas elétricas fundamentais — tensão, corrente, resistência, continuidade — fornecendo dados objetivos que ajudam a confirmar ou descartar hipóteses sobre a causa de um defeito, complementando a observação visual e sensorial inicial do técnico." },
+      { level:"dificil", question:"Por que testar componentes isoladamente (fora do circuito) pode fornecer resultados diferentes de testá-los dentro do circuito em funcionamento?", options:[
+      "Porque componentes com defeito, nessa interpretação incorreta, nunca podem ser detectados quando testados fora do circuito original independentemente do tipo de alimento ou processo envolvido",
+      "Porque testar dentro do circuito, segundo essa hipótese equivocada, é tecnicamente impossível em qualquer situação de manutenção real ao longo de qualquer etapa do processo produtivo considerado",
+      "Porque a interação entre componentes vizinhos dentro do circuito pode mascarar ou alterar o comportamento de um componente com defeito, algo que não ocorre quando ele é testado isoladamente",
+      "Porque testar componentes isoladamente, segundo essa ideia equivocada, sempre produz resultados idênticos aos obtidos dentro do circuito em qualquer contexto da produção industrial de alimentos"
+    ], correct:2, resolution:"Dentro de um circuito em funcionamento, um componente interage eletricamente com os componentes vizinhos, o que pode mascarar um defeito sutil ou, inversamente, revelar um comportamento anormal que só aparece sob aquelas condições específicas de operação; testar o mesmo componente isoladamente, fora desse contexto, pode não reproduzir exatamente as mesmas condições, levando a resultados diferentes entre os dois tipos de teste." },
+      { level:"dificilimo", question:"Por que um defeito intermitente (que aparece e desaparece de forma inconsistente) é considerado um dos desafios mais difíceis na manutenção eletroeletrônica?", options:[
+      "Porque, nessa interpretação incorreta, defeitos intermitentes sempre desaparecem permanentemente depois da primeira tentativa de diagnóstico independentemente do tipo de alimento ou processo envolvido",
+      "Porque, segundo essa ideia equivocada, defeitos intermitentes nunca têm nenhuma causa física real identificável no equipamento em qualquer contexto da produção industrial de alimentos",
+      "Porque a causa pode depender de condições específicas e variáveis, como temperatura, vibração ou tempo de uso, que nem sempre estão presentes durante o momento do diagnóstico, dificultando a reprodução consistente do problema",
+      "Porque, segundo essa hipótese equivocada, apenas equipamentos muito antigos podem apresentar algum tipo de defeito intermitente ao longo de qualquer etapa do processo produtivo considerado"
+    ], correct:2, resolution:"Defeitos intermitentes costumam depender de condições específicas e variáveis — uma solda com micro-fissura que só falha sob certa temperatura, um componente que oscila com vibração, um cabo que se solta apenas em determinadas posições — condições que nem sempre estão presentes exatamente durante o momento em que o técnico está testando o equipamento, tornando muito mais difícil reproduzir o problema de forma consistente e identificar sua causa raiz real." }
+    ]
+  },
+  "eletronica__automacao-comercial-e-residencial": {
+    title: "Automação Comercial e Residencial",
+    emoji: "🏠",
+    intro: "Automação comercial e residencial envolve a integração de dispositivos elétricos e eletrônicos — iluminação, segurança, climatização — controlados de forma automatizada ou remota, aumentando conforto, eficiência e segurança.",
+    analogy: "Pense na automação residencial como transformar uma casa comum em uma orquestra sincronizada: em vez de cada dispositivo (luz, alarme, ar-condicionado) funcionar de forma isolada, um sistema de automação coordena todos eles para trabalharem em conjunto, respondendo automaticamente a comandos ou situações específicas.",
+    visual: {"type": "labeled", "center": "Automação Residencial", "parts": ["Sensor de presença", "Controlador central", "Iluminação automatizada", "Sistema de segurança"]},
+    exercises: [
+      { level:"facil", question:"O que é automação residencial?", options:[
+      "A integração de dispositivos elétricos de uma casa para funcionarem de forma automatizada ou controlada remotamente",
+      "Um documento legal exigido para o registro de uma nova construção junto à prefeitura",
+      "Um serviço de manutenção preventiva realizado apenas uma vez por ano na residência em qualquer contexto da produção industrial de alimentos",
+      "Um tipo específico de seguro contratado exclusivamente para proteger equipamentos eletrônicos residenciais"
+    ], correct:0, resolution:"Automação residencial é a integração de diferentes dispositivos elétricos e eletrônicos de uma casa — iluminação, climatização, segurança — permitindo que funcionem de forma automatizada, programada ou controlada remotamente, aumentando conforto e eficiência." },
+      { level:"medio", question:"Por que um sensor de presença é útil em um sistema de iluminação automatizada?", options:[
+      "Porque o sensor de presença, segundo essa ideia equivocada, serve apenas para medir a temperatura ambiente do cômodo",
+      "Porque o sensor de presença, segundo essa hipótese equivocada, substitui totalmente a necessidade de qualquer interruptor manual instalado",
+      "Porque permite que as luzes se acendam ou apaguem automaticamente conforme a presença de pessoas no ambiente, economizando energia sem exigir intervenção manual",
+      "Porque o sensor de presença, nessa interpretação incorreta, é usado exclusivamente para identificar a voz de cada morador"
+    ], correct:2, resolution:"Um sensor de presença detecta movimento ou presença de pessoas em um ambiente, permitindo que o sistema de automação acenda ou apague as luzes automaticamente conforme necessário, economizando energia ao evitar que luzes fiquem ligadas em ambientes vazios, sem exigir que alguém se lembre de apagar manualmente." },
+      { level:"dificil", question:"Qual é a diferença entre um sistema de automação centralizado e um sistema descentralizado (baseado em dispositivos independentes conectados)?", options:[
+      "No sistema centralizado, um controlador único coordena todos os dispositivos, enquanto no descentralizado cada dispositivo tem sua própria lógica e se comunica diretamente com os demais, sem um controlador central obrigatório",
+      "O sistema centralizado é usado apenas em residências pequenas, e o descentralizado é usado exclusivamente em grandes edifícios comerciais em qualquer contexto da produção industrial de alimentos",
+      "O sistema centralizado nunca pode ser controlado remotamente, e o descentralizado depende inteiramente de controle remoto para funcionar independentemente do tipo de alimento ou processo envolvido",
+      "O sistema centralizado é sempre mais barato de instalar, e o sistema descentralizado é sempre um investimento mais caro ao longo de qualquer etapa do processo produtivo considerado"
+    ], correct:0, resolution:"Em um sistema centralizado, um controlador único (um hub central) recebe informações de todos os sensores e envia comandos para todos os dispositivos, coordenando o funcionamento geral; em um sistema descentralizado, cada dispositivo tem sua própria lógica de funcionamento e pode se comunicar diretamente com outros dispositivos próximos, sem depender obrigatoriamente de um controlador central único para operar." },
+      { level:"dificilimo", question:"Por que a interoperabilidade entre dispositivos de diferentes fabricantes é um desafio técnico importante no crescimento da automação residencial?", options:[
+      "Porque, segundo essa ideia equivocada, todos os dispositivos de automação residencial sempre utilizam exatamente o mesmo protocolo de comunicação em qualquer contexto da produção industrial de alimentos",
+      "Porque fabricantes diferentes frequentemente usam protocolos de comunicação próprios e incompatíveis entre si, dificultando a integração de dispositivos de marcas variadas em um único sistema coeso de automação",
+      "Porque, segundo essa hipótese equivocada, a interoperabilidade entre dispositivos nunca representa nenhum tipo de desafio técnico real independentemente do tipo de alimento ou processo envolvido",
+      "Porque, nessa interpretação incorreta, dispositivos de fabricantes diferentes nunca podem, sob nenhuma circunstância, ser conectados à mesma rede elétrica"
+    ], correct:1, resolution:"Diferentes fabricantes de dispositivos de automação frequentemente desenvolvem seus próprios protocolos de comunicação proprietários, buscando manter os consumidores dentro de seu próprio ecossistema de produtos; essa fragmentação técnica dificulta que um usuário combine livremente dispositivos de marcas diferentes em um único sistema integrado, exigindo hubs específicos ou protocolos-padrão (como Zigbee ou Matter) para viabilizar essa interoperabilidade." }
+    ]
+  },
+  "eletronica__energias-renovaveis-e-eficiencia-energetica": {
+    title: "Energias Renováveis e Eficiência Energética",
+    emoji: "☀️",
+    intro: "Energias renováveis e eficiência energética estudam fontes de energia como solar e eólica, além de estratégias técnicas para reduzir o desperdício de energia em sistemas elétricos e eletrônicos.",
+    analogy: "Pense na eficiência energética como o consumo de combustível de um carro: dois veículos podem percorrer a mesma distância, mas um consome muito menos combustível por ser mais eficiente — da mesma forma, dois sistemas elétricos podem realizar a mesma tarefa com consumos de energia bem diferentes, dependendo de quão eficientes forem seus componentes e seu projeto.",
+    visual: {"type": "pie", "slices": [{"label": "Energia hidrelétrica", "value": 55}, {"label": "Energia eólica", "value": 13}, {"label": "Energia solar", "value": 11}, {"label": "Outras fontes", "value": 21}]},
+    exercises: [
+      { level:"facil", question:"O que caracteriza uma fonte de energia renovável, como a solar ou a eólica?", options:[
+      "Uma fonte de energia que nunca pode ser convertida em eletricidade utilizável por equipamentos comuns",
+      "Uma fonte de energia que é sempre mais barata do que qualquer fonte de energia não renovável existente",
+      "Uma fonte de energia que só pode ser utilizada em grandes usinas de geração de grande porte industrial",
+      "Uma fonte que se renova naturalmente em um período de tempo relativamente curto, sem se esgotar com o uso contínuo"
+    ], correct:3, resolution:"Fontes de energia renovável, como a solar e a eólica, se renovam naturalmente em um período de tempo relativamente curto — o sol continua brilhando, o vento continua soprando — diferente de fontes não renováveis como combustíveis fósseis, que se esgotam com o uso e levam milhões de anos para se formar novamente." },
+      { level:"medio", question:"Por que um painel solar fotovoltaico consegue gerar eletricidade diretamente a partir da luz do sol?", options:[
+      "Porque o painel solar, segundo essa ideia equivocada, aquece a água internamente e usa esse calor para girar um pequeno motor",
+      "Porque o painel solar, segundo essa hipótese equivocada, reflete a luz solar de volta para gerar eletricidade por reflexão",
+      "Porque o painel solar, nessa interpretação incorreta, armazena luz solar diretamente como se fosse uma bateria comum",
+      "Porque o material semicondutor do painel libera elétrons quando exposto à luz, gerando uma corrente elétrica através do chamado efeito fotovoltaico"
+    ], correct:3, resolution:"Painéis solares fotovoltaicos são compostos por material semicondutor (geralmente silício) que, ao ser exposto à luz solar, libera elétrons de seus átomos, gerando uma corrente elétrica contínua através de um fenômeno físico chamado efeito fotovoltaico — um processo direto de conversão de luz em eletricidade, sem envolver calor ou reflexão." },
+      { level:"dificil", question:"Por que a intermitência da geração solar e eólica (que depende de sol e vento disponíveis) representa um desafio técnico para a integração dessas fontes na rede elétrica?", options:[
+      "Porque a intermitência, segundo essa ideia equivocada, torna essas fontes tecnicamente incapazes de gerar qualquer eletricidade utilizável em qualquer contexto da produção industrial de alimentos",
+      "Porque a rede elétrica tradicional, nessa interpretação incorreta, nunca precisa manter nenhum tipo de equilíbrio entre geração e consumo independentemente do tipo de alimento ou processo envolvido",
+      "Porque fontes intermitentes, segundo essa hipótese equivocada, são sempre proibidas por lei de serem conectadas à rede elétrica ao longo de qualquer etapa do processo produtivo considerado",
+      "Porque a rede elétrica precisa manter equilíbrio constante entre geração e consumo, e fontes intermitentes exigem sistemas de armazenamento ou fontes complementares para suprir a demanda quando sol ou vento não estão disponíveis"
+    ], correct:3, resolution:"Diferente de usinas que podem gerar energia de forma constante e previsível, fontes solares e eólicas dependem de condições climáticas variáveis, gerando eletricidade de forma intermitente; como a rede elétrica precisa manter um equilíbrio constante entre o que é gerado e o que é consumido, essa intermitência exige soluções complementares, como sistemas de armazenamento em baterias ou outras fontes de geração que possam compensar os períodos sem sol ou vento suficiente." },
+      { level:"dificilimo", question:"Por que investir em eficiência energética (reduzir o consumo desnecessário) pode ser, em certos casos, uma estratégia mais custo-efetiva do que investir apenas em aumentar a capacidade de geração de energia renovável?", options:[
+      "Porque reduzir o desperdício de energia já existente costuma ter um custo por unidade de energia economizada mais baixo do que construir nova capacidade de geração, já que evita gastos com equipamentos, instalação e manutenção de novas fontes",
+      "Porque, nessa interpretação incorreta, aumentar a capacidade de geração de energia renovável nunca traz nenhum benefício real ao sistema elétrico independentemente do tipo de alimento ou processo envolvido",
+      "Porque, segundo essa hipótese equivocada, o custo de gerar nova energia é sempre menor do que o custo de qualquer medida de eficiência ao longo de qualquer etapa do processo produtivo considerado",
+      "Porque, segundo essa ideia equivocada, eficiência energética elimina totalmente a necessidade de qualquer fonte de geração de energia em qualquer contexto da produção industrial de alimentos"
+    ], correct:0, resolution:"Reduzir o desperdício de energia em um sistema já existente — através de equipamentos mais eficientes, melhor isolamento térmico, iluminação de baixo consumo — costuma custar menos por unidade de energia economizada do que construir e instalar nova capacidade de geração renovável, que exige investimento em equipamentos, infraestrutura de conexão e manutenção contínua; por isso a eficiência energética é frequentemente considerada uma das formas mais econômicas de 'gerar' energia disponível para outros usos." }
+    ]
+  },
+  "eletronica__sistemas-microcontrolados": {
+    title: "Sistemas Microcontrolados",
+    emoji: "🔬",
+    intro: "Sistemas microcontrolados usam pequenos computadores integrados em um único chip — microcontroladores — para controlar equipamentos eletrônicos específicos, sendo a base de projetos embarcados como sensores inteligentes e automação simples.",
+    analogy: "Pense em um microcontrolador como o cérebro de um robô simples e dedicado: diferente de um computador completo com múltiplas funções, ele é projetado para executar uma tarefa específica repetidamente — ler um sensor, acionar um motor — de forma eficiente e com baixo consumo de energia.",
+    visual: {"type": "labeled", "center": "Microcontrolador", "parts": ["CPU integrada", "Memória (RAM/Flash)", "Portas de entrada/saída", "Periféricos (timers, ADC)"]},
+    exercises: [
+      { level:"facil", question:"O que é um microcontrolador?", options:[
+      "Um pequeno computador integrado em um único chip, projetado para controlar tarefas específicas de um equipamento eletrônico",
+      "Um componente usado apenas para armazenar imagens dentro de uma câmera fotográfica digital",
+      "Um dispositivo usado exclusivamente para medir a temperatura ambiente de uma sala independentemente do tipo de alimento ou processo envolvido",
+      "Um tipo de cabo usado exclusivamente para conectar dois computadores completos entre si em qualquer contexto da produção industrial de alimentos"
+    ], correct:0, resolution:"Um microcontrolador é um pequeno computador completo integrado em um único chip — com processador, memória e portas de entrada e saída — projetado para controlar tarefas específicas de um equipamento eletrônico, como ler sensores e acionar atuadores." },
+      { level:"medio", question:"O que são portas de entrada e saída (I/O) em um microcontrolador?", options:[
+      "Pinos físicos que permitem ao microcontrolador ler sinais de sensores (entrada) ou controlar dispositivos externos (saída)",
+      "As portas de entrada e saída, nessa interpretação incorreta, são usadas exclusivamente para carregar a bateria do dispositivo",
+      "As portas de entrada e saída, segundo essa hipótese equivocada, armazenam permanentemente o programa do microcontrolador",
+      "As portas de entrada e saída, segundo essa ideia equivocada, servem apenas para conectar o microcontrolador à internet"
+    ], correct:0, resolution:"As portas de entrada e saída (I/O) são pinos físicos do microcontrolador que permitem a comunicação com o mundo externo: como entrada, podem ler sinais vindos de sensores (temperatura, luz, movimento); como saída, podem enviar sinais para controlar dispositivos externos, como acionar um LED ou um motor." },
+      { level:"dificil", question:"Qual é a diferença entre um microcontrolador e um microprocessador usado em um computador comum?", options:[
+      "O microcontrolador nunca pode executar nenhum tipo de programa, e o microprocessador depende inteiramente de programas para funcionar independentemente do tipo de alimento ou processo envolvido",
+      "O microcontrolador é sempre mais rápido tecnicamente do que qualquer microprocessador, independentemente da aplicação envolvida ao longo de qualquer etapa do processo produtivo considerado",
+      "O microcontrolador é usado apenas em equipamentos médicos, e o microprocessador é usado exclusivamente em consoles de videogame em qualquer contexto da produção industrial de alimentos",
+      "O microcontrolador integra processador, memória e periféricos em um único chip voltado para tarefas específicas, enquanto o microprocessador depende de componentes externos adicionais e é voltado para processamento de propósito geral"
+    ], correct:3, resolution:"Um microcontrolador integra em um único chip o processador, a memória e periféricos de entrada e saída, sendo otimizado para executar tarefas específicas de controle com baixo consumo de energia; um microprocessador, como o usado em um computador, é voltado para processamento de propósito geral e depende de componentes externos adicionais — memória RAM separada, controladores de dispositivos — para formar um sistema completo." },
+      { level:"dificilimo", question:"Por que um projeto embarcado com microcontrolador pode falhar em produção mesmo funcionando perfeitamente em bancada durante os testes de desenvolvimento?", options:[
+      "Porque, nessa interpretação incorreta, projetos embarcados nunca podem, sob nenhuma circunstância, apresentar nenhum tipo de falha em produção independentemente do tipo de alimento ou processo envolvido",
+      "Porque, segundo essa hipótese equivocada, condições ambientais como temperatura nunca têm nenhuma relação real com o funcionamento de um microcontrolador ao longo de qualquer etapa do processo produtivo considerado",
+      "Porque, segundo essa ideia equivocada, microcontroladores testados em bancada sempre funcionam de forma idêntica em qualquer condição de produção em qualquer contexto da produção industrial de alimentos",
+      "Porque condições reais de operação — variações de temperatura, ruído elétrico do ambiente, tolerâncias de componentes em produção em massa — podem introduzir comportamentos que não aparecem no ambiente controlado de bancada durante o desenvolvimento"
+    ], correct:3, resolution:"O ambiente de bancada durante o desenvolvimento costuma ser controlado — temperatura estável, pouco ruído elétrico, um único protótipo testado; em produção real, variações de temperatura ambiente, ruído elétrico de outros equipamentos próximos, e pequenas variações de tolerância entre diferentes unidades de componentes fabricados em massa podem expor comportamentos ou falhas que não se manifestaram durante os testes controlados em bancada, por isso testes de campo e de estresse são etapas importantes antes da produção em escala." }
+    ]
+  },
+  "eletronica__redes-telecomunicacoes-e-iot": {
+    title: "Redes, Telecomunicações e IoT",
+    emoji: "📡",
+    intro: "Redes, telecomunicações e IoT (Internet das Coisas) estudam como dispositivos eletrônicos se comunicam entre si e com a internet, permitindo o monitoramento e controle remoto de equipamentos conectados.",
+    analogy: "Pense na IoT como transformar objetos comuns em participantes de uma grande conversa telefônica: uma geladeira, uma lâmpada ou um sensor de temperatura, que antes eram 'mudos' e isolados, ganham a capacidade de 'falar' com outros dispositivos e com a internet, compartilhando informações e recebendo comandos remotamente.",
+    visual: {"type": "flow", "steps": ["Dispositivo IoT (sensor)", "Rede de comunicação", "Servidor/nuvem", "Aplicativo de controle"]},
+    exercises: [
+      { level:"facil", question:"O que é IoT (Internet das Coisas)?", options:[
+      "A conexão de objetos físicos comuns à internet, permitindo que coletem e transmitam dados ou sejam controlados remotamente",
+      "Um tipo específico de cabo usado exclusivamente para conectar computadores a uma impressora",
+      "Um programa de computador usado apenas para editar imagens e fotografias digitais em qualquer contexto da produção industrial de alimentos",
+      "Um serviço de streaming de vídeo disponível apenas para assinantes de determinada operadora"
+    ], correct:0, resolution:"IoT (Internet das Coisas, do inglês Internet of Things) é a conexão de objetos físicos do dia a dia — sensores, eletrodomésticos, equipamentos industriais — à internet, permitindo que coletem, transmitam e recebam dados, possibilitando monitoramento e controle remoto desses dispositivos." },
+      { level:"medio", question:"Por que protocolos de comunicação de baixo consumo de energia (como o LoRa ou o Zigbee) são frequentemente usados em dispositivos IoT alimentados por bateria?", options:[
+      "Porque esses protocolos foram projetados para transmitir dados consumindo pouca energia, prolongando significativamente a vida útil da bateria do dispositivo",
+      "Porque esses protocolos, segundo essa ideia equivocada, transmitem dados a uma velocidade muito maior do que o Wi-Fi tradicional",
+      "Porque esses protocolos, nessa interpretação incorreta, são exigidos exclusivamente para dispositivos conectados diretamente à tomada elétrica",
+      "Porque esses protocolos, segundo essa hipótese equivocada, eliminam totalmente a necessidade de qualquer tipo de bateria no dispositivo"
+    ], correct:0, resolution:"Protocolos de comunicação de baixo consumo, como LoRa e Zigbee, foram especificamente projetados para transmitir pequenas quantidades de dados consumindo o mínimo possível de energia, o que é essencial para dispositivos IoT alimentados por bateria que precisam funcionar por meses ou até anos sem troca frequente de bateria, mesmo que isso signifique velocidades de transmissão mais baixas do que protocolos como Wi-Fi." },
+      { level:"dificil", question:"Qual é a diferença entre um dispositivo IoT que se comunica diretamente com a internet e um que se comunica através de um gateway (concentrador) local?", options:[
+      "O dispositivo com conexão direta acessa a internet de forma independente, enquanto o que usa gateway transmite dados para um dispositivo intermediário local, que então repassa essas informações para a internet",
+      "O dispositivo com conexão direta transmite sempre dados em texto simples, e o que usa gateway transmite sempre dados criptografados ao longo de qualquer etapa do processo produtivo considerado",
+      "O dispositivo com conexão direta nunca pode ser alimentado por bateria, e o que usa gateway depende inteiramente de bateria independentemente do tipo de alimento ou processo envolvido",
+      "O dispositivo com conexão direta é usado apenas em ambientes internos, e o que usa gateway é usado exclusivamente ao ar livre em qualquer contexto da produção industrial de alimentos"
+    ], correct:0, resolution:"Um dispositivo IoT com conexão direta à internet (geralmente via Wi-Fi) se comunica de forma independente com servidores remotos; um dispositivo que utiliza gateway transmite seus dados, muitas vezes por protocolos de curto alcance e baixo consumo, para um concentrador local (o gateway), que então agrega e repassa essas informações para a internet — uma arquitetura comum em redes de sensores distribuídos que precisam economizar energia." },
+      { level:"dificilimo", question:"Por que a segurança de dispositivos IoT é considerada um desafio particularmente difícil em comparação à segurança de computadores tradicionais?", options:[
+      "Porque, segundo essa ideia equivocada, dispositivos IoT nunca se conectam de fato a nenhuma rede de internet, tornando a segurança irrelevante em qualquer contexto da produção industrial de alimentos",
+      "Porque, segundo essa hipótese equivocada, a segurança de dispositivos IoT é sempre automaticamente garantida pelo próprio fabricante ao longo de qualquer etapa do processo produtivo considerado",
+      "Porque, nessa interpretação incorreta, computadores tradicionais nunca apresentam nenhum tipo de vulnerabilidade de segurança real independentemente do tipo de alimento ou processo envolvido",
+      "Porque dispositivos IoT frequentemente têm recursos de processamento e memória limitados, o que restringe a capacidade de implementar mecanismos robustos de segurança, além de muitas vezes não receberem atualizações regulares após a instalação"
+    ], correct:3, resolution:"Dispositivos IoT costumam ter processadores simples e pouca memória, projetados para baixo custo e consumo de energia, o que limita a capacidade de implementar criptografia robusta e outros mecanismos de segurança avançados usados em computadores tradicionais; além disso, muitos dispositivos IoT são instalados e esquecidos, sem receber atualizações de segurança regulares, deixando vulnerabilidades conhecidas sem correção por longos períodos, ao contrário de computadores que costumam receber atualizações mais frequentes." }
+    ]
+  },
+  "eletronica__manutencao-eletroeletronica-industrial": {
+    title: "Manutenção Eletroeletrônica Industrial",
+    emoji: "🏗️",
+    intro: "Manutenção eletroeletrônica industrial trata da conservação, diagnóstico e reparo de equipamentos elétricos e eletrônicos usados em ambientes industriais, incluindo estratégias preventivas e preditivas para evitar paradas inesperadas.",
+    analogy: "Pense na manutenção preventiva industrial como uma revisão periódica de carro: em vez de esperar o motor quebrar para consertá-lo, trocas programadas de óleo e peças de desgaste evitam problemas maiores — a manutenção industrial aplica essa mesma lógica a motores, painéis elétricos e equipamentos de uma fábrica.",
+    visual: {"type": "compare", "leftTitle": "Manutenção Corretiva", "leftItems": ["Realizada após a falha ocorrer", "Pode causar parada inesperada", "Custo de reparo geralmente maior"], "rightTitle": "Manutenção Preventiva", "rightItems": ["Realizada antes da falha ocorrer", "Evita paradas inesperadas", "Custo de reparo geralmente menor"]},
+    exercises: [
+      { level:"facil", question:"Qual é a diferença básica entre manutenção corretiva e manutenção preventiva?", options:[
+      "A corretiva e a preventiva são exatamente o mesmo tipo de manutenção, apenas com nomes diferentes usados por técnicos",
+      "A corretiva é usada apenas em equipamentos novos, e a preventiva é usada exclusivamente em equipamentos muito antigos",
+      "A corretiva é sempre mais barata de realizar do que qualquer tipo de manutenção preventiva programada",
+      "A corretiva é realizada depois que uma falha já ocorreu, enquanto a preventiva é realizada antes, buscando evitar a falha"
+    ], correct:3, resolution:"A manutenção corretiva é realizada depois que uma falha já ocorreu, buscando reparar o equipamento; a manutenção preventiva é realizada antes de uma falha acontecer, em intervalos programados, buscando evitar que o problema chegue a ocorrer, geralmente com menor custo e impacto do que uma correção emergencial." },
+      { level:"medio", question:"Por que uma parada não programada de um equipamento industrial costuma ser mais custosa do que uma manutenção programada?", options:[
+      "Porque, além do custo do reparo em si, uma parada inesperada interrompe a produção, gerando prejuízo adicional por perda de produtividade e possível atraso na entrega de produtos",
+      "Porque uma parada não programada, segundo essa ideia equivocada, sempre exige a substituição total do equipamento avariado em qualquer contexto da produção industrial de alimentos",
+      "Porque uma manutenção programada, nessa interpretação incorreta, nunca envolve nenhum custo real para a empresa envolvida independentemente do tipo de alimento ou processo envolvido",
+      "Porque uma parada não programada, segundo essa hipótese equivocada, é sempre causada exclusivamente por erro do operador ao longo de qualquer etapa do processo produtivo considerado"
+    ], correct:0, resolution:"Uma parada não programada interrompe a produção de forma inesperada, gerando não apenas o custo direto do reparo, mas também prejuízo indireto por perda de produtividade, possíveis atrasos na entrega de produtos e, em alguns casos, danos maiores ao equipamento causados pela falha não controlada — custos que uma manutenção programada, realizada em momento planejado, geralmente evita." },
+      { level:"dificil", question:"O que caracteriza a manutenção preditiva, e como ela se diferencia da manutenção preventiva tradicional?", options:[
+      "A manutenção preditiva utiliza monitoramento contínuo de indicadores (como vibração ou temperatura) para prever quando uma falha provavelmente ocorrerá, enquanto a preventiva segue intervalos fixos predefinidos, independentemente da condição real do equipamento",
+      "A manutenção preditiva nunca utiliza nenhum tipo de sensor, e a preventiva depende inteiramente de sensores para funcionar independentemente do tipo de alimento ou processo envolvido ao longo de qualquer etapa do processo produtivo considerado",
+      "A manutenção preditiva é aplicada apenas em equipamentos de pequeno porte, e a preventiva é aplicada exclusivamente em equipamentos de grande porte em qualquer contexto da produção industrial de alimentos",
+      "A manutenção preditiva é sempre mais barata de implementar do que qualquer forma de manutenção preventiva tradicional mesmo em situações consideradas tecnicamente controladas segundo essa mesma linha de raciocínio equivocada apresentada"
+    ], correct:0, resolution:"A manutenção preventiva segue um cronograma fixo predefinido (por exemplo, a cada seis meses), independentemente da condição real do equipamento naquele momento; a manutenção preditiva, por sua vez, utiliza sensores e monitoramento contínuo de indicadores como vibração, temperatura ou consumo de corrente para identificar sinais de deterioração e prever quando uma falha provavelmente ocorrerá, permitindo intervenção no momento mais adequado, nem cedo nem tarde demais." },
+      { level:"dificilimo", question:"Por que uma estratégia de manutenção puramente preventiva, seguindo intervalos fixos rígidos, pode gerar desperdício de recursos mesmo evitando falhas inesperadas?", options:[
+      "Porque, segundo essa ideia equivocada, manutenção preventiva sempre evita completamente qualquer tipo de desperdício de recursos da empresa em qualquer contexto da produção industrial de alimentos",
+      "Porque componentes podem ser substituídos ou revisados antes do necessário, mesmo estando em boas condições reais de funcionamento, apenas porque o intervalo programado chegou, desperdiçando peças, mão de obra e tempo de máquina parada desnecessariamente",
+      "Porque, segundo essa hipótese equivocada, intervalos fixos de manutenção preventiva são sempre calculados de forma perfeitamente precisa para cada equipamento ao longo de qualquer etapa do processo produtivo considerado",
+      "Porque, nessa interpretação incorreta, componentes substituídos preventivamente nunca estão em condições reais de continuar funcionando independentemente do tipo de alimento ou processo envolvido"
+    ], correct:1, resolution:"Como a manutenção preventiva segue intervalos fixos calculados com margem de segurança (geralmente conservadores), um componente pode ser substituído ou revisado antes de realmente precisar, mesmo estando em condições ainda adequadas de funcionamento, apenas porque o prazo programado chegou; isso pode gerar desperdício de peças ainda utilizáveis, mão de obra e tempo de parada de máquina que poderiam ter sido evitados com uma abordagem mais precisa, como a manutenção preditiva baseada na condição real do equipamento." }
+    ]
+  },
+  "eletronica__eletronica-e-automacao-industriais": {
+    title: "Eletrônica e Automação Industriais",
+    emoji: "⚙️",
+    intro: "Eletrônica e automação industriais integram sensores, controladores e atuadores eletrônicos para monitorar e controlar processos produtivos em fábricas, reduzindo a necessidade de intervenção manual constante.",
+    analogy: "Pense em um sistema de automação industrial como o sistema nervoso de uma fábrica: sensores são como terminações nervosas que percebem o ambiente, controladores são como o cérebro que processa essas informações, e atuadores são como músculos que executam a ação decidida — tudo trabalhando em conjunto de forma coordenada.",
+    visual: {"type": "labeled", "center": "Automação Industrial", "parts": ["Sensor de processo", "CLP (controlador)", "Atuador (motor/válvula)", "Interface Homem-Máquina"]},
+    exercises: [
+      { level:"facil", question:"O que é uma Interface Homem-Máquina (IHM) em um sistema de automação industrial?", options:[
+      "Um painel ou tela que permite ao operador humano visualizar e interagir com o funcionamento de um processo automatizado",
+      "Um componente usado apenas para armazenar energia elétrica de reserva em caso de falta de luz",
+      "Um documento técnico exigido para o registro legal de um equipamento industrial no país",
+      "Um tipo específico de sensor usado exclusivamente para medir a temperatura de um processo industrial"
+    ], correct:0, resolution:"A Interface Homem-Máquina (IHM) é um painel ou tela que permite ao operador humano visualizar informações sobre o processo automatizado — como status de sensores e alarmes — e interagir com o sistema, enviando comandos ou ajustando parâmetros de operação." },
+      { level:"medio", question:"Por que sensores de processo são elementos essenciais em um sistema de automação industrial?", options:[
+      "Porque fornecem ao sistema de controle informações reais sobre o estado do processo, permitindo decisões automatizadas baseadas em dados concretos, e não em suposições",
+      "Porque os sensores de processo, segundo essa hipótese equivocada, substituem totalmente a necessidade de qualquer atuador no sistema",
+      "Porque os sensores de processo, nessa interpretação incorreta, são exigidos exclusivamente para processos destinados à exportação",
+      "Porque os sensores de processo, segundo essa ideia equivocada, servem apenas para decorar visualmente o painel de controle da fábrica"
+    ], correct:0, resolution:"Sensores de processo (temperatura, pressão, nível, posição) fornecem ao sistema de controle informações reais e atualizadas sobre o estado do processo produtivo, permitindo que decisões automatizadas sejam tomadas com base em dados concretos medidos, em vez de suposições ou estimativas, o que é essencial para o controle preciso de um processo industrial." },
+      { level:"dificil", question:"Qual é a diferença entre controle de processo em malha aberta e em malha fechada em um sistema de automação industrial?", options:[
+      "O controle em malha aberta é usado apenas em processos manuais, e o controle em malha fechada é usado exclusivamente em processos totalmente robotizados",
+      "No controle em malha fechada, a ação é continuamente ajustada com base na leitura de um sensor sobre o resultado real, enquanto na malha aberta a ação é executada sem considerar o resultado medido posteriormente",
+      "O controle em malha aberta é sempre mais preciso tecnicamente do que o controle em malha fechada, independentemente do processo independentemente do tipo de alimento ou processo envolvido",
+      "O controle em malha aberta nunca envolve nenhum tipo de atuador, e o controle em malha fechada depende inteiramente de atuadores em qualquer contexto da produção industrial de alimentos"
+    ], correct:1, resolution:"No controle em malha fechada, um sensor mede continuamente o resultado real do processo, e essa informação é usada para ajustar a ação de controle de forma contínua (retroalimentação); no controle em malha aberta, a ação é executada com base em um valor predefinido, sem considerar o resultado medido posteriormente, o que geralmente resulta em menor precisão diante de perturbações inesperadas no processo." },
+      { level:"dificilimo", question:"Por que a integração de sistemas de automação industrial com sistemas de gestão empresarial (como softwares de planejamento de produção) tem se tornado cada vez mais valorizada nas indústrias modernas?", options:[
+      "Porque, segundo essa ideia equivocada, sistemas de automação industrial nunca geram nenhum tipo de dado útil para a gestão da empresa em qualquer contexto da produção industrial de alimentos independentemente do tipo de alimento ou processo envolvido",
+      "Porque permite que dados de produção em tempo real, coletados diretamente do chão de fábrica pelos sistemas de automação, alimentem decisões estratégicas de planejamento, estoque e logística, reduzindo a defasagem entre o que acontece na produção e o que é gerenciado administrativamente",
+      "Porque, segundo essa hipótese equivocada, a integração entre esses sistemas elimina totalmente a necessidade de qualquer supervisão humana segundo essa mesma linha de raciocínio equivocada apresentada em qualquer contexto da produção industrial de alimentos",
+      "Porque, nessa interpretação incorreta, sistemas de gestão empresarial e sistemas de automação industrial são tecnicamente incompatíveis entre si ao longo de qualquer etapa do processo produtivo considerado mesmo em situações consideradas tecnicamente controladas"
+    ], correct:1, resolution:"Sistemas de automação industrial geram, em tempo real, dados detalhados sobre a produção — quantidade produzida, tempo de ciclo, paradas de máquina; integrar esses dados diretamente a sistemas de gestão empresarial permite que decisões estratégicas sobre planejamento de produção, controle de estoque e logística sejam tomadas com base em informações atualizadas do chão de fábrica, reduzindo a defasagem que existiria se esses dados tivessem que ser coletados e inseridos manualmente, algo cada vez mais valorizado à medida que as indústrias buscam maior agilidade e precisão na tomada de decisão." }
+    ]
+  },
+  "eletronica__pratica-profissional": {
+    title: "Prática Profissional em Eletrônica",
+    emoji: "🧑‍🔧",
+    intro: "Prática profissional integra os conhecimentos técnicos aprendidos ao longo do curso em experiências reais de trabalho, desenvolvendo habilidades práticas, comunicação técnica e postura profissional esperadas do mercado de trabalho.",
+    analogy: "Pense na prática profissional como o teste de estrada de um carro recém-montado: por mais que cada peça tenha sido projetada e testada individualmente em laboratório, é rodando de verdade nas condições reais da estrada que se descobre se tudo realmente funciona bem em conjunto, sob as pressões e imprevistos do uso real.",
+    visual: {"type": "cycle", "steps": ["Aplicação do conhecimento técnico", "Resolução de problemas reais", "Comunicação com a equipe", "Reflexão e aprendizado contínuo"]},
+    exercises: [
+      { level:"facil", question:"Qual é o principal objetivo da prática profissional dentro de um curso técnico?", options:[
+      "Servir exclusivamente como uma forma de avaliação para a nota final do aluno no curso",
+      "Garantir automaticamente uma vaga de emprego fixa na empresa onde a prática foi realizada",
+      "Aplicar os conhecimentos técnicos aprendidos em situações reais de trabalho, desenvolvendo experiência prática",
+      "Substituir totalmente a necessidade de qualquer conteúdo teórico estudado ao longo do curso técnico"
+    ], correct:2, resolution:"A prática profissional tem como objetivo principal permitir que o aluno aplique os conhecimentos técnicos aprendidos em sala de aula a situações reais de trabalho, desenvolvendo experiência prática e habilidades que complementam a formação teórica recebida durante o curso." },
+      { level:"medio", question:"Por que a comunicação técnica clara com colegas e supervisores é uma habilidade tão importante no ambiente de trabalho quanto o conhecimento técnico em si?", options:[
+      "Porque mesmo um bom trabalho técnico pode gerar retrabalho, erros ou atrasos se não for comunicado de forma clara e compreendida corretamente pela equipe envolvida",
+      "Porque a comunicação técnica, nessa interpretação incorreta, substitui totalmente a necessidade de qualquer conhecimento técnico real",
+      "Porque a comunicação técnica, segundo essa ideia equivocada, é exigida apenas em empresas de grande porte, nunca em pequenas oficinas",
+      "Porque a comunicação técnica, segundo essa hipótese equivocada, é relevante apenas para cargos de gerência, nunca para técnicos de campo"
+    ], correct:0, resolution:"Mesmo um trabalho tecnicamente correto pode gerar retrabalho, mal-entendidos ou atrasos se as informações sobre o que foi feito, o que ainda precisa ser feito, ou que problemas foram encontrados não forem comunicadas de forma clara para colegas e supervisores, mostrando que comunicação e conhecimento técnico são habilidades complementares, não substitutas uma da outra." },
+      { level:"dificil", question:"Por que a experiência de resolver problemas reais e imprevistos durante a prática profissional costuma desenvolver habilidades que a sala de aula, isoladamente, tem mais dificuldade de proporcionar?", options:[
+      "Porque situações reais frequentemente envolvem informações incompletas, prazos, recursos limitados e imprevistos que exigem adaptação, algo diferente de exercícios estruturados e bem definidos típicos do ambiente de sala de aula",
+      "Porque a prática profissional, segundo essa hipótese equivocada, elimina totalmente a necessidade de qualquer conhecimento teórico prévio ao longo de qualquer etapa do processo produtivo considerado",
+      "Porque problemas reais, nessa interpretação incorreta, são sempre tecnicamente mais simples do que qualquer exercício acadêmico independentemente do tipo de alimento ou processo envolvido",
+      "Porque a sala de aula, segundo essa ideia equivocada, nunca aborda nenhum tipo de conteúdo tecnicamente relevante para o trabalho real em qualquer contexto da produção industrial de alimentos"
+    ], correct:0, resolution:"Exercícios de sala de aula costumam ser estruturados com informações completas e objetivos bem definidos, facilitando o aprendizado de conceitos técnicos; situações reais de trabalho frequentemente envolvem informações incompletas, prazos apertados, recursos limitados e imprevistos que exigem adaptação e tomada de decisão sob incerteza, desenvolvendo habilidades práticas de resolução de problemas que complementam, mas não substituem, o conhecimento técnico de base aprendido teoricamente." },
+      { level:"dificilimo", question:"Por que um profissional recém-formado tecnicamente competente ainda pode enfrentar dificuldades significativas de adaptação nos primeiros meses de trabalho, mesmo dominando o conteúdo técnico do curso?", options:[
+      "Porque, nessa interpretação incorreta, profissionais recém-formados sempre apresentam dificuldades exclusivamente por falta de conhecimento técnico ao longo de qualquer etapa do processo produtivo considerado",
+      "Porque, segundo essa hipótese equivocada, a adaptação ao ambiente de trabalho depende unicamente do tempo de curso já concluído pelo profissional mesmo em situações consideradas tecnicamente controladas",
+      "Porque a adaptação ao ambiente profissional envolve também aspectos não puramente técnicos, como cultura organizacional, dinâmica de equipe, prioridades do negócio e expectativas implícitas do mercado, que não são plenamente ensinados apenas pelo conteúdo técnico do curso",
+      "Porque, segundo essa ideia equivocada, o domínio técnico do conteúdo do curso nunca tem nenhuma relação real com o desempenho profissional em qualquer contexto da produção industrial de alimentos independentemente do tipo de alimento ou processo envolvido"
+    ], correct:2, resolution:"O domínio técnico do conteúdo do curso é uma base necessária, mas a adaptação bem-sucedida ao ambiente profissional envolve também aspectos que vão além do conhecimento técnico puro — entender a cultura e as prioridades daquela empresa específica, aprender a trabalhar em equipe com pessoas de diferentes perfis, e desenvolver sensibilidade para expectativas implícitas do mercado que raramente são explicitadas formalmente durante o curso — por isso mesmo profissionais tecnicamente competentes costumam passar por um período de adaptação nos primeiros meses de trabalho." }
+    ]
   }
 };
 
