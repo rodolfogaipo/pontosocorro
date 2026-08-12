@@ -212,23 +212,26 @@ function renderTrackHome(){
     </div>
     <div class="eyebrow">Escolha a trilha</div>
     <div class="module-grid" style="grid-template-columns:1fr;">
-      ${TRACKS.map(t => `
-        <button class="module-card" data-track="${t.id}" style="text-align:left; display:flex; align-items:center; gap:14px;">
+      ${TRACKS.map(t => {
+        const isTecnico = t.id === 'tecnico';
+        return `
+        <button class="module-card" data-track="${t.id}" ${isTecnico ? 'disabled' : ''} style="text-align:left; display:flex; align-items:center; gap:14px; ${isTecnico ? 'opacity:0.55; cursor:not-allowed;' : ''}">
           <span style="font-size:32px">${t.icon}</span>
           <span>
             <span class="m-name" style="display:block">${t.name}</span>
             <span class="m-sub">${t.subtitle}</span>
+            ${isTecnico ? '<span class="badge-soon" style="display:inline-block; margin-top:6px;">EM BREVE</span>' : ''}
           </span>
         </button>
-      `).join('')}
+      `;}).join('')}
     </div>
   `;
   view.querySelectorAll('[data-track]').forEach(el=>{
     el.addEventListener('click', ()=>{
       const t = el.dataset.track;
+      if (t === 'tecnico') return; // ainda não disponível
       if (t === 'regular') go('regularModuleList');
       if (t === 'emti') go('emtiModuleList');
-      if (t === 'tecnico') go('tecnicoList');
     });
   });
 }
